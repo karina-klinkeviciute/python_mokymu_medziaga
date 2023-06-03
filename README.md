@@ -1,2 +1,2 @@
-# python_mokymu_medziaga
+# Python mokymų medžiaga
 Python programavimo mokymų medžiaga
