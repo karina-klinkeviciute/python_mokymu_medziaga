@@ -12,6 +12,8 @@ Vėliau mokysimės, kaip įkelti į įvairius serverius, kur reikia daugiau konf
 
 Norint deployinti projektą į PythonAnywhere, reikia pirmiausiai jį paruošti tam. 
 
+### Requirements failas
+
 Tam, kad PythonAnywhere instaliavimo scriptas ne tik sukeltų mūsų projektą, bet ir suinstaliuotų visus reikalingus framework'us ir bibliotekas, reikia failo `requirements.txt`. 
 Šis failas turi būti šakninėje git direktorijoje. 
 Susiraskit, kokia jūsų projekto direktorija yra šakninė git direktorija (kartais gali būti šakninė pačio projekto direktorija, o kartais viena aukščiau). 
@@ -20,6 +22,14 @@ Susiraskit, kokia jūsų projekto direktorija yra šakninė git direktorija (kar
 
 Bus sukurtas failas `requirements.txt`, jį reikia pridėti į git, su `git add requirements.txt`. Tada reikia padaryti git commitą (`git commit -m "pridėta requirements.txt"`). 
 Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github: `git push` (taip pat galit naudotis PyCharm įrankiais).
+
+### Saugumas
+
+.env
+seecret key
+debug - false
+
+
 
 Viskas, projektas paruoštas. 
 
