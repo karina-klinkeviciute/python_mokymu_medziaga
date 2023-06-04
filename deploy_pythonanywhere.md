@@ -26,7 +26,7 @@ Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github: 
 ### Saugumas
 
 .env
-seecret key
+secret key
 debug - false
 
 
@@ -52,3 +52,17 @@ PythonAnywhere svetainė mums leidžia priėjimą prie Linux konsolės.
 
 Viršutiniame meniu reikia paspausti "Consoles". Atsidariusiame lange yra išvardintos įvairios Python, Bash, duomenų bazių konsolės. Mums reikia pasirinkti `Bash` konsolę sąraše `Other`. 
 
+Konsolėje pirmiausiai reikia suinstaliuoti deployinimo įrankį, kuris padės mums sukelti failus iš GitHUb ir paleisti serverį:
+
+```
+pip3.10 install --user pythonanywhere
+```
+
+Suinstaliavus, reikia paleisti šį įrankį, kad parsiųstų Django kodą iš GitHub į serverį ir įdiegtų mūsų projektą. Tam reikia paleisti žemiau esančią komandą, 
+tik joje vietoje <your-github-username> ir <your-repo-name> reikia surašyti 
+
+```
+pa_autoconfigure_django.py --python=3.10 https://github.com/<your-github-username>/<your-repo-name>.git
+```
+
+Šis automatinis deployinimo scriptas 
