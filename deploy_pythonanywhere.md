@@ -100,5 +100,5 @@ Jei norime pasižiūrėti, kaip atrodo mūsų svetainė ir prie jos prisijungti,
   
   Paspaudę ant jo, atsidarysim svetainę, o prie nuorodos pridėję /admin/ - administravimo aplinką. Gali būti, kad rodys, kad svetainė nesaugi. Taip yra todėl, d paspaudus ant nuorodos, ją atidaro `http` protokolu. 
   
-
+Tam, kad nuorodą nesaugiu protokolu (http), mums nukreiptų į saugų (https), reikia 
 
