@@ -58,6 +58,8 @@ Konsolėje pirmiausiai reikia suinstaliuoti deployinimo įrankį, kuris padės m
 pip3.10 install --user pythonanywhere
 ```
 
+## Deployinimas (kėlimas į serverį ir paleidimas)
+
 Suinstaliavus, reikia paleisti šį įrankį, kad parsiųstų Django kodą iš GitHub į serverį ir įdiegtų mūsų projektą. Tam reikia paleisti žemiau esančią komandą, 
 tik joje vietoje <your-github-username> ir <your-repo-name> reikia surašyti 
 
@@ -65,4 +67,38 @@ tik joje vietoje <your-github-username> ir <your-repo-name> reikia surašyti
 pa_autoconfigure_django.py --python=3.10 https://github.com/<your-github-username>/<your-repo-name>.git
 ```
 
-Šis automatinis deployinimo scriptas 
+Šis automatinis deployinimo scriptas atliks šiuos veiksmus:
+  
+  - parsiųs kodą iš github
+  - sukurs ir aktyvuos virtualią aplinką PythonAnywhere serveryje
+  - papildys settings failą savo papildomais nustatymais
+  - sukurs duomenų bazę ir migruos jos struktūrą su `python manage.py migrate`
+  - sutvarkys static failus (paleis collectstatic)
+  - sukonfigūruos PythonAnywhere, kad jis būtų pasiruošęs rodyti jūsų puslapį
+
+Dabar jau mūsų puslapis įkeltas į serverį ir jį galima pasiekti naršyklėje. Bet jame dar nėra nei naudotojų, nei duomenų.
+  
+  
+## Pagrindinio naudotojo (super user) sukūrimas
+  
+Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti suomenis, reikia susikurti vartotoją:
+  
+```python manage.py createsuperuser```
+
+## Aplinkos kintamųjų surašymas
+  
+
+Jei norime pasižiūrėti, kaip atrodo mūsų svetainė ir prie jos prisijungti, reikia eiti į "Web" skiltį. Ten rasim savo svetainės adresą ir jos informaciją. 
+  
+## Saugumas 
+  
+  Norėdami, kad mūsų 
+  
+  .env
+  
+  https
+  
+  Paspaudę ant jo, atsidarysim svetainę, o prie nuorodos pridėję /admin/ - administravimo aplinką. Gali būti, kad rodys, kad svetainė nesaugi. Taip yra todėl, d paspaudus ant nuorodos, ją atidaro `http` protokolu. 
+  
+
+
