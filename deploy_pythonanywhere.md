@@ -69,7 +69,7 @@ pip3.10 install --user pythonanywhere
 
 ## Deployinimas (kėlimas į serverį ir paleidimas)
 
-Suinstaliavus, reikia paleisti šį įrankį, kad parsiųstų Django kodą iš GitHub į serverį ir įdiegtų mūsų projektą. Tam reikia paleisti žemiau esančią komandą, 
+Suinstaliavus, reikia paleisti šį įrankį, kad mūsų Django projekto kodą parsiųstų iš GitHub į serverį, ir įdiegtų mūsų projektą. Tam reikia paleisti žemiau esančią komandą, 
 tik joje vietoje `<your-github-username>` ir `<your-repo-name>` reikia surašyti savo Github vartotojo vardą ir repozitorijos pavadinimą (arba tiesiog nukopijuoti visą nuorodą iš Github)
 
 ```
