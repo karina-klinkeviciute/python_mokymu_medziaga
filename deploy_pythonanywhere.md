@@ -61,7 +61,7 @@ PythonAnywhere svetainė mums leidžia priėjimą prie Linux konsolės.
 
 Viršutiniame meniu reikia paspausti "Consoles". Atsidariusiame lange yra išvardintos įvairios Python, Bash, duomenų bazių konsolės. Mums reikia pasirinkti `Bash` konsolę sąraše `Other`. 
 
-Konsolėje pirmiausiai reikia suinstaliuoti deployinimo įrankį, kuris padės mums sukelti failus iš GitHUb ir paleisti serverį:
+Konsolėje pirmiausiai reikia suinstaliuoti deployinimo įrankį, kuris padės mums sukelti failus iš GitHub ir paleisti serverį:
 
 ```
 pip3.10 install --user pythonanywhere
