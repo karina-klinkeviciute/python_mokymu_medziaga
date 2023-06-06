@@ -126,12 +126,14 @@ Su teksto redaktoriumi `nano` atsidarom šį failą:
 
 ``` nano .env```
 
-Pakeičiam aplinkos kintamųjų reikšmes į tikras, mums reikalingas serveryje:
+Jame šiuo metu bus šie kintamieji:
 
 ```bash
 SECRET_KEY=musu_slaptas_raktas
 DEBUG=False
 ```
+
+Mums reikia sugeneruoti slaptą raktą, kuris būtų unikalus šiam PythonAnywhere serveriui. 
 
 Slapto rakto sugeneravimui iš atsitiktinių simbolių, terminale (galima ir savo kompiuteryje, turi būti įjungta virtuali aplinka, į kurią instaliavom Django) turime paleisti šį kodą:
 
