@@ -20,8 +20,17 @@ Susiraskit, kokia jūsų projekto direktorija yra šakninė git direktorija (kar
 
 Šioje, šakninėje direktorijoje paleiskit šią komandą: `pip freeze > requirements.txt`
 
-Bus sukurtas failas `requirements.txt`, jį reikia pridėti į git, su `git add requirements.txt`. Tada reikia padaryti git commitą (`git commit -m "pridėta requirements.txt"`). 
-Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github: `git push` (taip pat galit naudotis PyCharm įrankiais).
+Bus sukurtas failas `requirements.txt`, jį reikia pridėti į git, komanda:
+```git add requirements.txt```. 
+
+Tada reikia padaryti git commitą: 
+```git commit -m "pridėta requirements.txt"```
+
+
+Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github: 
+```git push``` 
+
+(taip pat galit naudotis PyCharm įrankiais).
 
 ### Saugumas
 
