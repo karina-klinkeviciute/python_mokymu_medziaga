@@ -89,7 +89,19 @@ DEBUG=False
 
 Nustatymų faile `settings.py` turi būti užkraunamos aukščiau minėtų kintamųjų reikšmės iš `.env` failo. 
 
-Tam reikia naudoti biblioteką 
+Tam reikia naudoti biblioteką `dotenv`
+
+`settings.py` failo pradžioje, prie kitų `import` sakinių, reikia pridėti ir tokį sakinį:
+
+```from dotenv import load_dotenv```
+
+Po `import` sakinių, reikia įrašyti toki` eilutę: 
+
+```load_dotenv()```
+
+Tada reikia surasti nustatymus, kuriuos norime padaryti slaptais įdedant į `.env` failą ir juos pakeisti taip:
+
+`SECRET_KEY = os.getenv("SECRET_KEY")`
 
 
 #### Debug nustatymai
@@ -103,11 +115,15 @@ Yra skirtingų būdų valdyti šį nustatymą, pavyzdžiui, skirtingi settings f
 
 Vienas iš būdų yra taip pat įkelti šį kintamąjį į aplinkos kintamuosius. 
 
+`DEBUG` reikšmę aukščiau esančiame pavyzdyje įdėjom į `.env` fail`. 
+
+`settings.py` faile jį reikia pasiimti taip:
 
 ```python
 DEBUG = True if os.getenv("DEBUG") == "True" else False
 ```
 
+Sąlyginį sakinį naudojam todėl. kad eilutė "False", jei bandytume paversti tiesiogiai į Boolean, taptų `True` reikšme.
 
 
 Viskas, projektas paruoštas. 
