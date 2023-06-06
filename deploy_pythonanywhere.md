@@ -64,8 +64,19 @@ secret key
 
 #### Debug nustatymai
 
-Kai dirbote su Django savo kompiuteriuose, matėt, kad padarius klaidą, ar įvedus netinkamą kelią, kartais Django svetainėje parodo daug informacijos, 
-debug - false
+Kai dirbote su Django savo kompiuteriuose, matėt, kad padarius klaidą, ar įvedus netinkamą kelią, kartais Django svetainėje parodo daug informacijos, padedančios klaidas surasti ir ištaisyti. Tačiau serveryje mes nenorim rodyti šios informacijos, nes ji gali atskleisti įsilaužėliams daug informacijos apie mūsų projektą ir taip padaryti jį nesaugiu. 
+
+Šios informacijos rodymas/nerodymas valdomas aplinkos kintamuoju `DEBUG`. Kai kintamasis `DEBUG=True`, tai visą šią informaciją apie klaidas mums rodys. Jei `DEBUG=False`,
+ši klaidų informacija bus nerodoma, o jei klaidų paliksim, bus tiesiog rodomas puslapis su klaidos pranešimu (404, 500). 
+
+Yra skirtingų būdų valdyti šį nustatymą, pavyzdžiui, skirtingi settings failai serveriui ir vietiniams kompiuteriams. 
+
+Vienas iš būdų yra taip pat įkelti šį kintamąjį į aplinkos kintamuosius. 
+
+
+```python
+DEBUG = True if os.getenv("DEBUG") == "True" else False
+```
 
 
 
