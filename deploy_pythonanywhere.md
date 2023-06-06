@@ -53,14 +53,44 @@ Kartais būna kitų duomenų, kurie taip pat yra slapti ir jų negalima niekam a
 
 Visi šie duomenys turi būti nekeliami į GitHub, o suvedami tiesiai serveryje.
 
+##### `.env` failas
+
 Vienas iš dažniausiai naudojamų būdų, dirbant su Django, o ir ne tik (su kitais framework'ais, kaip laravel - irgi) yra aplinkos kintamieji (Environment variables). 
 
 Environment variables būna saugomi kompiuterio atmintyje. Jei dirbam su Django (ar kitu frameworku), ten juos sukeliam iš specialaus `.env` failo, naudodami specialias bibliotekas. 
 
+Norint naudoti `.env` failą, reikia pasiruošti patį failą, ir taip pat pakeisti nustatymų failą taip, kad kai kuriuos nustatymus imtų iš `.env` failo. 
 
+`.env` failas yra rašomas `bash` formatu. 
 
-.env - nedėti į git. Įdėti į .gitignore (pasirašyti .env_example)
-secret key
+`.env` failo pavyzdys:
+
+```
+SECRET_KEY="m*epo+((q9t4h-g1zf9-nclc80-mthneqryca)0by@9=vgna6k"
+DEBUG=True
+```
+
+`.env` failas negali būti keliamas į GitHub, nes tokiu būdu atskleistume visus savo slaptažodžius. Todėl jį reikia įdėti į `.gitignore` failą.
+
+Tam, kad nepamiršume, kokius kintamuosius turim surašyti į `.env` failą, galim pasidaryti kitą failą, pavyzdžiui, `.env_example` ir į jį surašyti visus šuos kintamuosius su pavyzinėmis reikšmėmis:
+
+`.env_example` failo pavyzdys:
+
+```bash
+SECRET_KEY=musu_slaptas_raktas
+DEBUG=False
+```
+
+Šį `.env_example` failą jau galim dėti į git.
+
+Žemiau bus parašyta, kokius veiksmus su šiais failais reikės atlikti serveryje.
+
+##### `settings.py` failas
+
+Nustatymų faile `settings.py` turi būti užkraunamos aukščiau minėtų kintamųjų reikšmės iš `.env` failo. 
+
+Tam reikia naudoti biblioteką 
+
 
 #### Debug nustatymai
 
