@@ -152,5 +152,6 @@ Tai padarius, reikės grįžti į puslapio viršų ir paspausti "reload naudotoj
 Ši mokomoji medžiaga sukurta naudojantis šiais šaltiniais:
 
 [Djanog Girls tutorial](https://tutorial.djangogirls.org/en/deploy/#setting-up-our-blog-on-pythonanywhere)
+
 [How to generate Django Secret Key](https://codinggear.blog/django-generate-secret-key/)
 
