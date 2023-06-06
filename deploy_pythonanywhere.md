@@ -16,7 +16,7 @@ Norint deployinti projektą į PythonAnywhere, reikia pirmiausiai jį paruošti 
 
 Tam, kad PythonAnywhere instaliavimo scriptas ne tik sukeltų mūsų projektą, bet ir suinstaliuotų visus reikalingus framework'us ir bibliotekas, reikia failo `requirements.txt`. 
 Šis failas turi būti šakninėje git direktorijoje. 
-Susiraskit, kokia jūsų projekto direktorija yra šakninė git direktorija (kartais gali būti šakninė pačio projekto direktorija, o kartais viena aukščiau). 
+Github svetainėje susiraskit, kokia jūsų projekto direktorija yra šakninė git direktorija (kartais gali būti šakninė pačio projekto direktorija, o kartais viena aukščiau). 
 
 Šioje, šakninėje direktorijoje paleiskit šią komandą: `pip freeze > requirements.txt`
 
