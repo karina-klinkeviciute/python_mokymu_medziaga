@@ -131,6 +131,17 @@ from django.core.management.utils import get_random_secret_key
 print(get_random_secret_key())
 ```
 
+Šis kodas atspausdins mums kažką panašaus į šitai:
+
+```m*epo+((q9t4h-g1zf9-nclc80-mthneqryca)0by@9=vgna6k```
+
+Šį simbolių rinkinį ir reikia įkopijuotį į .env failą, prie SECRET_KEY aplinkos kintamojo:
+
+```
+SECRET_KEY="m*epo+((q9t4h-g1zf9-nclc80-mthneqryca)0by@9=vgna6k"
+DEBUG = False
+```
+
 
 ## Programėlės informacija
 
