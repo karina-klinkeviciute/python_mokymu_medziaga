@@ -32,14 +32,39 @@ Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github:
 
 (taip pat galit naudotis PyCharm įrankiais).
 
-## Migracijų failai
+### Migracijų failai
 
 Pasitikrinkit, kad migracijų failai būtų irgi sukelti į GitHUb.
 
 ### Saugumas
 
+#### Secret Key ir skaptažodžiai
+
+Kai kurie Django ar mūsų projekto nustatymai neturėtų būti keliami į GitHub . 
+
+Vienas iš jų yra SECRET_KEY. SECRET_KEY naudojamas užšifruoti sesijų "cookies", tai pat užšifruojant 
+slaptažodžius ar kitus duomenis. Todėl jis labai svarbus, ir jo negalima niekam atskleisti (pavyzdžiui, įkelti į GitHub), nes tada kiti gali užšifruoti jo duomenis ir taip apsimesti jūsų svetaine. 
+
+Kartais būna kitų duomenų, kurie taip pat yra slapti ir jų negalima niekam atskleisti, kas reiškia - ir kelti į GitHub. Pavyzdžiai:
+
+* Duomenų bazių prisijungimo duomenys
+* Trečiųjų šalių programėlių ar servisų API slapti raktai
+* Elektroninio pašto slaptažodžiai
+
+Visi šie duomenys turi būti nekeliami į GitHub, o suvedami tiesiai serveryje.
+
+Vienas iš dažniausiai naudojamų būdų, dirbant su Django, o ir ne tik (su kitais framework'ais, kaip laravel - irgi) yra aplinkos kintamieji (Environment variables). 
+
+Environment variables būna saugomi kompiuterio atmintyje. Jei dirbam su Django (ar kitu frameworku), ten juos sukeliam iš specialaus `.env` failo, naudodami specialias bibliotekas. 
+
+
+
 .env - nedėti į git. Įdėti į .gitignore (pasirašyti .env_example)
 secret key
+
+#### Debug nustatymai
+
+Kai dirbote su Django savo kompiuteriuose, matėt, kad padarius klaidą, ar įvedus netinkamą kelią, kartais Django svetainėje parodo daug informacijos, 
 debug - false
 
 
