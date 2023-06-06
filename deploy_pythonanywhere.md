@@ -32,6 +32,10 @@ Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github:
 
 (taip pat galit naudotis PyCharm įrankiais).
 
+## Migracijų failai
+
+Pasitikrinkit, kad migracijų failai būtų irgi sukelti į GitHUb.
+
 ### Saugumas
 
 .env - nedėti į git. Įdėti į .gitignore (pasirašyti .env_example)
