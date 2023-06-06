@@ -94,9 +94,11 @@ Dabar jau mūsų puslapis įkeltas į serverį ir jį galima pasiekti naršyklė
   
 ## Pagrindinio naudotojo (super user) sukūrimas
   
-Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, reikia susikurti vartotoją:
+Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, reikia susikurti naudotoją:
   
 ```python manage.py createsuperuser```
+
+Atsidariusiame dialoge reikia įrašyti naudotojo vardą ir kitus duomenis, kaip darėte ir savo kompiuteryje.
 
 ## Aplinkos kintamųjų surašymas
   
