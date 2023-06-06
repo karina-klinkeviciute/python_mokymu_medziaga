@@ -25,7 +25,7 @@ Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github: 
 
 ### Saugumas
 
-.env
+.env - nedėti į git. Įdėti į .gitignore (pasirašyti .env_example)
 secret key
 debug - false
 
@@ -61,7 +61,7 @@ pip3.10 install --user pythonanywhere
 ## Deployinimas (kėlimas į serverį ir paleidimas)
 
 Suinstaliavus, reikia paleisti šį įrankį, kad parsiųstų Django kodą iš GitHub į serverį ir įdiegtų mūsų projektą. Tam reikia paleisti žemiau esančią komandą, 
-tik joje vietoje <your-github-username> ir <your-repo-name> reikia surašyti 
+tik joje vietoje `<your-github-username>` ir `<your-repo-name>` reikia surašyti savo Github vartotojo vardą ir repozitorijos pavadinimą (arba tiesiog nukopijuoti visą nuorodą iš Github)
 
 ```
 pa_autoconfigure_django.py --python=3.10 https://github.com/<your-github-username>/<your-repo-name>.git
@@ -81,24 +81,76 @@ Dabar jau mūsų puslapis įkeltas į serverį ir jį galima pasiekti naršyklė
   
 ## Pagrindinio naudotojo (super user) sukūrimas
   
-Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti suomenis, reikia susikurti vartotoją:
+Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, reikia susikurti vartotoją:
   
 ```python manage.py createsuperuser```
 
 ## Aplinkos kintamųjų surašymas
   
+Prieš tai pasiruošėm nustatymus taip, kad slapti ir/ar nuo serverio priklausantys nustatymai turi būti surašyti į .env failą. Kadangi .env failo į git nekėlėm, PythonAnywhere reikia jį susikurti iš naujo. 
 
-Jei norime pasižiūrėti, kaip atrodo mūsų svetainė ir prie jos prisijungti, reikia eiti į "Web" skiltį. Ten rasim savo svetainės adresą ir jos informaciją. 
+Tą taip pat padarysim konsolėje. 
+
+Pasitikrinam, kokie failai ir direktorijos pas mus yra:
+
+```ls```
+
+Pirmiausia, persijungiam į projekto direktoriją:
+```cd svetaines_pavadinimas.pythonanywhere.com```
+
+Tada patikrinam, kokie joje yra failai:
+```ls -al```
+
+Parametras `-al` reikalingas tam, kad rodytų ir paslėptus failus (kad galėtume rasti .env ir .env_example).
+
+Jei šioje direktorijoje yra `.env_example` failas, perkopijuojam jį į `.env` failą:
+
+```cp .env_example .env```
+
+Su teksto redaktoriumi `nano` atsidarom šį failą:
+
+``` nano .env```
+
+Pakeičiam aplinkos kintamųjų reikšmes į tikras, mums reikalingas serveryje:
+
+```bash
+SECRET_KEY=musu_slaptas_raktas
+DEBUG=False
+```
+
+Slapto rakto sugeneravimui iš atsitiktinių simbolių, terminale (galima ir savo kompiuteryje, turi būti įjungta virtuali aplinka, į kurią instaliavom Django) turime paleisti šį kodą:
+
+Pirmiausiai įjungiam python shell aplinką:
+
+```python```
+
+Tada importuojam bibliotekas ir sugeneruojam kodą:
+
+```python
+from django.core.management.utils import get_random_secret_key
+print(get_random_secret_key())
+```
+
+
+## Programėlės informacija
+
+Savo svetainės svetainės adresą ir jos informaciją rasim paspaudę meniu punktą "Web". Ten kairėje bus programėlių sąrašas, kuriame bus mūsų ši vienintelė programėlė (nemokamam plane galima turėti tik vieną). Paspaudę ant jos, rasim jos informaciją.
   
-## Saugumas 
+## Saugus jungimasis (SSL, HTTPS)
+
+Norėdami, kad jungimasis prie mūtų tinklalapio visada būtų saugus (būtų visada nukreipiama į HTTPS protokolą, kuris užšifruoja siunčiamą informaciją), reikia įjungti tai mūsų programėlei žemiau. 
+
+Paėję kiek žemiau, rasime skiltį "Security". Ten yra nustatymas "Force HTTPS" ir iš pradžių jis yra išjungtas (Disabled). Mums reikia paspausti pele ant žodžio "Disabled" tam, kad jį įjungtume. Dabar turėtų rodyti "Enabled".
+
+Tai padarius, reikės grįžti į puslapio viršų ir paspausti "reload naudotojo_vardas.pythonanywhere.com". Tada mūsų svetainė persikraus ir šie nustatymai įsigalios.
   
-  Norėdami, kad mūsų 
-  
-  .env
-  
-  https
-  
-  Paspaudę ant jo, atsidarysim svetainę, o prie nuorodos pridėję /admin/ - administravimo aplinką. Gali būti, kad rodys, kad svetainė nesaugi. Taip yra todėl, d paspaudus ant nuorodos, ją atidaro `http` protokolu. 
-  
-Tam, kad nuorodą nesaugiu protokolu (http), mums nukreiptų į saugų (https), reikia 
+## Svetainės atnaujinimas po pakeitimų
+
+
+
+#### Credits:
+Ši mokomoji medžiaga sukurta naudojantis šiais šaltiniais:
+
+[Djanog Girls tutorial](https://tutorial.djangogirls.org/en/deploy/#setting-up-our-blog-on-pythonanywhere)
+[How to generate Django Secret Key](https://codinggear.blog/django-generate-secret-key/)
 
