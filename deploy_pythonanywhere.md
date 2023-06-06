@@ -70,7 +70,7 @@ SECRET_KEY="m*epo+((q9t4h-g1zf9-nclc80-mthneqryca)0by@9=vgna6k"
 DEBUG=True
 ```
 
-`.env` failas negali būti keliamas į GitHub, nes tokiu būdu atskleistume visus savo slaptažodžius. Todėl jį reikia įdėti į `.gitignore` failą.
+**`.env` failas negali būti keliamas į GitHub, nes tokiu būdu atskleistume visus savo slaptažodžius. Todėl jį reikia įdėti į `.gitignore` failą.**
 
 Tam, kad nepamiršume, kokius kintamuosius turim surašyti į `.env` failą, galim pasidaryti kitą failą, pavyzdžiui, `.env_example` ir į jį surašyti visus šuos kintamuosius su pavyzinėmis reikšmėmis:
 
@@ -256,7 +256,27 @@ Tai padarius, reikės grįžti į puslapio viršų ir paspausti "reload naudotoj
   
 ## Svetainės atnaujinimas po pakeitimų
 
+### git 
 
+Jei atnaujinam svetainės kodą ir norim, kad atsinaujintų ir mūsų svetainė, reikia atnaujintą kodą įkelti į GitHub, o iš ten - pasiimti į serverį. 
+
+Pakeitus kodą, savo kompiuteryje reikia atlikti šiuos veiksmus savo kompiuteryje:
+
+`git add pakeistas_failas` arba `git add .` jei pakeitėm daugiau failų. Taip pridedami failai kėlimui į github.
+`git commit -m "pakeitimai"` - užtvirtinam pakeitimus
+`git push` - nusiunčiam į GitHub
+
+Serveryje reikia atlikti šiuos veiksmus:
+
+* Jei nesame pasileidę `Bash` konsolės, pasileidžiam ją. 
+* nueinam į savo projekto direktoriją: `cd naudotojo_vardas.pythonanywhere.com`
+* parsiunčiam atnaujinimus iš git: `git pull`
+
+### svetainės perkrovimas
+
+Parsiuntus atnaujinimus iš git, reikia perkrauti mūsų svetainę. Tam reikia nueiti į meniu punktą `Web`, ten vėl susirasti reload naudotojo_vardas.pythonanywhere.com" ir jį paspausti. 
+
+Mūsų svetainė persikraus, ir nuėję į ją galėsime pamatyti ją su atnaujinimais. 
 
 #### Credits:
 Ši mokomoji medžiaga sukurta naudojantis šiais šaltiniais:
