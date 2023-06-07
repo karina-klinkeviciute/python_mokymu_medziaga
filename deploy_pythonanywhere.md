@@ -153,7 +153,7 @@ Yra skirtingų būdų valdyti šį nustatymą, pavyzdžiui, skirtingi settings f
 
 Vienas iš būdų yra taip pat įkelti šį kintamąjį į aplinkos kintamuosius. 
 
-`DEBUG` reikšmę aukščiau esančiame pavyzdyje įdėjom į `.env` fail`. 
+`DEBUG` reikšmę aukščiau esančiame pavyzdyje įdėjom į `.env` failą. 
 
 `settings.py` faile jį reikia pasiimti taip:
 
@@ -161,11 +161,12 @@ Vienas iš būdų yra taip pat įkelti šį kintamąjį į aplinkos kintamuosius
 DEBUG = True if os.getenv("DEBUG") == "True" else False
 ```
 
-Sąlyginį sakinį naudojam todėl. kad eilutė "False", jei bandytume paversti tiesiogiai į Boolean, taptų `True` reikšme.
+Sąlyginį sakinį naudojam todėl, kad eilutė "False", jei bandytume paversti tiesiogiai į Boolean, taptų `True` reikšme.
 
 Padarę šiuos pakeitimus, vėl viską sukeliam į GitHub:
 
-```git commit -m "pakeitėm nustatymus```
+```git commit -m "pakeitėm nustatymus"```
+
 ```git push```
 
 
