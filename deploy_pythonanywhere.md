@@ -86,7 +86,13 @@ SECRET_KEY=musu_slaptas_raktas
 DEBUG=False
 ```
 
-Šį `.env_example` failą jau galim dėti į git.
+Šį `.env_example` failą jau galim dėti į git:
+
+```git add .env_example```
+
+```git commit -m "pridejom .env_example"```
+
+```git push```
 
 Žemiau bus parašyta, kokius veiksmus su šiais failais reikės atlikti serveryje.
 
@@ -138,6 +144,11 @@ DEBUG = True if os.getenv("DEBUG") == "True" else False
 ```
 
 Sąlyginį sakinį naudojam todėl. kad eilutė "False", jei bandytume paversti tiesiogiai į Boolean, taptų `True` reikšme.
+
+Padarę šiuos pakeitimus, vėl viską sukeliam į GitHub:
+
+```git commit -m "pakeitėm nustatymus```
+```git push```
 
 
 Viskas, projektas paruoštas. 
