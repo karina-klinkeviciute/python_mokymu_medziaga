@@ -9,43 +9,22 @@ Vėliau mokysimės, kaip įkelti į įvairius serverius, kur reikia daugiau konf
 https://www.pythonanywhere.com/
 
 
-Į PythonAnywhere galima deployinti failą tiesiai iš GitHub git repozitorijos. Taip mes ir darysim. Tam PythonAnywhere turi specialų įrankį, apie kurį bus žemiau.
-
+Į PythonAnywhere galima deployinti failą tiesiai iš GitHub git repozitorijos. Deployinimas iš git repozitorijos yra gana įprastas būdas - ir rankiniams deployinimams, ir automatiniams. Tam PythonAnywhere turi specialų įrankį, kurį mes ir naudosim.
 
 
 ## Projekto paruošimas
 
 Norint deployinti projektą į PythonAnywhere, reikia pirmiausiai jį paruošti tam. 
 
-### Requirements failas
-
-Tam, kad PythonAnywhere instaliavimo scriptas ne tik sukeltų mūsų projektą, bet ir suinstaliuotų visus reikalingus framework'us ir bibliotekas, reikia failo `requirements.txt`. 
-Šis failas turi būti šakninėje git direktorijoje. 
-Github svetainėje susiraskit, kokia jūsų projekto direktorija yra šakninė git direktorija (kartais gali būti šakninė pačio projekto direktorija, o kartais viena aukščiau). 
-
-Šioje, šakninėje direktorijoje paleiskit šią komandą: `pip freeze > requirements.txt`
-
-Bus sukurtas failas `requirements.txt`, jį reikia pridėti į git, komanda:
-```git add requirements.txt```. 
-
-Tada reikia padaryti git commitą: 
-```git commit -m "pridėta requirements.txt"```
-
-
-Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github: 
-```git push``` 
-
-(taip pat galit naudotis PyCharm įrankiais).
-
 ### Migracijų failai
 
-Pasitikrinkit, kad migracijų failai būtų irgi sukelti į GitHub.
+Pasitikrinkit, kad migracijų failai būtų irgi sukelti į GitHub. Į github nekeliam duomenų bazės - ji bus sukuriama serveryje iš naujo, nes serveryje norim turėti produkcijos, ne testavimo duomenis. 
 
 ### Saugumas
 
-#### Secret Key ir skaptažodžiai
+#### Secret Key ir slaptažodžiai
 
-Kai kurie Django ar mūsų projekto nustatymai neturėtų būti keliami į GitHub . 
+Kai kurie Django ar mūsų projekto nustatymai neturėtų būti keliami į GitHub. 
 
 Vienas iš jų yra SECRET_KEY. SECRET_KEY naudojamas užšifruoti sesijų "cookies", tai pat užšifruojant 
 slaptažodžius ar kitus duomenis. Todėl jis labai svarbus, ir jo negalima niekam atskleisti (pavyzdžiui, įkelti į GitHub), nes tada kiti gali užšifruoti jo duomenis ir taip apsimesti jūsų svetaine. 
@@ -168,6 +147,27 @@ Padarę šiuos pakeitimus, vėl viską sukeliam į GitHub:
 ```git commit -m "pakeitėm nustatymus"```
 
 ```git push```
+
+### Requirements failas
+
+Tam, kad PythonAnywhere instaliavimo scriptas ne tik sukeltų mūsų projektą, bet ir suinstaliuotų visus reikalingus framework'us ir bibliotekas, reikia failo `requirements.txt`. 
+Šis failas turi būti šakninėje git direktorijoje. 
+Github svetainėje susiraskit, kokia jūsų projekto direktorija yra šakninė git direktorija (kartais gali būti šakninė pačio projekto direktorija, o kartais viena aukščiau). 
+
+Šioje, šakninėje direktorijoje paleiskit šią komandą: `pip freeze > requirements.txt`
+
+Bus sukurtas failas `requirements.txt`, jį reikia pridėti į git, komanda:
+```git add requirements.txt```. 
+
+Tada reikia padaryti git commitą: 
+```git commit -m "pridėta requirements.txt"```
+
+
+Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github: 
+```git push``` 
+
+(taip pat galit naudotis PyCharm įrankiais).
+
 
 
 Viskas, projektas paruoštas. 
