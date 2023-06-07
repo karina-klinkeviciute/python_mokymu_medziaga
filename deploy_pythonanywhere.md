@@ -18,7 +18,7 @@ Norint deployinti projektą į PythonAnywhere, reikia pirmiausiai jį paruošti 
 
 ### Migracijų failai
 
-Pasitikrinkit, kad migracijų failai būtų irgi sukelti į GitHub. Į github nekeliam duomenų bazės - ji bus sukuriama serveryje iš naujo, nes serveryje norim turėti produkcijos, ne testavimo duomenis. 
+Pasitikrinkit, kad migracijų failai būtų irgi sukelti į GitHub. Į github nekeliam duomenų bazės - ji bus sukuriama serveryje iš naujo, nes serveryje norim turėti produkcijos, ne testavimo duomenis. Taip pat, realybėje daugelis duomenų gali būti slapti, 
 
 ### Saugumas
 
