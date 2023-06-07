@@ -68,7 +68,7 @@ Norint naudoti `.env` failą, reikia pasiruošti patį failą, ir taip pat pakei
 
 `.env` failas yra rašomas `bash` formatu. 
 
-`.env` failo pavyzdys:
+Pasiruoškime sau `.env` failą:
 
 ```
 SECRET_KEY="m*epo+((q9t4h-g1zf9-nclc80-mthneqryca)0by@9=vgna6k"
@@ -76,6 +76,17 @@ DEBUG=True
 ```
 
 **`.env` failas negali būti keliamas į GitHub, nes tokiu būdu atskleistume visus savo slaptažodžius. Todėl jį reikia įdėti į `.gitignore` failą.**
+
+
+`.gitignore turinys`:
+
+```
+...
+.env
+.idea
+venv
+...
+```
 
 Tam, kad nepamirštume, kokius kintamuosius turim surašyti į `.env` failą, galim pasidaryti kitą failą, pavyzdžiui, `.env_example` ir į jį surašyti visus šuos kintamuosius su pavyzinėmis reikšmėmis:
 
