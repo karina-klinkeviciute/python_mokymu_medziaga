@@ -1,6 +1,6 @@
 # Projekto deployinimas PythonAnywhere
 
-Jei norime, kad mūsų sukurtas puslapis būtų pasiekiamas per internetą, turim jį įkelti į serverį ir ten paleisti (angliškai "deploy").
+Jei norime, kad mūsų sukurtas puslapis būtų pasiekiamas per internetą, turim jį įkelti į serverį, ten sukonfigūruoti ir paleisti (angliškai "deploy", lietuviško termino nežinau, tai čia naudosiu anglišką).
 
 PythonAnywhere yra vienas iš svetainių talpinimo paslaugų tiekėjų, orientuotas būtent į su Python sukurtas svetaines. 
 
