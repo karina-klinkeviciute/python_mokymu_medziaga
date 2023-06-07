@@ -91,6 +91,15 @@ Nustatymų faile `settings.py` turi būti užkraunamos aukščiau minėtų kinta
 
 Tam reikia naudoti biblioteką `dotenv`
 
+Ją pirmiausiai reikia suinstaliuoti:
+
+```pip install python-dotenv```
+
+Suinstaliavę naują biblioteką, nepamirškime atnaujinti `requirements.txt`:
+
+```pip freeze > requirements.txt```
+
+
 `settings.py` failo pradžioje, prie kitų `import` sakinių, reikia pridėti ir tokį sakinį:
 
 ```from dotenv import load_dotenv```
