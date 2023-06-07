@@ -67,6 +67,8 @@ venv
 ...
 ```
 
+## `.env_example`
+
 Tam, kad nepamirštume, kokius kintamuosius turim surašyti į `.env` failą, galim pasidaryti kitą failą, pavyzdžiui, `.env_example` ir į jį surašyti visus šuos kintamuosius su pavyzinėmis reikšmėmis:
 
 `.env_example` failo pavyzdys:
