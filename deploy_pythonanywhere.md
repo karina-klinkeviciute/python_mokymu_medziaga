@@ -2,7 +2,12 @@
 
 Jei norime, kad mūsų sukurtas puslapis būtų pasiekiamas per internetą, turim jį įkelti į serverį.
 
-Vėliau mokysimės, kaip įkelti į įvairius serverius, kur reikia daugiau konfigūravimo, bet šiuo metu pasirinksim vieną paprasčiausių būdų - įkelti į PythonAnywhere. 
+PythonAnywhere yra vienas iš svetainių talpinimo paslaugų tiekėjų, orientuotas būtent į su Python sukurtas svetaines. 
+
+Vėliau mokysimės, kaip įkelti į įvairius serverius, kur reikia daugiau konfigūravimo, bet šiuo metu pasirinksim vieną paprasčiausių būdų - įkelti į PythonAnywhere. PythonAnywhere turi nemokamus talpinimo planus, todėl jis patogus mums mokantis. 
+
+https://www.pythonanywhere.com/
+
 
 Į PythonAnywhere galima deployinti failą tiesiai iš GitHub git repozitorijos. Taip mes ir darysim. Tam PythonAnywhere turi specialų įrankį, apie kurį bus žemiau.
 
