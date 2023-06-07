@@ -124,16 +124,23 @@ Suinstaliavę naują biblioteką, nepamirškime atnaujinti `requirements.txt`:
 
 `settings.py` failo pradžioje, prie kitų `import` sakinių, reikia pridėti ir tokį sakinį:
 
-```from dotenv import load_dotenv```
+```python
+from dotenv import load_dotenv
+```
 
 Po `import` sakinių, reikia įrašyti toki` eilutę: 
 
-```load_dotenv()```
+```python
+load_dotenv()
+```
 
 Tada reikia surasti nustatymus, kuriuos norime padaryti slaptais įdedant į `.env` failą ir juos pakeisti taip:
 
-`SECRET_KEY = os.getenv("SECRET_KEY")`
-
+```python
+SECRET_KEY = os.getenv("SECRET_KEY")
+DEBUG = os.getenv("DEBUG")
+```
+Jei yra kitų nustatymų, kurių taip pat nenorim, kad kiti pamatytų, 
 
 #### Debug nustatymai
 
