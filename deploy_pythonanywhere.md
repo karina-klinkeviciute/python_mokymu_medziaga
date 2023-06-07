@@ -39,7 +39,7 @@ Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github:
 
 ### Migracijų failai
 
-Pasitikrinkit, kad migracijų failai būtų irgi sukelti į GitHUb.
+Pasitikrinkit, kad migracijų failai būtų irgi sukelti į GitHub.
 
 ### Saugumas
 
