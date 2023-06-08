@@ -60,7 +60,7 @@ class Irankis(models.Model):
 
 ## Administravimo aplinka
 
-Po to, kaip susikuriam modelius, užregistruojam juos [administravimo aplinkoje] (https://github.com/robotautas/kursas/blob/master/Django/MDs3/django3.md)
+Po to, kaip susikuriam modelius, užregistruojam juos [administravimo aplinkoje](https://github.com/robotautas/kursas/blob/master/Django/MDs3/django3.md)
 
 Taip pat susikuriam pagrindinį vartotoją (superuser)
 
