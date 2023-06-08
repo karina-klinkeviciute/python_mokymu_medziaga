@@ -219,14 +219,6 @@ pa_autoconfigure_django.py --python=3.10 https://github.com/<your-github-usernam
 
 Dabar jau mūsų puslapis įkeltas į serverį ir jį galima pasiekti naršyklėje. Bet jame dar nėra nei naudotojų, nei duomenų.
   
-  
-## Pagrindinio naudotojo (super user) sukūrimas
-  
-Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, reikia susikurti naudotoją:
-  
-```python manage.py createsuperuser```
-
-Atsidariusiame dialoge reikia įrašyti naudotojo vardą ir kitus duomenis, kaip darėte ir savo kompiuteryje.
 
 ## Aplinkos kintamųjų surašymas
   
@@ -286,6 +278,14 @@ print(get_random_secret_key())
 SECRET_KEY="m*epo+((q9t4h-g1zf9-nclc80-mthneqryca)0by@9=vgna6k"
 DEBUG = False
 ```
+  
+## Pagrindinio naudotojo (super user) sukūrimas
+  
+Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, reikia susikurti naudotoją:
+  
+```python manage.py createsuperuser```
+
+Atsidariusiame dialoge reikia įrašyti naudotojo vardą ir kitus duomenis, kaip darėte ir savo kompiuteryje.
 
 
 ## Programėlės informacija
