@@ -88,6 +88,15 @@ Jei pas jus projekte yra naudotojų registracija, ir jei kai kurį turinį rodot
 
 Jei jūsų svetainės naudotojai turi turėti galimybę įvesti turinį - [tam reikia formų](https://github.com/robotautas/kursas/blob/master/Django/MDs8/django8.md)
 
+
+## Django saugumas
+
+.env failas
+Django Secret Key
+Debug nustatymai
+2FA
+uuid
+
 ## Kiti naudingi dalykai
 
 **Paveikslėliai, puslapiavimas, paieška.** Jei jūsų projekte bus keliami paveikslėliai, naudojamas puslapiavimas ar norėsit naudotojams leisti ieškoti, [apie tai rasit informacijos čia](https://github.com/robotautas/kursas/blob/master/Django/MDs6/django6.md)
@@ -102,13 +111,6 @@ Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus 
 
 **Duomenų importavimas/eksportavimas** - Jei reikės per admin importuoti ar eksportuoti duomenis iš modelių ar į modelius, įvairiais formatais: Excel, CSV, JSON, tam yra ši biblioteka: https://django-import-export.readthedocs.io/en/latest/ 
 
-## Django saugumas
-
-.env failas
-Django Secret Key
-Debug nustatymai
-2FA
-uuid
 
 ## Frontend (HTML, CSS, JS)
 
