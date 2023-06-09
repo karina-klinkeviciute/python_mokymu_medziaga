@@ -128,6 +128,7 @@ Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus 
 [HTML tutorial](https://www.w3schools.com/html/)
 
 [CSS tutorial](https://www.w3schools.com/css/)
+[Bootstrap](https://getbootstrap.com/)
 
 
 ## Trumpa Django projekto kūrimo santrauka (cheat sheet)
