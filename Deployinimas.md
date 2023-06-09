@@ -1,20 +1,10 @@
-# Projekto deployinimas PythonAnywhere
+# Projekto deployinimas 
 
 Jei norime, kad mūsų sukurtas puslapis būtų pasiekiamas per internetą, turim jį įkelti į serverį, ten sukonfigūruoti ir paleisti (angliškai "deploy", lietuviško termino nežinau, tai čia naudosiu anglišką).
 
-PythonAnywhere yra vienas iš svetainių talpinimo paslaugų tiekėjų, orientuotas būtent į su Python sukurtas svetaines. 
-
-Vėliau mokysimės, kaip įkelti į įvairius serverius, kur reikia daugiau konfigūravimo, bet šiuo metu pasirinksim vieną paprasčiausių būdų - įkelti į PythonAnywhere. PythonAnywhere turi nemokamus talpinimo planus, todėl jis patogus mums mokantis. 
-
-https://www.pythonanywhere.com/
-
-
-Į PythonAnywhere galima deployinti failą tiesiai iš GitHub git repozitorijos. Deployinimas iš git repozitorijos yra gana įprastas būdas - ir rankiniams deployinimams, ir automatiniams. Tam PythonAnywhere turi specialų įrankį, kurį mes ir naudosim.
-
-
 ## Projekto paruošimas
 
-Norint deployinti projektą į PythonAnywhere, reikia pirmiausiai jį paruošti tam. 
+Norint deployinti projektą į serverį reikia pirmiausiai jį paruošti tam. 
 
 ### Migracijų failai
 
@@ -152,7 +142,7 @@ Padarę šiuos pakeitimus, vėl viską sukeliam į GitHub:
 
 ### Requirements failas
 
-Tam, kad PythonAnywhere instaliavimo scriptas ne tik sukeltų mūsų projektą, bet ir suinstaliuotų visus reikalingus framework'us ir bibliotekas, reikia failo `requirements.txt`. 
+Tam, kad Pserveryje galėtume suinstaliuoti visus reikalingus framework'us ir bibliotekas, reikia failo `requirements.txt`. 
 Šis failas turi būti šakninėje git direktorijoje. 
 Github svetainėje susiraskit, kokia jūsų projekto direktorija yra šakninė git direktorija (kartais gali būti šakninė pačio projekto direktorija, o kartais viena aukščiau). 
 
@@ -180,7 +170,7 @@ Viskas, projektas paruoštas.
 
 ## Aplinkos kintamųjų surašymas
   
-Prieš tai pasiruošėm nustatymus taip, kad slapti ir/ar nuo serverio priklausantys nustatymai turi būti surašyti į .env failą. Kadangi .env failo į git nekėlėm, PythonAnywhere reikia jį susikurti iš naujo. 
+Prieš tai pasiruošėm nustatymus taip, kad slapti ir/ar nuo serverio priklausantys nustatymai turi būti surašyti į .env failą. Kadangi .env failo į git nekėlėm, serveryje reikia jį susikurti iš naujo. 
 
 Tą taip pat padarysim konsolėje. 
 
@@ -189,7 +179,7 @@ Pasitikrinam, kokie failai ir direktorijos pas mus yra:
 ```ls```
 
 Pirmiausia, persijungiam į projekto direktoriją:
-```cd svetaines_pavadinimas.pythonanywhere.com```
+```cd musu_svetaine```
 
 Tada patikrinam, kokie joje yra failai:
 ```ls -al```
@@ -211,7 +201,7 @@ SECRET_KEY=musu_slaptas_raktas
 DEBUG=False
 ```
 
-Mums reikia sugeneruoti slaptą raktą, kuris būtų unikalus šiam PythonAnywhere serveriui. 
+Mums reikia sugeneruoti slaptą raktą, kuris būtų unikalus šiam serveriui. 
 
 Slapto rakto sugeneravimui iš atsitiktinių simbolių, terminale (galima ir savo kompiuteryje, turi būti įjungta virtuali aplinka, į kurią instaliavom Django) turime paleisti šį kodą:
 
@@ -265,8 +255,9 @@ Pakeitus kodą, savo kompiuteryje reikia atlikti šiuos veiksmus savo kompiutery
 
 Serveryje reikia atlikti šiuos veiksmus:
 
-* nueinam į savo projekto direktoriją: `cd naudotojo_vardas.pythonanywhere.com`
+* nueinam į savo projekto direktoriją
 * parsiunčiam atnaujinimus iš git: `git pull`
+* perkraunam gunicorn (įdėti komandą)
 
 
 [How to generate Django Secret Key](https://codinggear.blog/django-generate-secret-key/)
