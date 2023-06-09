@@ -88,15 +88,6 @@ Jei pas jus projekte yra naudotojų registracija, ir jei kai kurį turinį rodot
 
 Jei jūsų svetainės naudotojai turi turėti galimybę įvesti turinį - [tam reikia formų](https://github.com/robotautas/kursas/blob/master/Django/MDs8/django8.md)
 
-
-## Django saugumas
-
-.env failas
-Django Secret Key
-Debug nustatymai
-2FA
-uuid
-
 ## Duomenų bazės 
 
 Rimtesniems, ir realiai naudojamiems projektams verta pasirinkti ne SQLite, bet kokią nors kitą duomenų bazių valdymo sistemą. 
@@ -104,6 +95,18 @@ Rimtesniems, ir realiai naudojamiems projektams verta pasirinkti ne SQLite, bet 
 Su Django rekomenduojama naudoti Postgres, bet taip pat DJango turi palaikymą ir kitoms duomenų bazių valdymo sistemoms
 
 [Django duomenų bazių konfigūravimai](https://docs.djangoproject.com/en/4.2/ref/databases/)
+
+## Django saugumas
+
+.env failas
+
+Django Secret Key
+
+Debug nustatymai
+
+2FA
+
+uuid
 
 ## Kiti naudingi dalykai
 
