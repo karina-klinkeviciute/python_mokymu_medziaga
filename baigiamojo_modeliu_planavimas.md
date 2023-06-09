@@ -7,7 +7,7 @@ Kadangi baigiamasis darbas turi būti jūsų įgytų žinių ir gebėjimų demon
 ### Git repozitorijos sukūrimas
 
 Jei dar neturim git repozitorijos savo projektui, reikia ją susikurti vienu iš mūsų išmoktų būdų.
-[Git tema kurso medžiagoje](https://github.com/DonatasNoreika/python1lygis/wiki/Versij%C5%B3-valdymo-sistemos-(GIT))
+[Git pagrindai](https://github.com/DonatasNoreika/python1lygis/wiki/Versij%C5%B3-valdymo-sistemos-(GIT))
 
 ## Django projekto sukūrimas
 
