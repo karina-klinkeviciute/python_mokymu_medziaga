@@ -97,6 +97,14 @@ Debug nustatymai
 2FA
 uuid
 
+## Duomenų bazės 
+
+Rimtesniems, ir realiai naudojamiems projektams verta pasirinkti ne SQLite, bet kokią nors kitą duomenų bazių valdymo sistemą. 
+
+Su Django rekomenduojama naudoti Postgres, bet taip pat DJango turi palaikymą ir kitoms duomenų bazių valdymo sistemoms
+
+[Django duomenų bazių konfigūravimai](https://docs.djangoproject.com/en/4.2/ref/databases/)
+
 ## Kiti naudingi dalykai
 
 **Paveikslėliai, puslapiavimas, paieška.** Jei jūsų projekte bus keliami paveikslėliai, naudojamas puslapiavimas ar norėsit naudotojams leisti ieškoti, [apie tai rasit informacijos čia](https://github.com/robotautas/kursas/blob/master/Django/MDs6/django6.md)
@@ -107,9 +115,9 @@ uuid
 
 Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus servisus, kaip Sendgrid, Omnisend, Mailchimp ir panašiai.
 
-**Field choices** Jei norim, kad modelyje kokio nors lauko reikšmes vartotojai galėtų pasirinkti tik iš mūsų nustatytų leidžiamų reikšmių, galim naudoti Field choices: https://docs.djangoproject.com/en/4.2/ref/models/fields/#choices 
+**Field choices.** Jei norim, kad modelyje kokio nors lauko reikšmes vartotojai galėtų pasirinkti tik iš mūsų nustatytų leidžiamų reikšmių, galim naudoti Field choices: https://docs.djangoproject.com/en/4.2/ref/models/fields/#choices 
 
-**Duomenų importavimas/eksportavimas** - Jei reikės per admin importuoti ar eksportuoti duomenis iš modelių ar į modelius, įvairiais formatais: Excel, CSV, JSON, tam yra ši biblioteka: https://django-import-export.readthedocs.io/en/latest/ 
+**Duomenų importavimas/eksportavimas.** - Jei reikės per admin importuoti ar eksportuoti duomenis iš modelių ar į modelius, įvairiais formatais: Excel, CSV, JSON, tam yra ši biblioteka: https://django-import-export.readthedocs.io/en/latest/ 
 
 
 ## Frontend (HTML, CSS, JS)
