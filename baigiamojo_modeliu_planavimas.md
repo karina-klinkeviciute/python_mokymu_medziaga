@@ -95,3 +95,7 @@ Jei norit padaryti, kad jūsų vartotojai galėtų rašyti gražiai suformatuotu
 
 ## Frontend (HTML, CSS, JS)
 
+[HTML tutorial](https://www.w3schools.com/html/)
+
+[CSS tutorial](https://www.w3schools.com/css/)
+
