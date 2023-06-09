@@ -174,50 +174,8 @@ Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github:
 
 Viskas, projektas paruoštas. 
 
-## PythonAnywhere registracija
 
-- nueikit į PythonAnywhere svetainę: https://www.pythonanywhere.com/
-- Ten paspauskit "Plans and Pricing"
-- Paspauskit "Create a Beginner account"
-- Užsiregistruokit
-
-## PythonAnywhere API Token
-
-Tam, kad galėtume susikurti savo App ir jame deployinti kodą, reikia susikurti API token. 
-
-Tam reikia eiti į Account -> API Token ir spausti "Create a new API token". Token'as bus sukurtas.
-
-## PythonAnywhere deployinimo įrankio instaliavimas
-
-PythonAnywhere svetainė mums leidžia priėjimą prie Linux konsolės. 
-
-Viršutiniame meniu reikia paspausti "Consoles". Atsidariusiame lange yra išvardintos įvairios Python, Bash, duomenų bazių konsolės. Mums reikia pasirinkti `Bash` konsolę sąraše `Other`. 
-
-Konsolėje pirmiausiai reikia suinstaliuoti deployinimo įrankį, kuris padės mums sukelti failus iš GitHub ir paleisti serverį:
-
-```
-pip3.10 install --user pythonanywhere
-```
-
-## Deployinimas (kėlimas į serverį ir paleidimas)
-
-Suinstaliavus, reikia paleisti šį įrankį, kad mūsų Django projekto kodą parsiųstų iš GitHub į serverį, ir įdiegtų mūsų projektą. Tam reikia paleisti žemiau esančią komandą, 
-tik joje vietoje `<your-github-username>` ir `<your-repo-name>` reikia surašyti savo Github vartotojo vardą ir repozitorijos pavadinimą (arba tiesiog nukopijuoti visą nuorodą iš Github)
-
-```
-pa_autoconfigure_django.py --python=3.10 https://github.com/<your-github-username>/<your-repo-name>.git
-```
-
-Šis automatinis deployinimo scriptas atliks šiuos veiksmus:
-  
-  - parsiųs kodą iš github
-  - sukurs ir aktyvuos virtualią aplinką PythonAnywhere serveryje
-  - papildys settings failą savo papildomais nustatymais
-  - sukurs duomenų bazę ir migruos jos struktūrą su `python manage.py migrate`
-  - sutvarkys static failus (paleis collectstatic)
-  - sukonfigūruos PythonAnywhere, kad jis būtų pasiruošęs rodyti jūsų puslapį
-
-Dabar jau mūsų puslapis įkeltas į serverį ir jį galima pasiekti naršyklėje. Bet jame dar nėra nei naudotojų, nei duomenų.
+## serverio pusė (nepilna, papildysiu)
   
 
 ## Aplinkos kintamųjų surašymas
@@ -288,18 +246,11 @@ Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, re
 Atsidariusiame dialoge reikia įrašyti naudotojo vardą ir kitus duomenis, kaip darėte ir savo kompiuteryje.
 
 
-## Programėlės informacija
 
-Savo svetainės svetainės adresą ir jos informaciją rasim paspaudę meniu punktą "Web". Ten kairėje bus programėlių sąrašas, kuriame bus mūsų ši vienintelė programėlė (nemokamam plane galima turėti tik vieną). Paspaudę ant jos, rasim jos informaciją.
-  
 ## Saugus jungimasis (SSL, HTTPS)
 
-Norėdami, kad jungimasis prie mūtų tinklalapio visada būtų saugus (būtų visada nukreipiama į HTTPS protokolą, kuris užšifruoja siunčiamą informaciją), reikia įjungti tai mūsų programėlei žemiau. 
+Let's Encrypt
 
-Paėję kiek žemiau, rasime skiltį "Security". Ten yra nustatymas "Force HTTPS" ir iš pradžių jis yra išjungtas (Disabled). Mums reikia paspausti pele ant žodžio "Disabled" tam, kad jį įjungtume. Dabar turėtų rodyti "Enabled".
-
-Tai padarius, reikės grįžti į puslapio viršų ir paspausti "reload naudotojo_vardas.pythonanywhere.com". Tada mūsų svetainė persikraus ir šie nustatymai įsigalios.
-  
 ## Svetainės atnaujinimas po pakeitimų
 
 ### git 
@@ -314,19 +265,8 @@ Pakeitus kodą, savo kompiuteryje reikia atlikti šiuos veiksmus savo kompiutery
 
 Serveryje reikia atlikti šiuos veiksmus:
 
-* Jei nesame pasileidę `Bash` konsolės, pasileidžiam ją. 
 * nueinam į savo projekto direktoriją: `cd naudotojo_vardas.pythonanywhere.com`
 * parsiunčiam atnaujinimus iš git: `git pull`
 
-### svetainės perkrovimas
-
-Parsiuntus atnaujinimus iš git, reikia perkrauti mūsų svetainę. Tam reikia nueiti į meniu punktą `Web`, ten vėl susirasti reload naudotojo_vardas.pythonanywhere.com" ir jį paspausti. 
-
-Mūsų svetainė persikraus, ir nuėję į ją galėsime pamatyti ją su atnaujinimais. 
-
-#### Credits:
-Ši mokomoji medžiaga sukurta naudojantis šiais šaltiniais:
-
-[Djanog Girls tutorial](https://tutorial.djangogirls.org/en/deploy/#setting-up-our-blog-on-pythonanywhere)
 
 [How to generate Django Secret Key](https://codinggear.blog/django-generate-secret-key/)
