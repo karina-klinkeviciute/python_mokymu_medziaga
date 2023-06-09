@@ -99,3 +99,7 @@ Jei norit padaryti, kad jūsų vartotojai galėtų rašyti gražiai suformatuotu
 
 [CSS tutorial](https://www.w3schools.com/css/)
 
+
+## Trumpa Django projekto kūrimo santrauka (cheat sheet)
+
+![Santrauka](django-projekto-kurimas.png)
