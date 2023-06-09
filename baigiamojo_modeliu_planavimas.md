@@ -14,7 +14,7 @@ Jei dar neturim git repozitorijos savo projektui, reikia ją susikurti vienu iš
 Sukuriam Django projektą:
 https://github.com/robotautas/kursas/blob/master/Django/MDs1/django1.md
 
-
+Taip pat susikuriam vieną ar daugiau programėlių (apps).
 
 
 ## Modeliai
@@ -64,5 +64,34 @@ Po to, kaip susikuriam modelius, užregistruojam juos [administravimo aplinkoje]
 
 Taip pat susikuriam pagrindinį vartotoją (superuser)
 
+Sukonfigūravę admin aplinką, galim pradėti vesti duomenis
+
 ## Views, urls ir templates
-## Registration, forms
+
+Kiekvienam duomenų atvaizdavimui (daiktų/dalykų/straipsnių sąrašams, vieno daikto/dalyko atvaizdavimui, turinio suvedimui) reikia šios trijulės - view, url, template. Nėra labai svarbu, kuria tvarka juos kuriam. Kiekvienas atrasit sau patogiausią būdą. 
+
+Nuoroda (url) rašoma į programėlės urls.py failą ir susieją kelią, kurį naudotojas įveda naršyklėje, ir view. View, gavęs šia užklausą, pagal ją atrenka, kokius duomenis mums reikia pateikti, "surašo" juos į paruoštą "blanką" - template ir pateikia atgal naudotojui. 
+
+[Daugiau apie templates ir Views](https://github.com/robotautas/kursas/blob/master/Django/MDs4/django4.md)
+
+## Registracija
+
+Ne visuose projektuose bus reikalinga registracija. Bet jei jūsų projekte ji reikalinga, [čia yra apie vartotojų registraciją](https://github.com/robotautas/kursas/blob/master/Django/MDs7/django7.md)
+
+## Autorizuotas turinys
+
+Jei pas jus projekte yra naudotojų registracija, ir jei kai kurį turinį rodot tik registruotiems, ar tik daliai registruotų naudotoj7, [čia galit rasti, kaip tai padaryti](https://github.com/robotautas/kursas/blob/master/Django/MDs8/django8.md)
+
+## Formos
+
+Jei jūsų svetainės naudotojai turi turėti galimybę įvesti turinį - [tam reikia formų](https://github.com/robotautas/kursas/blob/master/Django/MDs8/django8.md)
+
+## Kiti naudingi dalykai
+
+Jei jūsų projekte bus keliami paveikslėliai, naudojamas puslapiavimas ar norėsit naudotojams leisti ieškoti, [apie tai rasit informacijos čia](https://github.com/robotautas/kursas/blob/master/Django/MDs6/django6.md)
+
+Jei norit padaryti, kad jūsų vartotojai galėtų rašyti gražiai suformatuotus tekstus, [galit įdiegti TinyMCE](https://github.com/robotautas/kursas/blob/master/Django/MDs8/django8.md#html-laukai-modeliuose)
+
+
+## Frontend (HTML, CSS, JS)
+
