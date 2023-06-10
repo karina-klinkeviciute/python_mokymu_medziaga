@@ -126,7 +126,7 @@ https: https://letsencrypt.org/
 
 **TinyMCE tekstų redaktorius.** Jei norit padaryti, kad jūsų vartotojai galėtų rašyti gražiai suformatuotus tekstus, [galit įdiegti TinyMCE](https://github.com/robotautas/kursas/blob/master/Django/MDs8/django8.md#html-laukai-modeliuose)
 
-**Sudėtingesnės užklausos su Q**: https://docs.djangoproject.com/en/3.2/topics/db/queries/#complex-lookups-with-q-objects
+**Sudėtingesnės užklausos su Q**: Kartais, kai norim Views'e išrinkti reikiamus objektus pagal kelis kriterijus, paprastos užklausos gali neužtekti. Tam galima naudoti Q užklausas, kurių pagalba galima rašyti sudėtingesnius loginius sakinius su AND ir OR: https://docs.djangoproject.com/en/3.2/topics/db/queries/#complex-lookups-with-q-objects
 
 **Email siuntimas.** Apie tai, kaip siųsti emailus iš Django, galima rasti čia: https://docs.djangoproject.com/en/4.2/topics/email/ Nustatymai ir konfigūravimai, jei norim siųsti iš Gmail, čia: https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab Siunčiamiems iš projekto laiškams geriausia susikurti naują, atskirą el. pašto dėžutę, o nenaudoti savo.
 
