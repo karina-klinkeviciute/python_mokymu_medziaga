@@ -110,6 +110,8 @@ Debug nustatymai
 
 uuid
 
+https
+
 ## Kiti naudingi dalykai
 
 **Paveikslėliai, puslapiavimas, paieška.** Jei jūsų projekte bus keliami paveikslėliai, naudojamas puslapiavimas ar norėsit naudotojams leisti ieškoti, [apie tai rasit informacijos čia](https://github.com/robotautas/kursas/blob/master/Django/MDs6/django6.md)
@@ -126,12 +128,46 @@ Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus 
 
 **Prisijungimas su tapatybės nustatymo teikėjais (authentication providers) (Google, Facebook, Twitter, AppleID, Github ir kt.).** Jei norim, kad vartotojai galėtų registruotis/prisijungti per kitas tapatybės nustatymo sistemas, tam galima naudoti šią biblioteką: https://django-allauth.readthedocs.io/en/latest/
 
+**Talpinimas į serverį**
+
+***Vėliau paruošiu medžiagą, kol kas gal pavyks pasileisti viską iš to, kas sudėta čia***
+
+Talpinimui į serverį geriausia pasirinkti VPS. Yra daug variantų, kur tai galima padaryti:
+
+Jei jūsų projektas nedidelis, yra keli variantai, kur galite jį talpinti nemokamai. Tik ten, jei viršijami limitai, pradeda skaičiuotis pinigai ir gali būti, kad vis tiek teks susimokėti:
+
+- AWS
+- Oracle
+
+Kiti variantai yra mokami:
+- DigitalOcean (pigiausias variantas - $4 per mėnesį. Gana populiarus Hosting provideris, patogus valdymas)
+- Google Cloud Services
+- Hostinger
+- Serveriai.lt
+- Heroku
+- Azure
+
+Kartais geriau netgi pasirinkti mokamą servisą, nes nemokamam, viršijus limitą, gali kainuoti daugiau :) Bet reikia patiems pasidaryti tyrimą, kas jums geriausiai tinka, ir pasirinkti.
+
+Projekto paruošimas talpinimui: https://github.com/karina-klinkeviciute/python_mokymu_medziaga/blob/main/Deployinimas.md 
+
+Prisijungus prie savo serverio (Digital Ocean tai būtų droplet), reikia ten sukonfigūruoti `gunicorn` ir `nginx` (yra ir alternatyvų, apache, uwsgi, bet populiariausia ir turbūt patogiausia yra gunicorn+nginx)
+
+Digital Ocean tutorial, kaip paruošti projektą su gunicorn, nginx ir postgres:  https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04 
+
+Šiame tutoriale Django projektas kuriamas serveryje. Jums reikės įkelti savo sukurtą projektą į serverį, naudojantis git. 
+
+Taip pat galima užregistruoti domeną. Užregistravus domeną, reikia įdiegti SSL sertifikatą, kad galima būtų jungtis prie svetainės per `https`. Yra įvairių SSL sertifikatų teikėjų, siūlau naudoti Let's Encryot, kuris yra Open Source ir nemokamas: https://letsencrypt.org/
+
+Kaip minėjau, vėliau paruošiu medžiagą, ir geriau jos palaukti, bet jei kas nors neturit kantrybės, galit bandyti patys :) 
+
 
 ## Frontend (HTML, CSS, JS)
 
 [HTML tutorial](https://www.w3schools.com/html/)
 
 [CSS tutorial](https://www.w3schools.com/css/)
+
 [Bootstrap](https://getbootstrap.com/)
 
 
