@@ -108,17 +108,19 @@ Su Django rekomenduojama naudoti Postgres, bet taip pat Django turi palaikymą i
 
 ## Django saugumas
 
-.env failas: https://codinggear.blog/django-environment-variables/
+**.env failas:** https://codinggear.blog/django-environment-variables/
 
-Django Secret Key - jį būtina įdėti į `.env` failą (žiūrėti aukščiau)
+**Django Secret Key** - jį būtina įdėti į `.env` failą (žiūrėti aukščiau)
 
-Debug nustatymai - serveryje nustatynas `DEBUG`, esantis `settings.py` faile, turi būti nustatytas į `False` (`DEBUG=False`). Gali būti nustatomas per atskirą nustatymų failą arba per `.env` failą.
+**Debug nustatymai** - serveryje nustatynas `DEBUG`, esantis `settings.py` faile, turi būti nustatytas į `False` (`DEBUG=False`). Gali būti nustatomas per atskirą nustatymų failą arba per `.env` failą.
 
-2FA: https://django-otp-official.readthedocs.io/en/stable/ 
+**2FA:** https://django-otp-official.readthedocs.io/en/stable/ 
 
-uuid: https://djangoandy.com/2020/10/14/should-i-use-uuid-as-my-model-id-in-django/ 
+**uuid:** https://djangoandy.com/2020/10/14/should-i-use-uuid-as-my-model-id-in-django/ 
 
-https: https://letsencrypt.org/ 
+**https:** https://letsencrypt.org/ 
+
+**Private storage:** Jei reikia kelti failus, kurie turi būti prieinami tik autorizuotiems naudotojams, ir galbūt netgi tik tam tikriems naudotojams (pavyzdžiui, įkelti dokumentai, kaip sąskaitos, sutartys ar kiti slapti/jautrūs dokumentai), reikia naudoti biblioteką, kuri tikrintų šiuos leidimus ir failus pateiktų tik tiems vartotojams, kuriems galima. Viena iš tam skirtų bibliotekų: https://pypi.org/project/django-private-storage/ 
 
 ## Kiti naudingi dalykai
 
@@ -149,6 +151,8 @@ Tam galima naudoti celery: https://pypi.org/project/django-celery/
 Kitas būdas - cron kartu su Django Management Commands. 
 
 **Django admin actions** Kai Django administravimo aplinkoje matom objektų sąrašą, tuos objektus pažymėjus, galima juos visus ištrinti. Tam naudojama Django admin action `delete`. Jei yra poreikis atlikti kokius nors kitus veiksmus per admin su vienu ar keliais pažymėtais objektais, mes galim susikurti savo Django admin actions: https://docs.djangoproject.com/en/4.2/ref/contrib/admin/actions/ 
+
+**Private storage:** Jei reikia kelti failus, kurie turi būti prieinami tik autorizuotiems naudotojams, ir galbūt netgi tik tam tikriems naudotojams (pavyzdžiui, įkelti dokumentai, kaip sąskaitos, sutartys ar kiti slapti/jautrūs dokumentai), reikia naudoti biblioteką, kuri tikrintų šiuos leidimus ir failus pateiktų tik tiems vartotojams, kuriems galima. Viena iš tam skirtų bibliotekų: https://pypi.org/project/django-private-storage/ 
 
 **Talpinimas į serverį**
 
