@@ -121,39 +121,7 @@ Su Django rekomenduojama naudoti Postgres, bet taip pat Django turi palaikymą i
 
 **Private storage:** Jei reikia kelti failus, kurie turi būti prieinami tik autorizuotiems naudotojams, ir galbūt netgi tik tam tikriems naudotojams (pavyzdžiui, įkelti dokumentai, kaip sąskaitos, sutartys ar kiti slapti/jautrūs dokumentai), reikia naudoti biblioteką, kuri tikrintų šiuos leidimus ir failus pateiktų tik tiems vartotojams, kuriems galima. Viena iš tam skirtų bibliotekų: https://pypi.org/project/django-private-storage/ 
 
-## Kiti naudingi dalykai
-
-**Paveikslėliai, puslapiavimas, paieška.** Jei jūsų projekte bus keliami paveikslėliai, naudojamas puslapiavimas ar norėsit naudotojams leisti ieškoti, [apie tai rasit informacijos čia](https://github.com/robotautas/kursas/blob/master/Django/MDs6/django6.md)
-
-**TinyMCE tekstų redaktorius.** Jei norit padaryti, kad jūsų vartotojai galėtų rašyti gražiai suformatuotus tekstus, [galit įdiegti TinyMCE](https://github.com/robotautas/kursas/blob/master/Django/MDs8/django8.md#html-laukai-modeliuose)
-
-**Sudėtingesnės užklausos su Q**: Kartais, kai norim Views'e išrinkti reikiamus objektus pagal kelis kriterijus, paprastos užklausos gali neužtekti. Tam galima naudoti Q užklausas, kurių pagalba galima rašyti sudėtingesnius loginius sakinius su AND ir OR: https://docs.djangoproject.com/en/3.2/topics/db/queries/#complex-lookups-with-q-objects
-
-**Email siuntimas.** Apie tai, kaip siųsti emailus iš Django, galima rasti čia: https://docs.djangoproject.com/en/4.2/topics/email/ Nustatymai ir konfigūravimai, jei norim siųsti iš Gmail, čia: https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab Siunčiamiems iš projekto laiškams geriausia susikurti naują, atskirą el. pašto dėžutę, o nenaudoti savo.
-
-Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus servisus, kaip Sendgrid, Omnisend, Mailchimp ir panašiai.
-
-**Field choices.** Jei norim, kad modelyje kokio nors lauko reikšmes vartotojai galėtų pasirinkti tik iš mūsų nustatytų leidžiamų reikšmių, galim naudoti Field choices: https://docs.djangoproject.com/en/4.2/ref/models/fields/#choices 
-
-**Duomenų importavimas/eksportavimas.** - Jei reikės per admin importuoti ar eksportuoti duomenis iš modelių ar į modelius, įvairiais formatais: Excel, CSV, JSON, tam yra ši biblioteka: https://django-import-export.readthedocs.io/en/latest/ 
-
-**Prisijungimas su tapatybės nustatymo teikėjais (authentication providers) (Google, Facebook, Twitter, AppleID, Github ir kt.).** Jei norim, kad vartotojai galėtų registruotis/prisijungti per kitas tapatybės nustatymo sistemas, tam galima naudoti šią biblioteką: https://django-allauth.readthedocs.io/en/latest/
-
-**Django management commands**
-
-Kartais gali reikėti kokių nors komandų, kurias mes paleistume serveryje, iš command line, kurios padarytų kokius nors darbus mūsų projekte (skaičiavimai, valymai, duomenų tvarkymai). Tam naudojamos Django management komandos: https://docs.djangoproject.com/en/4.2/howto/custom-management-commands/
-
-**Periodiniai darbai** Kartais gali reikėti preiodinių užduočių. Pavyzdžiui, kas mėnesį perskaičiuoti biudžetus, nustatytu laiko siųsti el. laiškus. 
-
-Tam galima naudoti celery: https://pypi.org/project/django-celery/ 
-
-Kitas būdas - cron kartu su Django Management Commands. 
-
-**Django admin actions** Kai Django administravimo aplinkoje matom objektų sąrašą, tuos objektus pažymėjus, galima juos visus ištrinti. Tam naudojama Django admin action `delete`. Jei yra poreikis atlikti kokius nors kitus veiksmus per admin su vienu ar keliais pažymėtais objektais, mes galim susikurti savo Django admin actions: https://docs.djangoproject.com/en/4.2/ref/contrib/admin/actions/ 
-
-**Private storage:** Jei reikia kelti failus, kurie turi būti prieinami tik autorizuotiems naudotojams, ir galbūt netgi tik tam tikriems naudotojams (pavyzdžiui, įkelti dokumentai, kaip sąskaitos, sutartys ar kiti slapti/jautrūs dokumentai), reikia naudoti biblioteką, kuri tikrintų šiuos leidimus ir failus pateiktų tik tiems vartotojams, kuriems galima. Viena iš tam skirtų bibliotekų: https://pypi.org/project/django-private-storage/ 
-
-**Talpinimas į serverį**
+## Talpinimas į serverį
 
 ***Vėliau paruošiu medžiagą, kol kas gal pavyks pasileisti viską iš to, kas sudėta čia***
 
@@ -194,6 +162,40 @@ Kaip minėjau, vėliau paruošiu medžiagą, ir geriau jos palaukti, bet jei kas
 [CSS tutorial](https://www.w3schools.com/css/)
 
 [Bootstrap](https://getbootstrap.com/)
+
+
+
+## Kiti naudingi dalykai
+
+**Paveikslėliai, puslapiavimas, paieška.** Jei jūsų projekte bus keliami paveikslėliai, naudojamas puslapiavimas ar norėsit naudotojams leisti ieškoti, [apie tai rasit informacijos čia](https://github.com/robotautas/kursas/blob/master/Django/MDs6/django6.md)
+
+**TinyMCE tekstų redaktorius.** Jei norit padaryti, kad jūsų vartotojai galėtų rašyti gražiai suformatuotus tekstus, [galit įdiegti TinyMCE](https://github.com/robotautas/kursas/blob/master/Django/MDs8/django8.md#html-laukai-modeliuose)
+
+**Sudėtingesnės užklausos su Q**: Kartais, kai norim Views'e išrinkti reikiamus objektus pagal kelis kriterijus, paprastos užklausos gali neužtekti. Tam galima naudoti Q užklausas, kurių pagalba galima rašyti sudėtingesnius loginius sakinius su AND ir OR: https://docs.djangoproject.com/en/3.2/topics/db/queries/#complex-lookups-with-q-objects
+
+**Email siuntimas.** Apie tai, kaip siųsti emailus iš Django, galima rasti čia: https://docs.djangoproject.com/en/4.2/topics/email/ Nustatymai ir konfigūravimai, jei norim siųsti iš Gmail, čia: https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab Siunčiamiems iš projekto laiškams geriausia susikurti naują, atskirą el. pašto dėžutę, o nenaudoti savo.
+
+Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus servisus, kaip Sendgrid, Omnisend, Mailchimp ir panašiai.
+
+**Field choices.** Jei norim, kad modelyje kokio nors lauko reikšmes vartotojai galėtų pasirinkti tik iš mūsų nustatytų leidžiamų reikšmių, galim naudoti Field choices: https://docs.djangoproject.com/en/4.2/ref/models/fields/#choices 
+
+**Duomenų importavimas/eksportavimas.** - Jei reikės per admin importuoti ar eksportuoti duomenis iš modelių ar į modelius, įvairiais formatais: Excel, CSV, JSON, tam yra ši biblioteka: https://django-import-export.readthedocs.io/en/latest/ 
+
+**Prisijungimas su tapatybės nustatymo teikėjais (authentication providers) (Google, Facebook, Twitter, AppleID, Github ir kt.).** Jei norim, kad vartotojai galėtų registruotis/prisijungti per kitas tapatybės nustatymo sistemas, tam galima naudoti šią biblioteką: https://django-allauth.readthedocs.io/en/latest/
+
+**Django management commands**
+
+Kartais gali reikėti kokių nors komandų, kurias mes paleistume serveryje, iš command line, kurios padarytų kokius nors darbus mūsų projekte (skaičiavimai, valymai, duomenų tvarkymai). Tam naudojamos Django management komandos: https://docs.djangoproject.com/en/4.2/howto/custom-management-commands/
+
+**Periodiniai darbai** Kartais gali reikėti preiodinių užduočių. Pavyzdžiui, kas mėnesį perskaičiuoti biudžetus, nustatytu laiko siųsti el. laiškus. 
+
+Tam galima naudoti celery: https://pypi.org/project/django-celery/ 
+
+Kitas būdas - cron kartu su Django Management Commands. 
+
+**Django admin actions** Kai Django administravimo aplinkoje matom objektų sąrašą, tuos objektus pažymėjus, galima juos visus ištrinti. Tam naudojama Django admin action `delete`. Jei yra poreikis atlikti kokius nors kitus veiksmus per admin su vienu ar keliais pažymėtais objektais, mes galim susikurti savo Django admin actions: https://docs.djangoproject.com/en/4.2/ref/contrib/admin/actions/ 
+
+**Private storage:** Jei reikia kelti failus, kurie turi būti prieinami tik autorizuotiems naudotojams, ir galbūt netgi tik tam tikriems naudotojams (pavyzdžiui, įkelti dokumentai, kaip sąskaitos, sutartys ar kiti slapti/jautrūs dokumentai), reikia naudoti biblioteką, kuri tikrintų šiuos leidimus ir failus pateiktų tik tiems vartotojams, kuriems galima. Viena iš tam skirtų bibliotekų: https://pypi.org/project/django-private-storage/ 
 
 
 ## Trumpa Django projekto kūrimo santrauka (cheat sheet)
