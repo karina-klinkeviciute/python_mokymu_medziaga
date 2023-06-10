@@ -121,6 +121,16 @@ Su Django rekomenduojama naudoti Postgres, bet taip pat Django turi palaikymą i
 
 **Private storage:** Jei reikia kelti failus, kurie turi būti prieinami tik autorizuotiems naudotojams, ir galbūt netgi tik tam tikriems naudotojams (pavyzdžiui, įkelti dokumentai, kaip sąskaitos, sutartys ar kiti slapti/jautrūs dokumentai), reikia naudoti biblioteką, kuri tikrintų šiuos leidimus ir failus pateiktų tik tiems vartotojams, kuriems galima. Viena iš tam skirtų bibliotekų: https://pypi.org/project/django-private-storage/ 
 
+
+## Frontend (HTML, CSS, JS)
+
+[HTML tutorial](https://www.w3schools.com/html/)
+
+[CSS tutorial](https://www.w3schools.com/css/)
+
+[Bootstrap](https://getbootstrap.com/)
+
+
 ## Talpinimas į serverį
 
 ***Vėliau paruošiu medžiagą, kol kas gal pavyks pasileisti viską iš to, kas sudėta čia***
@@ -153,16 +163,6 @@ Digital Ocean tutorial, kaip paruošti projektą su gunicorn, nginx ir postgres:
 Taip pat galima užregistruoti domeną. Užregistravus domeną, reikia įdiegti SSL sertifikatą, kad galima būtų jungtis prie svetainės per `https`. Yra įvairių SSL sertifikatų teikėjų, siūlau naudoti Let's Encryot, kuris yra Open Source ir nemokamas: https://letsencrypt.org/
 
 Kaip minėjau, vėliau paruošiu medžiagą, ir geriau jos palaukti, bet jei kas nors neturit kantrybės, galit bandyti patys :) 
-
-
-## Frontend (HTML, CSS, JS)
-
-[HTML tutorial](https://www.w3schools.com/html/)
-
-[CSS tutorial](https://www.w3schools.com/css/)
-
-[Bootstrap](https://getbootstrap.com/)
-
 
 
 ## Kiti naudingi dalykai
