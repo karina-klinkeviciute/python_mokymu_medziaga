@@ -74,7 +74,7 @@ Po to, kaip susikuriam modelius, užregistruojam juos [administravimo aplinkoje]
 
 Taip pat susikuriam pagrindinį vartotoją (superuser)
 
-Sukonfigūravę admin aplinką, galim pradėti vesti duomenis
+Sukonfigūravę admin aplinką, galim pradėti vesti duomenis.
 
 ## Views, urls ir templates
 
@@ -126,6 +126,8 @@ https: https://letsencrypt.org/
 
 **TinyMCE tekstų redaktorius.** Jei norit padaryti, kad jūsų vartotojai galėtų rašyti gražiai suformatuotus tekstus, [galit įdiegti TinyMCE](https://github.com/robotautas/kursas/blob/master/Django/MDs8/django8.md#html-laukai-modeliuose)
 
+**Sudėtingesnės užklausos su Q**: https://docs.djangoproject.com/en/3.2/topics/db/queries/#complex-lookups-with-q-objects
+
 **Email siuntimas.** Apie tai, kaip siųsti emailus iš Django, galima rasti čia: https://docs.djangoproject.com/en/4.2/topics/email/ Nustatymai ir konfigūravimai, jei norim siųsti iš Gmail, čia: https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab Siunčiamiems iš projekto laiškams geriausia susikurti naują, atskirą el. pašto dėžutę, o nenaudoti savo.
 
 Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus servisus, kaip Sendgrid, Omnisend, Mailchimp ir panašiai.
@@ -135,6 +137,18 @@ Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus 
 **Duomenų importavimas/eksportavimas.** - Jei reikės per admin importuoti ar eksportuoti duomenis iš modelių ar į modelius, įvairiais formatais: Excel, CSV, JSON, tam yra ši biblioteka: https://django-import-export.readthedocs.io/en/latest/ 
 
 **Prisijungimas su tapatybės nustatymo teikėjais (authentication providers) (Google, Facebook, Twitter, AppleID, Github ir kt.).** Jei norim, kad vartotojai galėtų registruotis/prisijungti per kitas tapatybės nustatymo sistemas, tam galima naudoti šią biblioteką: https://django-allauth.readthedocs.io/en/latest/
+
+**Django management commands**
+
+Kartais gali reikėti kokių nors komandų, kurias mes paleistume serveryje, iš command line, kurios padarytų kokius nors darbus mūsų projekte (skaičiavimai, valymai, duomenų tvarkymai). Tam naudojamos Django management komandos: https://docs.djangoproject.com/en/4.2/howto/custom-management-commands/
+
+**Periodinės užduotys** Kartais gali reikėti preiodinių užduočių. Pavyzdžiui, kas mėnesį perskaičiuoti biudžetus, nustatytu laiko siųsti el. laiškus. 
+
+Tam galima naudoti celery: https://pypi.org/project/django-celery/ 
+
+Kitas būdas - cron kartu su Django Management Commands. 
+
+**Django admin actions** Kai Django administravimo aplinkoje matom objektų sąrašą, tuos objektus pažymėjus, galima juos visus ištrinti. Tam naudojama Django admin action `delete`. Jei yra poreikis atlikti kokius nors kitus veiksmus per admin su vienu ar keliais pažymėtais objektais, mes galim susikurti savo Django admin actions: https://docs.djangoproject.com/en/4.2/ref/contrib/admin/actions/ 
 
 **Talpinimas į serverį**
 
