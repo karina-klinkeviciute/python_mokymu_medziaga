@@ -141,10 +141,10 @@ Jei jūsų projektas nedidelis, yra keli variantai, kur galite jį talpinti nemo
 
 Kiti variantai yra mokami:
 - DigitalOcean (pigiausias variantas - $4 per mėnesį. Gana populiarus Hosting provideris, patogus valdymas)
+- Heroku
 - Google Cloud Services
 - Hostinger
 - Serveriai.lt
-- Heroku
 - Azure
 
 Kartais geriau netgi pasirinkti mokamą servisą, nes nemokamam, viršijus limitą, gali kainuoti daugiau :) Bet reikia patiems pasidaryti tyrimą, kas jums geriausiai tinka, ir pasirinkti.
