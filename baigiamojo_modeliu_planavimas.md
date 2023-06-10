@@ -76,9 +76,11 @@ Nuoroda (url) rašoma į programėlės urls.py failą ir susieją užklausą (ke
 
 [Daugiau apie templates ir Views](https://github.com/robotautas/kursas/blob/master/Django/MDs4/django4.md)
 
-## Registracija
+## Registracija/prisijungimas
 
 Ne visuose projektuose bus reikalinga registracija. Bet jei jūsų projekte ji reikalinga, [čia yra apie vartotojų registraciją](https://github.com/robotautas/kursas/blob/master/Django/MDs7/django7.md)
+
+Jei norim, kad vartotojai galėtų registruotis/prisijungti per kitas tapatybės nustatymo sistemas (Google, Facebook, Twitter, AppleID, Github ir kt.), tam galima naudoti šią biblioteką: https://django-allauth.readthedocs.io/en/latest/
 
 ## Autorizuotas turinys
 
@@ -92,7 +94,7 @@ Jei jūsų svetainės naudotojai turi turėti galimybę įvesti turinį - [tam r
 
 Rimtesniems, ir realiai naudojamiems projektams verta pasirinkti ne SQLite, bet kokią nors kitą duomenų bazių valdymo sistemą. 
 
-Su Django rekomenduojama naudoti Postgres, bet taip pat DJango turi palaikymą ir kitoms duomenų bazių valdymo sistemoms
+Su Django rekomenduojama naudoti Postgres, bet taip pat Django turi palaikymą ir kitoms duomenų bazių valdymo sistemoms
 
 [Django duomenų bazių konfigūravimai](https://docs.djangoproject.com/en/4.2/ref/databases/)
 
@@ -121,6 +123,8 @@ Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus 
 **Field choices.** Jei norim, kad modelyje kokio nors lauko reikšmes vartotojai galėtų pasirinkti tik iš mūsų nustatytų leidžiamų reikšmių, galim naudoti Field choices: https://docs.djangoproject.com/en/4.2/ref/models/fields/#choices 
 
 **Duomenų importavimas/eksportavimas.** - Jei reikės per admin importuoti ar eksportuoti duomenis iš modelių ar į modelius, įvairiais formatais: Excel, CSV, JSON, tam yra ši biblioteka: https://django-import-export.readthedocs.io/en/latest/ 
+
+**Prisijungimas su tapatybės nustatymo teikėjais (authentication providers) (Google, Facebook, Twitter, AppleID, Github ir kt.).** Jei norim, kad vartotojai galėtų registruotis/prisijungti per kitas tapatybės nustatymo sistemas, tam galima naudoti šią biblioteką: https://django-allauth.readthedocs.io/en/latest/
 
 
 ## Frontend (HTML, CSS, JS)
