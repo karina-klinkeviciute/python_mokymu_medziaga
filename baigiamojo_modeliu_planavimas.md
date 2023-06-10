@@ -58,7 +58,15 @@ class Irankis(models.Model):
 ``` 
 [Modelių kūrimo aprašymas](https://github.com/robotautas/kursas/blob/master/Django/MDs2/django2.md)
 
+### Naudotojo modelis
+
 Naudotojo (User) modelį Django turi jau paruoštą. Bet dėl įvairių priežasčių mums gali būti patogiau susikurti savo vartotojo modelį. Kaip tai padaryti, parašyta čia: https://docs.djangoproject.com/en/4.2/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project  To daryti nėra būtina (savo naudotojo modelio kūrimas yra kiek sudėtingesnis), galit pasitarti su dėstytojais, ar jūsų atveju geriau tai daryti, ar ne.
+
+Savo naudotojo modelio kūrimo privalumai:
+
+- galima naudoti email prisijungimui, vietoj naudotojo vardo (username)
+- naudotojo modeliui vietoje įprasto `id` galima naudoti `uuid`. Čia argumentai, kodėl geriau naudoti `uuid`: https://djangoandy.com/2020/10/14/should-i-use-uuid-as-my-model-id-in-django/ 
+
 
 ## Administravimo aplinka
 
@@ -100,17 +108,17 @@ Su Django rekomenduojama naudoti Postgres, bet taip pat Django turi palaikymą i
 
 ## Django saugumas
 
-.env failas
+.env failas: https://codinggear.blog/django-environment-variables/
 
-Django Secret Key
+Django Secret Key - jį būtina įdėti į `.env` failą (žiūrėti aukščiau)
 
-Debug nustatymai
+Debug nustatymai - serveryje nustatynas `DEBUG`, esantis `settings.py` faile, turi būti nustatytas į `False` (`DEBUG=False`). Gali būti nustatomas per atskirą nustatymų failą arba per `.env` failą.
 
-2FA
+2FA: https://django-otp-official.readthedocs.io/en/stable/ 
 
-uuid
+uuid: https://djangoandy.com/2020/10/14/should-i-use-uuid-as-my-model-id-in-django/ 
 
-https
+https: https://letsencrypt.org/ 
 
 ## Kiti naudingi dalykai
 
