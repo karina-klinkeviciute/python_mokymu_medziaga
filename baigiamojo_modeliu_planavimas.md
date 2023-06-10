@@ -143,7 +143,7 @@ Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus 
 
 Kartais gali reikėti kokių nors komandų, kurias mes paleistume serveryje, iš command line, kurios padarytų kokius nors darbus mūsų projekte (skaičiavimai, valymai, duomenų tvarkymai). Tam naudojamos Django management komandos: https://docs.djangoproject.com/en/4.2/howto/custom-management-commands/
 
-**Periodinės užduotys** Kartais gali reikėti preiodinių užduočių. Pavyzdžiui, kas mėnesį perskaičiuoti biudžetus, nustatytu laiko siųsti el. laiškus. 
+**Periodiniai darbai** Kartais gali reikėti preiodinių užduočių. Pavyzdžiui, kas mėnesį perskaičiuoti biudžetus, nustatytu laiko siųsti el. laiškus. 
 
 Tam galima naudoti celery: https://pypi.org/project/django-celery/ 
 
