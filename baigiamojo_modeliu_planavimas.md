@@ -1,5 +1,4 @@
-# Baigiamojo darbo pradžia 
-
+# Gidas baigiamiesiems darbams
 Kadangi baigiamasis darbas turi būti jūsų įgytų žinių ir gebėjimų demonstravimas, ši instrukcija specialiai bus mažai detali.
 
 ## Projekto pradžia
