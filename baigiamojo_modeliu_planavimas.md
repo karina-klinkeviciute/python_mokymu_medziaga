@@ -173,7 +173,9 @@ Kaip minėjau, vėliau paruošiu medžiagą, ir geriau jos palaukti, bet jei kas
 
 **Sudėtingesnės užklausos su Q**: Kartais, kai norim Views'e išrinkti reikiamus objektus pagal kelis kriterijus, paprastos užklausos gali neužtekti. Tam galima naudoti Q užklausas, kurių pagalba galima rašyti sudėtingesnius loginius sakinius su AND ir OR: https://docs.djangoproject.com/en/3.2/topics/db/queries/#complex-lookups-with-q-objects
 
-**Email siuntimas.** Apie tai, kaip siųsti emailus iš Django, galima rasti čia: https://docs.djangoproject.com/en/4.2/topics/email/ Nustatymai ir konfigūravimai, jei norim siųsti iš Gmail, čia: https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab Siunčiamiems iš projekto laiškams geriausia susikurti naują, atskirą el. pašto dėžutę, o nenaudoti savo.
+**Email siuntimas.** Apie tai, kaip siųsti emailus iš Django, galima rasti čia: https://docs.djangoproject.com/en/4.2/topics/email/ Nustatymai ir konfigūravimai, jei norim siųsti iš Gmail, čia: https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab  ir čia: https://opensource.com/article/22/12/django-send-emails-smtp 
+
+Siunčiamiems iš projekto laiškams geriausia susikurti naują, atskirą el. pašto dėžutę, o nenaudoti savo.
 
 Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus servisus, kaip Sendgrid, Omnisend, Mailchimp ir panašiai.
 
