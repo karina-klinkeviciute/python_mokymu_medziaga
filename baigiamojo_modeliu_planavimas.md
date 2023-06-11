@@ -141,6 +141,7 @@ Jei jūsų projektas nedidelis, yra keli variantai, kur galite jį talpinti nemo
 
 - AWS
 - Oracle
+- Azure
 
 Kiti variantai yra mokami:
 - DigitalOcean (pigiausias variantas - $4 per mėnesį. Gana populiarus Hosting provideris, patogus valdymas)
@@ -148,9 +149,8 @@ Kiti variantai yra mokami:
 - Google Cloud Services
 - Hostinger
 - Serveriai.lt
-- Azure
 
-Kartais geriau netgi pasirinkti mokamą servisą, nes nemokamam, viršijus limitą, gali kainuoti daugiau :) Bet reikia patiems pasidaryti tyrimą, kas jums geriausiai tinka, ir pasirinkti.
+Kartais geriau netgi pasirinkti mokamą servisą, nes nemokamam, viršijus limitą, gali kainuoti daugiau :) Be to, daugeliu atvejų, norint užregistruoti domeną, vis tiek reikia imti mokamą planą. Bet reikia patiems pasidaryti tyrimą, kas jums geriausiai tinka, ir pasirinkti.
 
 Projekto paruošimas talpinimui: https://github.com/karina-klinkeviciute/python_mokymu_medziaga/blob/main/Deployinimas.md 
 
