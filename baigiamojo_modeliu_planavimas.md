@@ -121,6 +121,8 @@ Su Django rekomenduojama naudoti Postgres, bet taip pat Django turi palaikymą i
 
 **Private storage:** Jei reikia kelti failus, kurie turi būti prieinami tik autorizuotiems naudotojams, ir galbūt netgi tik tam tikriems naudotojams (pavyzdžiui, įkelti dokumentai, kaip sąskaitos, sutartys ar kiti slapti/jautrūs dokumentai), reikia naudoti biblioteką, kuri tikrintų šiuos leidimus ir failus pateiktų tik tiems vartotojams, kuriems galima. Viena iš tam skirtų bibliotekų: https://pypi.org/project/django-private-storage/ 
 
+**hoenypots** - bandymų įsilaužti pagavimu: https://pypi.org/project/django-honeypot/ 
+
 
 ## Frontend (HTML, CSS, JS)
 
