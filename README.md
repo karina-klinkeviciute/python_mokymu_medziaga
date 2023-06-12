@@ -10,4 +10,4 @@ Turinys:
 
 [Trumpa Django projekto kūrimo santrauka](baigiamojo_modeliu_planavimas.md)
 
-[Veiklos logika (Business logic](veiklos-logika.md)
+[Veiklos logika (Business logic)](veiklos-logika.md)
