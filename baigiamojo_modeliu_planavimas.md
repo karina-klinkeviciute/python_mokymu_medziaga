@@ -83,6 +83,10 @@ Nuoroda (url) rašoma į programėlės urls.py failą ir susieja užklausą (kel
 
 [Daugiau apie templates ir Views](https://github.com/robotautas/kursas/blob/master/Django/MDs4/django4.md)
 
+Django taip pat turi specialius Views, kurie pritaikyti tam tikriems veiksmams su duomenimis - įrašymui, skaitymui, redagavimui, trynimui (taip vadinamam(CRUD). [Čia apie tai, kaip juos naudoti](https://github.com/robotautas/kursas/wiki/Django:-Create,-Update,-Delete-rodini%C5%B3-klas%C4%97s)
+
+O čia yra trumpa santrauka apie visus Django Views: https://ccbv.co.uk/ 
+
 ## Registracija/prisijungimas
 
 Ne visuose projektuose bus reikalinga registracija. Bet jei jūsų projekte ji reikalinga, [čia yra apie vartotojų registraciją](https://github.com/robotautas/kursas/blob/master/Django/MDs7/django7.md)
@@ -131,25 +135,6 @@ Su Django rekomenduojama naudoti Postgres, bet taip pat Django turi palaikymą i
 [CSS tutorial](https://www.w3schools.com/css/)
 
 [Bootstrap](https://getbootstrap.com/)
-
-## REST API kūrimas
-
-Jei mes norim iš mūsų projekto kam nors pateikti vien duomenis, be šablonų, HTML, CSS, mes galim tai daryti su REST API. 
-
-REST API naudojamas, jei: 
-- be Django dar naudojam ir frontend JavaScript framework'ą, pavyzdžiui Vue, React, Ember, Angular, Svelte ar kitą. 
-- kuriam mobiliąją programėlę, kuri keičiasi duomenimis su mūsų backend'u. 
-- norim leisti kitomis programomis bendrauti su mūsų projektu.
-
-Django turi biblioteką Django REST Framework, skirtą bendrauti su REST API. 
-
-[Kurso medžiaga apie REST API Django](https://github.com/robotautas/kursas/tree/master/Django_REST)
-
-[Django REST Framework dokumentacija](https://www.django-rest-framework.org/)
-
-## GraphQL
-
-Kitas būdas bendrauti su frontend frameworkais ar mobiliosiomis programėlėmis yra [GraphQL](https://graphql.org/). Jam Python turi [kelias bibliotekas](https://graphql.org/code/#python)
 
 
 ## Talpinimas į serverį
@@ -205,6 +190,26 @@ Jei mums reikia siųsti emailus daug ir dažnai, geriausiai naudoti tam skirtus 
 **Duomenų importavimas/eksportavimas.** - Jei reikės per admin importuoti ar eksportuoti duomenis iš modelių ar į modelius, įvairiais formatais: Excel, CSV, JSON, tam yra ši biblioteka: https://django-import-export.readthedocs.io/en/latest/ 
 
 **Prisijungimas su tapatybės nustatymo teikėjais (authentication providers) (Google, Facebook, Twitter, AppleID, Github ir kt.).** Jei norim, kad vartotojai galėtų registruotis/prisijungti per kitas tapatybės nustatymo sistemas, tam galima naudoti šią biblioteką: https://django-allauth.readthedocs.io/en/latest/
+
+**REST API kūrimas**
+
+Jei mes norim iš mūsų projekto kam nors pateikti vien duomenis, be šablonų, HTML, CSS, mes galim tai daryti su REST API. 
+
+REST API naudojamas, jei: 
+- be Django dar naudojam ir frontend JavaScript framework'ą, pavyzdžiui Vue, React, Ember, Angular, Svelte ar kitą. 
+- kuriam mobiliąją programėlę, kuri keičiasi duomenimis su mūsų backend'u. 
+- norim leisti kitomis programomis bendrauti su mūsų projektu.
+
+Django turi biblioteką Django REST Framework, skirtą bendrauti su REST API. 
+
+[Kurso medžiaga apie REST API Django](https://github.com/robotautas/kursas/tree/master/Django_REST)
+
+[Django REST Framework dokumentacija](https://www.django-rest-framework.org/)
+
+## GraphQL
+
+Kitas būdas bendrauti su frontend frameworkais ar mobiliosiomis programėlėmis yra [GraphQL](https://graphql.org/). Jam Python turi [kelias bibliotekas](https://graphql.org/code/#python)
+
 
 **Django management commands**
 
