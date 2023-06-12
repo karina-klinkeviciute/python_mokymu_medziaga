@@ -132,6 +132,25 @@ Su Django rekomenduojama naudoti Postgres, bet taip pat Django turi palaikymą i
 
 [Bootstrap](https://getbootstrap.com/)
 
+## REST API kūrimas
+
+Jei mes norim iš mūsų projekto kam nors pateikti vien duomenis, be šablonų, HTML, CSS, mes galim tai daryti su REST API. 
+
+REST API naudojamas, jei: 
+- be Django dar naudojam ir frontend JavaScript framework'ą, pavyzdžiui Vue, React, Ember, Angular, Svelte ar kitą. 
+- kuriam mobiliąją programėlę, kuri keičiasi duomenimis su mūsų backend'u. 
+- norim leisti kitomis programomis bendrauti su mūsų projektu.
+
+Django turi biblioteką Django REST Framework, skirtą bendrauti su REST API. 
+
+[Kurso medžiaga apie REST API Django](https://github.com/robotautas/kursas/tree/master/Django_REST)
+
+[Django REST Framework dokumentacija](https://www.django-rest-framework.org/)
+
+## GraphQL
+
+Kitas būdas bendrauti su frontend frameworkais ar mobiliosiomis programėlėmis yra [GraphQL](https://graphql.org/). Jam Python turi [kelias bibliotekas](https://graphql.org/code/#python)
+
 
 ## Talpinimas į serverį
 
