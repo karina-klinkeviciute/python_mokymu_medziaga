@@ -29,4 +29,31 @@ Rekomendacija kuo daugiau veiklos logikos rašyti prie models yra dėl to, kad t
 
 ## Kodo pavyzdžiai
 
-TBD
+### 1 pavyzdys
+Turime modelį `Event` ir modelį `EventRegistration`, kuris saugo atskirų vartotojų registracijas į renginius.
+```python
+class Event( models.Model ):
+    date = models.DateTimeField( null = True )
+    title = models.CharField( max_length = 100 )
+    conference = models.ForeignKey( Conference, on_delete = models.CASCADE )
+    # ...
+
+class EventRegistration( models.Model ):
+    event = models.ForeignKey( Event, on_delete = models.CASCADE )
+    # ...
+```
+Norėdami apskaičiuoti į renginį prisiregistravusių vartotojų skaičių, šią logiką galime pridėti į Event modelį:
+```python
+class Event( models.Model ):
+    date = models.DateTimeField( null = True )
+    title = models.CharField( max_length = 100 )
+    conference = models.ForeignKey( Conference, on_delete = models.CASCADE )
+    
+    def count_registrations( self ):
+        return self.eventregistration_set.count()
+```
+Funkciją `count_registration()` dabar galime naudoti savo view, o norėdami pakeisti registracijų skaičiavimo logiką (pvz norime skaičiuoti tik patvirtintas registracijas) kodą užteks keisti tik vienoje vietoje.
+```python
+renginys = Event.objects.get( id=1 )
+renginys.count_registrations() # Suskaičiuos renginio registracijų kiekį
+```
