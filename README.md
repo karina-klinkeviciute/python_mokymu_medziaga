@@ -9,3 +9,5 @@ Turinys:
 [git praktikos užduotis](https://github.com/karina-klinkeviciute/git_praktika)
 
 [Trumpa Django projekto kūrimo santrauka](baigiamojo_modeliu_planavimas.md)
+
+[Veiklos logika (Business logic](veiklos-logika.md)
