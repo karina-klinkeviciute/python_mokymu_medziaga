@@ -1,4 +1,4 @@
-# Gidas baigiamiesiems darbams
+# Gidas baigiamiesiems darbams su Django
 Kadangi baigiamasis darbas turi būti jūsų įgytų žinių ir gebėjimų demonstravimas, ši instrukcija specialiai bus mažai detali.
 
 ## Projekto pradžia
