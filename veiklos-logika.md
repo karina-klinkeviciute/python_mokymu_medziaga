@@ -57,3 +57,59 @@ Funkciją `count_registration()` dabar galime naudoti savo view, o norėdami pak
 renginys = Event.objects.get( id=1 )
 renginys.count_registrations() # Suskaičiuos renginio registracijų kiekį
 ```
+
+### 2 pavyzdys
+
+Tarkim. norime suskaičiuoti, kiek Event'e dalyvauja žmonių, kurie užsiregistravę per įmones (per CompanyRegistration)
+
+Tam prie Event modelio galim pasirašyti funkciją `count_companies_attendees`.
+
+```python
+class Event( models.Model ):
+    date = models.DateTimeField( null = True )
+    title = models.CharField( max_length = 100 )
+    conference = models.ForeignKey( Conference, on_delete = models.CASCADE )
+    
+    def companies_attendees_count(self):
+        companies = self.companyregistration_set
+        attendees = companies.aggregate(companies_attendees=Sum('people_count'))
+        return attendees
+```
+
+Šią naują suskaičiuotą reikšmę galim paversti į property - ją tada galima bus naudoti taip, kaip Django modelio lauką. Tai patogu norint jį naudoti administravimo aplinkoje, šablonuose ir kitur:
+
+```python
+class Event( models.Model ):
+    date = models.DateTimeField( null = True )
+    title = models.CharField( max_length = 100 )
+    conference = models.ForeignKey( Conference, on_delete = models.CASCADE )
+    
+    @property
+    def companies_attendees_count(self):
+        companies = self.companyregistration_set
+        attendees = companies.aggregate(companies_attendees=Sum('people_count'))
+        return attendees
+```
+
+Kaip matot, virš metodo aprašymo (`def companies_attendees_count(self):`) atsirado nauja eilutė. Tai yra taip vadinamas dekoratorius. Šiuo atveju, dekoratorius yra `@property` - tai reiškia 
+suskaičiuotą "lauką".
+
+Kai suskaičiuotas reikšmes pasidarom "laukais" su `@property` dekoratoriumi, galima jas naudoti šablonuose, administravimo aplinkoje kaip įprastus laukus. Tik administravimo aplinkoje juos reikia
+nurodyti kaip skirtas tik skaitymui - `read_only`. Tam, kartu su įrašymu į `fields` sąrašą, reikia įrašyti ir į `readonly_fields`.
+
+Pavyzdys, kaip šiuos suskaičiuotus laukus naudoti administravimo aplinkoje:
+
+```python
+class EventAdmin(admin.ModelAdmin):
+    list_display = ['date', 'title', ]
+    fields = ['date', 'title', 'conference', 'created_at', 'updated_at', 'companies_attendees_count']
+    readonly_fields = ['companies_attendees_count', 'created_at', 'updated_at']
+
+
+# Register your models here.
+admin.site.register(Event, EventAdmin)
+```
+
+**Užduotis:**
+
+Pridėti naują lauką, kuris skaičiuotų visus užsiregistravusius lankytojus - ir užsiregistravusius tiesiogiai, ir per įmones.
