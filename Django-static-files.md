@@ -5,14 +5,16 @@ Django turi savo sistemą, kaip tvarkyti su nekiintamais failais, ("static files
 Static files yra failai, kurie yra nekintami. Tai CSS failai svetainės stiliams aprašyti, bendri svetainės dizaino paveikslėliai (logotipai, diziano iliustracijos, social media nuorodos) 
 ir JavaScript failai, skirti kai kuriems svetainės funkcionalumams (bet ne frontend frameworks). 
 
-Django projekte, `static files` dažniausiai dedami į šakniniame projekto folderyje esantį folderį pavadinimu `static`. Galima dėti ir kitur, šio folderio pavadinimas nurodomas `settings.py` faile, bet rekomenduojama laikytis šio susitarimo. 
+Django projekte, `static files` dažniausiai dedami į appsuose esančius folderius pavadinimu`static`. 
 
-Į `static` folderį galima failus dėti tiesiai, bet rekomenduojama suskirstyti į dar atskirus folderius pagal failų tipą: CSS, JS, paveikslėliai. 
+Šių failų nustatymai gali būti keičiami `settings.py` faile nurodant `STORAGES` nustatymus: https://docs.djangoproject.com/en/4.2/ref/settings/#storages (tik nuo Django 4.2 versijos)
 
-Folderis `static` tada atrodytų taip:
+Į `static` folderyje rekomenduojama pirmiausia sukurti folderį tuo pačiu pavadinimu, kaip appsas, o jame - folderius `css`, `images`, `js`. Pavyzdžiui, jei mūsų appsas vadinasi `my_app`, tai folderių struktūra būtų tokia:
 
-- static
-  - css
-  - images
-  - js
+- my_app
+  - static
+    - my_app
+      - css
+      - images
+      - js
 
