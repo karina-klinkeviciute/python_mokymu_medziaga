@@ -43,3 +43,17 @@ Tada failų struktūra atrodytų taip:
         - scripts.js
 
 
+Tam, kad mūsų šitie failai būtų pasiekiami naršyklėje, settings faile yra toks nustatymas:
+
+`STATIC_URL = 'static/'`
+
+Tai reiškia, kad kai naršyklė kraus mūsų svetainę, ir kartu su ja kraus šiuos statinius failus, jie bus prieinami per kelią `/static/`. T.y., jei mūsų svetainė bus https://example.com, tai statiniai failai bus pasiekiami per kelią https://example.com/static. Pavyzdžiui, mūsų appso css failas bus pasiekiamas par https"example.com/static/my_app/css/style/css iš kur naršyklė jį ir užkraus, kad galėtų jį naudoti mūsų svetainės dizaino stilių sudėjimui.
+
+## Static files serveryje
+
+Mūsų kompiuteryje Django pats surenka static files iš apps'ų ir pateikia juos į naršyklę. Bet serveryje tai neveiks. 
+
+Todėl, prieš keliant failus į serverį, reikia atlikti šiuos dalykus:
+
+### STATIC_ROOT nustatymai
+
