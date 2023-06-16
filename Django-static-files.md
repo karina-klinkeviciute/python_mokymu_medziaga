@@ -28,4 +28,18 @@ Tada folderyje `my_app` reikia sukurti folderius `css`, `images`, `js`. Pavyzdž
 
 Static failų saugojimo nustatymai gali būti keičiami `settings.py` faile nurodant `STORAGES` nustatymus: https://docs.djangoproject.com/en/4.2/ref/settings/#storages (tik nuo Django 4.2 versijos)
 
-Dabar kiekviename iš tų folderių galime susikurti savo failus. 
+Dabar kiekviename iš tų folderių galime susikurti savo failus. Pavyzdžiui, CSS failą galim pavadinti `style.css`, galim įkelti kelis paveikslėlius, pavyzdžiui logotipą `logo.png`, ir galbūt JavaScript failą `scripts.js`.
+
+Tada failų struktūra atrodytų taip:
+
+- my_app
+  - static
+    - my_app
+      - css
+        - style.css
+      - images
+        - logo.png
+      - js
+        - scripts.js
+
+
