@@ -173,6 +173,8 @@ Kaip minėjau, vėliau paruošiu medžiagą, ir geriau jos palaukti, bet jei kas
 
 ## Kiti naudingi dalykai
 
+**Cookiecutters** Įprastai prie Django reikia įvairių bibliotekų, ir savų projekto modifikacijų. Kai kurie šių dalykų būna gana standartiniai. Tam būna paruoštų projektų su įvairiais šiais dalykais iš karto sudėtais. Jie vadinasi "cookiecutters". Čia - vienas iš jų, gana populiarus: https://github.com/cookiecutter/cookiecutter-django 
+
 **Paveikslėliai, puslapiavimas, paieška.** Jei jūsų projekte bus keliami paveikslėliai, naudojamas puslapiavimas ar norėsit naudotojams leisti ieškoti, [apie tai rasit informacijos čia](https://github.com/robotautas/kursas/blob/master/Django/MDs6/django6.md)
 
 **TinyMCE tekstų redaktorius.** Jei norit padaryti, kad jūsų vartotojai galėtų rašyti gražiai suformatuotus tekstus, [galit įdiegti TinyMCE](https://github.com/robotautas/kursas/blob/master/Django/MDs8/django8.md#html-laukai-modeliuose)
