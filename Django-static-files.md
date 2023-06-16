@@ -57,3 +57,37 @@ Todėl, prieš keliant failus į serverį, reikia atlikti šiuos dalykus:
 
 ### STATIC_ROOT nustatymai
 
+Reikia įrašyti kompiuteryje/serveryje esančio folderio, į kurį bus surinkti visi static files, pavadinimą:
+
+`STATIC_ROOT = Path(BASE_DIR / 'static')`
+
+Čia, naudojant Path bilioteką, sujungiamas mūsų projekto folderis - `BASE_DIR` ir mūsų folderio `static` pavadinimas.
+
+### `collectstatic`
+
+Tam, kad Django surinktų static failus iš visų appsų ir sudėtų į aukščiau aprašytą `static` folderį, esantį šakninėje projekto direktorijoje, reikia paleisti šią komandą:
+
+`python manage.py collectstatic`
+
+Ši komanda sukurs direktoriją `static` jei ji dar nebuvo sukurta, ir sukels į ją static failus iš visų appsų. Šio folderio struktūra tada atrodys maždaug taip:
+
+- static
+  - my_app
+    - css
+      - style.css
+    - images
+      - logo.png
+    - js 
+      - scripts.js
+  - another_app
+    - css
+      - style.css
+    - images
+      - image.png
+      - background.jpg
+      - social_media.svg
+    - js
+      - likes.js
+
+Taip pat serveryje reikės nustatyti `nginx` arba `apache` nustatymus taip, kad šis folderis būtų prieinamas. Bet apie tai bus [Deployment dalyje]
+
