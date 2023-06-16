@@ -89,5 +89,5 @@ Tam, kad Django surinktų static failus iš visų appsų ir sudėtų į aukšči
     - js
       - likes.js
 
-Taip pat serveryje reikės nustatyti `nginx` arba `apache` nustatymus taip, kad šis folderis būtų prieinamas. Bet apie tai bus [Deployment dalyje]
+Taip pat serveryje reikės nustatyti `nginx` arba `apache` nustatymus taip, kad šis folderis būtų pasiekaimas per naršyklę. Bet apie tai bus [Deployment dalyje](https://github.com/karina-klinkeviciute/python_mokymu_medziaga/blob/main/Deployinimas.md) (kol kas neparuošta)
 
