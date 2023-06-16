@@ -111,6 +111,10 @@ Su Django rekomenduojama naudoti Postgres, bet taip pat Django turi palaikymą i
 
 ## Django saugumas
 
+Video, paaiškinantis kai kuriuos saugumo aspektus Django: https://www.youtube.com/watch?v=CN6zJlqdxt0 
+
+**Allowed hosts** https://zerotobyte.com/use-django-allowed-hosts-to-prevent-security-threats/
+
 **.env failas:** https://codinggear.blog/django-environment-variables/
 
 **Django Secret Key** - jį būtina įdėti į `.env` failą (žiūrėti aukščiau)
