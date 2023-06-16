@@ -66,6 +66,7 @@ Vėliau, norėdami įdėti šiuos failus į template'us, turėsim naudoti Django
 CSS failai yra kraunami HTML failo `head` dalyje:
 
 ```html
+{% load static %}
 ...
 <head>
   ...
@@ -79,6 +80,8 @@ Paveikslėliai gali būti dedami įvairiose HTML `body` dalies vietose - ten, ku
 Jie dėsis taip:
 
 ```html
+{% load static %}
+...
 <img src="{% static 'irankis/images/logo.png' %}">
 ```
 
@@ -87,6 +90,8 @@ JavaScript failai dažniausiai dedami pačioje HTML failo pabaigoje, prieš `</b
 JavaScript įdėjimas į šabloną:
 
 ```html
+{% load static %}
+...
 <body>
   ...
   kažkoks turinys
