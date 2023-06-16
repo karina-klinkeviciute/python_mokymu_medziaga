@@ -87,6 +87,10 @@ Django taip pat turi specialius Views, kurie pritaikyti tam tikriems veiksmams s
 
 O čia yra trumpa santrauka apie visus Django Views: https://ccbv.co.uk/ 
 
+## Static files
+
+Jei norim naudoti CSS, paveikslėlius tinklalapio dizainui, taip pat kažkiek JavaScript frontend'o funkcionalumui, visa tai sudedam į atskirus failus, vadinamus ["static files"](https://github.com/karina-klinkeviciute/python_mokymu_medziaga/blob/main/Django-static-files.md)
+
 ## Registracija/prisijungimas
 
 Ne visuose projektuose bus reikalinga registracija. Bet jei jūsų projekte ji reikalinga, [čia yra apie vartotojų registraciją](https://github.com/robotautas/kursas/blob/master/Django/MDs7/django7.md)
