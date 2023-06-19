@@ -29,6 +29,8 @@ Rekomendacija kuo daugiau veiklos logikos rašyti prie models yra dėl to, kad t
 
 ## Kodo pavyzdžiai
 
+Kodo pavyzdžiai - pagal [konferencijos programėlę](https://github.com/aivaraskriksciunas/conference_app_0602)
+
 ### 1 pavyzdys
 Turime modelį `Event` ir modelį `EventRegistration`, kuris saugo atskirų vartotojų registracijas į renginius.
 ```python
