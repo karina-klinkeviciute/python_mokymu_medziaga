@@ -2,7 +2,7 @@
 
 Veiklos logika programavime vadinama visa tai, ką reikia suprogramuoti, kas priklauso nuo veiklos, kuriai projektas daromas, o ne grynai technologiniai dalykai.
 
-Pavyzdžiui, įrankių nuomos projekte veiklos logika bus viskas, kas susiję būtent su įrankių nuoma, su jai skirtu funkcionalumu. 
+Pavyzdžiui, [įrankių nuomos projekte](https://github.com/karina-klinkeviciute/CodeAcademyDjango) veiklos logika bus viskas, kas susiję būtent su įrankių nuoma, su jai skirtu funkcionalumu. 
 
 Į veiklos logiką, Django projekte, gali įeiti daug dalykų. Visų pirmiausia, pats modelių suplanavimas, laukai, ryšiai tarp modelių - tai jau yra veiklos logikos dalis. 
 
