@@ -57,6 +57,16 @@ class Irankis(models.Model):
 ``` 
 [Modelių kūrimo aprašymas](https://github.com/robotautas/kursas/blob/master/Django/MDs2/django2.md)
 
+Planuodami Django modelius, mes kartu planuojam ir savo duomenų bazės struktūrą. Tam svarbu žinoti apie įvairius duomenų bazių aspektus:
+
+[Joins](https://github.com/robotautas/kursas/blob/master/DB/db3/db3.md) - duomenų išrinkima iš kelių lentelių, to sudėtingumas
+
+[Apribojimus(constraints) ir ryšius (One to Many, Many to Many)](https://github.com/robotautas/kursas/blob/master/DB/db4/db4.md). Apribojimai, kaip `unique`, `unique together`, `not null` leidžia geriau kontroliuoti duomenis. Ryšiai padeda planuotis lenteles (taip pat ir Django modelius) pagal mūsų vuiklos logiką, programos funkcionalumą.
+
+[Indeksus](https://levelup.gitconnected.com/relational-database-indexes-and-when-to-use-them-fb2104cf7af4), kurie reikalingi greitesnei paieškai duomenų bazėse.
+
+[Duomenų bazių normalizavimą](https://en.wikipedia.org/wiki/Database_normalization), kuris reikalingas tam, kad duomenys nesidubliuotų. 
+
 ### Naudotojo modelis
 
 Naudotojo (User) modelį Django turi jau paruoštą. Bet dėl įvairių priežasčių mums gali būti patogiau susikurti savo vartotojo modelį. Kaip tai padaryti, parašyta čia: https://docs.djangoproject.com/en/4.2/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project  To daryti nėra būtina (savo naudotojo modelio kūrimas yra kiek sudėtingesnis), galit pasitarti su dėstytojais, ar jūsų atveju geriau tai daryti, ar ne.
