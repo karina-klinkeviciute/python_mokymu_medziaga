@@ -245,7 +245,7 @@ Kitas būdas - cron kartu su Django Management Commands.
 
 **Private storage:** Jei reikia kelti failus, kurie turi būti prieinami tik autorizuotiems naudotojams, ir galbūt netgi tik tam tikriems naudotojams (pavyzdžiui, įkelti dokumentai, kaip sąskaitos, sutartys ar kiti slapti/jautrūs dokumentai), reikia naudoti biblioteką, kuri tikrintų šiuos leidimus ir failus pateiktų tik tiems vartotojams, kuriems galima. Viena iš tam skirtų bibliotekų: https://pypi.org/project/django-private-storage/ 
 
-**Prieinamumas (Accessibility)** Kai darom svetainę, norim, kad ja galėtų naudotis visi. Accessibility ir yra apie tai. Acessibility apibendrinimas: https://www.w3.org/WAI/fundamentals/accessibility-intro/  Pasitikrinti, ar jūsų svetainė yra prieinama, galite čia: https://www.accessibilitychecker.org/ 
+**Prieinamumas (Accessibility)** Kai darom svetainę, norim, kad ja galėtų naudotis visi. Accessibility ir yra apie tai. Acessibility apibendrinimas: https://www.w3.org/WAI/fundamentals/accessibility-intro/  Pasitikrinti, ar jūsų svetainė yra prieinama, galite čia: https://www.accessibilitychecker.org/ Taip pat yra įrankis Lighthouse, kuris yra integruotas į Chrome Dev Tools: https://github.com/GoogleChrome/lighthouse Jis tikrina ir kitus dalykus, kaip bendrai svetainės kodo kokybė, bet kartu patikrina ir accessibility. 
 
 
 ## Trumpa Django projekto kūrimo santrauka (cheat sheet)
