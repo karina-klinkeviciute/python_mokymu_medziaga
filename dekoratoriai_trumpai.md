@@ -20,3 +20,9 @@ def kiek_objektu(cls):
     return cls.objektu_kiekis
 ```
 
+Dekoratorius savaime yra funkcija, kuri paima funkciją kaip argumentą, ją iškviečia ir grąžina rezultatą. Papildomai gali arba prieš kviečiant, arba po to, kažką padaryti papildomai - su argumentais, arba su rezultatu. 
+
+
+Daugiau teorijos apie dekoratorius:
+
+[Dekoratoriai - pirma dalis]
