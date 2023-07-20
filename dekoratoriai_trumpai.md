@@ -14,7 +14,9 @@ def visi_balai():
     return self.balas1 + self.balas2 + self.balas3
 ```
 
+```python
 @class_method
 def kiek_objektu(cls):
     return cls.objektu_kiekis
+```
 
