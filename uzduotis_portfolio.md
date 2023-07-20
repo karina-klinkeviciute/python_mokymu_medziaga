@@ -43,7 +43,7 @@ Projektus galit išdėlioti vienu iš 3 būdų:
 Galima išdėlioti ir kitaip, jei sugalvosit kaip aiškiai, gražiai ir įdomiai tai padaryti.
 
 
-Pavyzdžiai:
+## Pavyzdžiai:
 
 
 https://www.koysor.me/ - tik be animacijų
@@ -57,15 +57,12 @@ https://www.kalebmckelvey.com/
 https://chaseohlson.com/#work
 
 
-Informacija:
+## Informacija:
 
-Django projekto kūrimas:
-https://github.com/karina-klinkeviciute/python_mokymu_medziaga/blob/main/django-projekto-kurimas.png 
+Django projekto kūrimas: https://github.com/karina-klinkeviciute/python_mokymu_medziaga/blob/main/django-projekto-kurimas.png 
 
 Django templates sistema: https://github.com/robotautas/kursas/blob/master/Django/MDs4/django4.md
 
-
-Django static files
-https://github.com/karina-klinkeviciute/python_mokymu_medziaga/blob/main/Django-static-files.md
+Django static files https://github.com/karina-klinkeviciute/python_mokymu_medziaga/blob/main/Django-static-files.md
 
 
