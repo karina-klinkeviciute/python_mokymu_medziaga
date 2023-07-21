@@ -8,6 +8,8 @@ Dekoratoriai Python'e turi specialų užrašymo būdą, prieš vardą naudojant 
 
 Dekoratorių pavyzdžiai:
 
+Dekoratorius `property`. 
+
 ```python
 @property
 def visi_balai():
@@ -20,9 +22,12 @@ def kiek_objektu(cls):
     return cls.objektu_kiekis
 ```
 
-Dekoratorius savaime yra funkcija, kuri paima funkciją kaip argumentą, ją iškviečia ir grąžina rezultatą. Papildomai gali arba prieš kviečiant, arba po to, kažką padaryti papildomai - su argumentais, arba su rezultatu. 
+Dekoratorius savaime yra funkcija, kuri paima funkciją kaip argumentą, ją iškviečia ir grąžina rezultatą. Taip pat dažniausiai arba prieš kviečiant, arba po to, kažką padaro papildomai - su argumentais, arba su rezultatu. 
 
 
 Daugiau teorijos apie dekoratorius:
 
-[Dekoratoriai - pirma dalis]
+[Dekoratoriai - pirma dalis](https://github.com/robotautas/kursas/wiki/Dekoratoriai-I)
+
+[Dekoratoriai - antra dalis](https://github.com/robotautas/kursas/wiki/Dekoratoriai-II)
+
