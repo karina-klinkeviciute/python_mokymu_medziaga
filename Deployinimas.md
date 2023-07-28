@@ -180,6 +180,8 @@ Prisijunkim šiuo naudotoju:
 
 `sudo su karina`
 
+### Projekto įkėlimas
+
 Projekto geriausiai nekelti į šakninę direktoriją, o jam sukurti naują direktoriją. Vienas iš variantų yra sukurti naują direktoriją, skirtą projektams, `/usr/local/` direktorijoje:
 
 `cd /usr/local`
@@ -191,9 +193,11 @@ Projekto geriausiai nekelti į šakninę direktoriją, o jam sukurti naują dire
 `cd projects`
 
 
-Šioje direktorijoje `git` pagalba įkelsim savo projektą. 
+Šioje direktorijoje `git` pagalba įkelsim savo projektą:
 
+`git clone https://github.com/karina-klinkeviciute/CodeAcademyDjango.git`
 
+Projektas bus sukeltas iš github į serverį. 
 
 ### Aplinkos kintamųjų surašymas
   
@@ -206,7 +210,7 @@ Pasitikrinam, kokie failai ir direktorijos pas mus yra:
 ```ls```
 
 Pirmiausia, persijungiam į projekto direktoriją:
-```cd musu_svetaine```
+```cd CodeAcademyDjango``` (vietoj "CodeAcademyDjango" - jūsų projekto pavadinimas)
 
 Tada patikrinam, kokie joje yra failai:
 ```ls -al```
@@ -217,7 +221,7 @@ Jei šioje direktorijoje yra `.env_example` failas, perkopijuojam jį į `.env` 
 
 ```cp .env_example .env```
 
-Su teksto redaktoriumi `nano` atsidarom šį failą:
+Su teksto redaktoriumi `nano` (galima naudoti ir vim, jei jums patogu) atsidarom šį failą:
 
 ``` nano .env```
 
@@ -254,14 +258,13 @@ SECRET_KEY="m*epo+((q9t4h-g1zf9-nclc80-mthneqryca)0by@9=vgna6k"
 DEBUG = False
 ```
   
-## Pagrindinio naudotojo (super user) sukūrimas
+### Pagrindinio naudotojo (super user) sukūrimas
   
 Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, reikia susikurti naudotoją:
   
 ```python manage.py createsuperuser```
 
 Atsidariusiame dialoge reikia įrašyti naudotojo vardą ir kitus duomenis, kaip darėte ir savo kompiuteryje.
-
 
 
 ## Saugus jungimasis (SSL, HTTPS)
