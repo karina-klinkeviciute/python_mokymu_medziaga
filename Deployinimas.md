@@ -257,6 +257,23 @@ print(get_random_secret_key())
 SECRET_KEY="m*epo+((q9t4h-g1zf9-nclc80-mthneqryca)0by@9=vgna6k"
 DEBUG = False
 ```
+
+### Virtualios aplinkos sukūrimas
+
+Kaip ir savo kompiuteryje, taip ir serveryje, projektą vykdyti rekomenduojama virtualioje aplinkoje (venv)
+
+Tam paleidžiam komandą: 
+
+`python -m venv venv`
+
+Tada šią virtualią aplinką aktyvuojam:
+
+`source venv/bin/activate`
+
+### Django ir kitų bibliotekų instaliavimas
+
+requirements.txt
+
   
 ### Pagrindinio naudotojo (super user) sukūrimas
   
@@ -266,10 +283,24 @@ Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, re
 
 Atsidariusiame dialoge reikia įrašyti naudotojo vardą ir kitus duomenis, kaip darėte ir savo kompiuteryje.
 
+### gunicorn ir nginx diegimas
+
+gunicorn yra Web serverio programinė įranga, skirta Python. Ji naudojama "production" serveriuose. Mūsų kompiuteriuose jos darbą atlieka `wsgi.py` failas, bet jis skirtas tik developinimui. 
+
+
+
 
 ## Saugus jungimasis (SSL, HTTPS)
 
-Let's Encrypt
+Šiais laikais nėra priežasčių svetainės nedaryti saugios (`https`). Tam, kad svetainė būtų saugi, reikia joje įdiegti saugumo sertifikatą (SSL certificate).
+
+Tačiau šį sertifikatą galėsit susidiegti tik tada, kai užsiregistruosit savo domeną. 
+
+Yra daug saugumo sertifikatų tiekėjų. Dauguma jų yra mokami. Bet yra ir nemokamas:Let's Encrypt
+
+### Let's encrypt diegimas
+
+https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal
 
 ## Svetainės atnaujinimas po pakeitimų
 
