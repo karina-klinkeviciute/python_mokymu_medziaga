@@ -57,7 +57,7 @@ venv
 ...
 ```
 
-## `.env_example`
+##### `.env_example`
 
 Tam, kad nepamirštume, kokius kintamuosius turim surašyti į `.env` failą, galim pasidaryti kitą failą, pavyzdžiui, `.env_example` ir į jį surašyti visus šuos kintamuosius su pavyzinėmis reikšmėmis:
 
@@ -80,7 +80,7 @@ DEBUG=False
 
 ##### `settings.py` failas
 
-Nustatymų faile `settings.py` turi būti užkraunamos aukščiau minėtų kintamųjų reikšmės iš `.env` failo. 
+Nustatymų faile `settings.py` aukščiau minėtų kintamųjų reikšmės turi būti užkraunamos iš `.env` failo. 
 
 Tam reikia naudoti biblioteką `dotenv`
 
@@ -99,7 +99,7 @@ Suinstaliavę naują biblioteką, nepamirškime atnaujinti `requirements.txt`:
 from dotenv import load_dotenv
 ```
 
-Po `import` sakinių, reikia įrašyti toki` eilutę: 
+Po `import` sakinių, reikia įrašyti tokią eilutę: 
 
 ```python
 load_dotenv()
@@ -142,11 +142,8 @@ Padarę šiuos pakeitimus, vėl viską sukeliam į GitHub:
 
 ### Requirements failas
 
-Tam, kad Pserveryje galėtume suinstaliuoti visus reikalingus framework'us ir bibliotekas, reikia failo `requirements.txt`. 
-Šis failas turi būti šakninėje git direktorijoje. 
-Github svetainėje susiraskit, kokia jūsų projekto direktorija yra šakninė git direktorija (kartais gali būti šakninė pačio projekto direktorija, o kartais viena aukščiau). 
-
-Šioje, šakninėje direktorijoje paleiskit šią komandą: `pip freeze > requirements.txt`
+Tam, kad serveryje galėtume suinstaliuoti visus reikalingus framework'us ir bibliotekas, reikia failo `requirements.txt`. 
+Savo projekte paleiskit šią komandą: `pip freeze > requirements.txt`
 
 Bus sukurtas failas `requirements.txt`, jį reikia pridėti į git, komanda:
 ```git add requirements.txt```. 
@@ -158,17 +155,47 @@ Tada reikia padaryti git commitą:
 Toliau reikia įkelti šį pakeitimą, ir kitus, jei yra neįkeltų, į github: 
 ```git push``` 
 
-(taip pat galit naudotis PyCharm įrankiais).
+(taip pat galima naudotis PyCharm įrankiais).
 
 
 
 Viskas, projektas paruoštas. 
 
 
-## serverio pusė (nepilna, papildysiu)
+## Serverio pusė 
   
+Prisijunkite prie serverio su Linux operacine sistema. 
 
-## Aplinkos kintamųjų surašymas
+Prisijungsite tikriausiai su `root` naudotoju, bet kelti puslapio su šiuo naudotoju nėra saugu. Todėl pirmiausiai reikia susikurti naują naudotoją. 
+
+### Naujo naudotojo sukūrimas
+
+Naudotojo sukūrimo komanda: 
+
+`sudo adduser karina`
+
+Paleidus šią komandą, paprašys sukurti slaptažodį ir, jei norit, įvesti naudotojo duomenis (galima palikti tuščius)
+
+Prisijunkim šiuo naudotoju:
+
+`sudo su karina`
+
+Projekto geriausiai nekelti į šakninę direktoriją, o jam sukurti naują direktoriją. Vienas iš variantų yra sukurti naują direktoriją, skirtą projektams, `/usr/local/` direktorijoje:
+
+`cd /usr/local`
+
+`mkdir projects`
+
+Įeinam į sukurtą direktoriją: 
+
+`cd projects`
+
+
+Šioje direktorijoje `git` pagalba įkelsim savo projektą. 
+
+
+
+### Aplinkos kintamųjų surašymas
   
 Prieš tai pasiruošėm nustatymus taip, kad slapti ir/ar nuo serverio priklausantys nustatymai turi būti surašyti į .env failą. Kadangi .env failo į git nekėlėm, serveryje reikia jį susikurti iš naujo. 
 
