@@ -111,7 +111,7 @@ Tada reikia surasti nustatymus, kuriuos norime padaryti slaptais įdedant į `.e
 SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG")
 ```
-Jei yra kitų nustatymų, kurių taip pat nenorim, kad kiti pamatytų, 
+Jei yra kitų nustatymų, kurių taip pat nenorim, kad kiti pamatytų, juos irgi reikia surašyti į `.env` failą.
 
 #### Debug nustatymai
 
