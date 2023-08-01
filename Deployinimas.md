@@ -111,9 +111,12 @@ Tada reikia surasti nustatymus, kuriuos norime padaryti slaptais įdedant į `.e
 SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True if os.getenv("DEBUG") == "True" else False
 ```
+
+Sąlyginį sakinį naudojam todėl, kad eilutė "False", jei bandytume paversti tiesiogiai į Boolean, taptų `True` reikšme.
+
 Jei yra kitų nustatymų, kurių taip pat nenorim, kad kiti pamatytų, juos irgi reikia surašyti į `.env` failą.
 
-#### Debug nustatymai
+#### Debug nustatymų paaiškinimas
 
 Kai dirbote su Django savo kompiuteriuose, matėt, kad padarius klaidą, ar įvedus netinkamą kelią, kartais Django svetainėje parodo daug informacijos, padedančios klaidas surasti ir ištaisyti. Tačiau serveryje mes nenorim rodyti šios informacijos, nes ji gali atskleisti įsilaužėliams daug informacijos apie mūsų projektą ir taip padaryti jį nesaugiu. 
 
@@ -122,23 +125,8 @@ Kai dirbote su Django savo kompiuteriuose, matėt, kad padarius klaidą, ar įve
 
 Yra skirtingų būdų valdyti šį nustatymą, pavyzdžiui, skirtingi settings failai serveriui ir vietiniams kompiuteriams. 
 
-Vienas iš būdų yra taip pat įkelti šį kintamąjį į aplinkos kintamuosius. 
+Vienas iš būdų yra taip pat įkelti šį kintamąjį į aplinkos kintamuosius, kaip ir padarėm viršuje. 
 
-`DEBUG` reikšmę aukščiau esančiame pavyzdyje įdėjom į `.env` failą. 
-
-`settings.py` faile jį reikia pasiimti taip:
-
-```python
-DEBUG = True if os.getenv("DEBUG") == "True" else False
-```
-
-Sąlyginį sakinį naudojam todėl, kad eilutė "False", jei bandytume paversti tiesiogiai į Boolean, taptų `True` reikšme.
-
-Padarę šiuos pakeitimus, vėl viską sukeliam į GitHub:
-
-```git commit -m "pakeitėm nustatymus"```
-
-```git push```
 
 ### Requirements failas
 
