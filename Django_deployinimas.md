@@ -74,7 +74,8 @@ DEBUG=False
 git add .env_example
 ```
 
-```git commit -m "pridejom .env_example"```
+```bash
+git commit -m "pridejom .env_example"```
 
 ```git push```
 
