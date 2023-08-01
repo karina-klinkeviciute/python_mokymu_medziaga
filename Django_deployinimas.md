@@ -70,7 +70,7 @@ DEBUG=False
 
 Šį `.env_example` failą jau galim dėti į git:
 
-```
+```bash
 git add .env_example
 ```
 
