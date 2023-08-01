@@ -160,32 +160,32 @@ Prisijungsite tikriausiai su `root` naudotoju, bet kelti puslapio su šiuo naudo
 
 Naudotojo sukūrimo komanda: 
 
-`sudo adduser karina`
+```sudo adduser karina```
 
 Sukūrus naudotoją, reikia nustatyti jam slaptažodį:
 
-`passwd karina`
+```passwd karina```
 
 Prisijunkim šiuo naudotoju:
 
-`sudo su karina`
+```sudo su karina```
 
 ### Projekto įkėlimas
 
 Projekto geriausiai nekelti į šakninę direktoriją, o jam sukurti naują direktoriją. Vienas iš variantų yra sukurti naują direktoriją, skirtą projektams, `/usr/local/` direktorijoje. Ši direktorija neliečiama darant sistemos atnaujinimus, todėl patogu tokius dalykus laikyti joje.
 
-`cd /usr/local`
+```cd /usr/local```
 
-`mkdir projects`
+```mkdir projects```
 
 Įeinam į sukurtą direktoriją: 
 
-`cd projects`
+```cd projects```
 
 
 Šioje direktorijoje `git` pagalba įkelsim savo projektą:
 
-`git clone https://github.com/karina-klinkeviciute/CodeAcademyDjango.git`
+```git clone https://github.com/karina-klinkeviciute/CodeAcademyDjango.git```
 
 Projektas bus sukeltas iš github į serverį. 
 
@@ -256,29 +256,29 @@ Python Ubuntu operacinėje sistemoje jau bus sudiegtas, bet `venv` ir `pip` mes 
 
 Rekomenduojama pirmiausiai atnaujinti `apt` programą ir jos šaltinius:
 
-`sudo apt update && apt upgrade`
+```sudo apt update && apt upgrade```
 
 Tada suinstaliuojam `venv` ir `pip`:
 
-`sudo apt install python3.10-venv`
+```sudo apt install python3.10-venv```
 
-`sudo apt install python3.10-pip`
+```sudo apt install python3.10-pip```
 
 Tada reikia susikurti virtualią aplinką.
 
 Tam paleidžiam komandą: 
 
-`python -m venv venv`
+```python -m venv venv```
 
 Tada šią virtualią aplinką aktyvuojam:
 
-`source venv/bin/activate`
+```source venv/bin/activate```
 
 ### Django ir kitų bibliotekų instaliavimas
 
 Kai aktyvuojam virtualią aplinką, į ją reikia suinstaliuoti visa mūsų projektui reikalingas bibliotekas. Projekto paruošimo dalyje mes jas surašėm į failą `requirements.txt`. Paleidžiam komandą, kuris suinstaliuos šias bibliotekas iš to failo:
 
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 
   
 ### Pagrindinio naudotojo (super user) sukūrimas
