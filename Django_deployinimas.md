@@ -264,7 +264,7 @@ Tada suinstaliuojam `venv` ir `pip`:
 
 `sudo apt install python3.10-pip`
 
-Taip pat, 
+Tada reikia susikurti virtualią aplinką.
 
 Tam paleidžiam komandą: 
 
@@ -276,9 +276,9 @@ Tada šią virtualią aplinką aktyvuojam:
 
 ### Django ir kitų bibliotekų instaliavimas
 
+Kai aktyvuojam virtualią aplinką, į ją reikia suinstaliuoti visa mūsų projektui reikalingas bibliotekas. Projekto paruošimo dalyje mes jas surašėm į failą `requirements.txt`. Paleidžiam komandą, kuris suinstaliuos šias bibliotekas iš to failo:
 
-
-requirements.txt
+`pip install -r requirements.txt`
 
   
 ### Pagrindinio naudotojo (super user) sukūrimas
