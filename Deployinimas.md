@@ -109,7 +109,7 @@ Tada reikia surasti nustatymus, kuriuos norime padaryti slaptais įdedant į `.e
 
 ```python
 SECRET_KEY = os.getenv("SECRET_KEY")
-DEBUG = os.getenv("DEBUG")
+DEBUG = True if os.getenv("DEBUG") == "True" else False
 ```
 Jei yra kitų nustatymų, kurių taip pat nenorim, kad kiti pamatytų, juos irgi reikia surašyti į `.env` failą.
 
