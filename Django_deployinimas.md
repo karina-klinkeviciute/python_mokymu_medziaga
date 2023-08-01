@@ -252,6 +252,20 @@ DEBUG = False
 
 Kaip ir savo kompiuteryje, taip ir serveryje, projektą vykdyti rekomenduojama virtualioje aplinkoje (venv)
 
+Python Ubuntu operacinėje sistemoje jau bus sudiegtas, bet `venv` ir `pip` mes joje dar neturėsime. Jį mums reikia susiinstaliuoti. Tam naudosim ocmandą `apt install`
+
+Rekomenduojama pirmiausiai atnaujinti `apt` programą ir jos šaltinius:
+
+`sudo apt update && apt upgrade`
+
+Tada suinstaliuojam `venv` ir `pip`:
+
+`sudo apt install python3.10-venv`
+
+`sudo apt install python3.10-pip`
+
+Taip pat, 
+
 Tam paleidžiam komandą: 
 
 `python -m venv venv`
@@ -261,6 +275,8 @@ Tada šią virtualią aplinką aktyvuojam:
 `source venv/bin/activate`
 
 ### Django ir kitų bibliotekų instaliavimas
+
+
 
 requirements.txt
 
