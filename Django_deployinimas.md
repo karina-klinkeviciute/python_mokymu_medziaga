@@ -47,7 +47,7 @@ DEBUG=True
 **`.env` failas negali būti keliamas į GitHub, nes tokiu būdu atskleistume visus savo slaptažodžius. Todėl jį reikia įdėti į `.gitignore` failą.**
 
 
-`.gitignore turinys`:
+`.gitignore` turinys:
 
 ```
 ...
