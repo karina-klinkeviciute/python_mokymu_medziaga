@@ -75,9 +75,12 @@ git add .env_example
 ```
 
 ```bash
-git commit -m "pridejom .env_example"```
+git commit -m "pridejom .env_example"
+```
 
-```git push```
+```bash
+git push
+```
 
 Žemiau bus parašyta, kokius veiksmus su šiais failais reikės atlikti serveryje.
 
@@ -89,11 +92,15 @@ Tam reikia naudoti biblioteką `dotenv`
 
 Ją pirmiausiai reikia suinstaliuoti:
 
-```pip install python-dotenv```
+```bash
+pip install python-dotenv
+```
 
 Suinstaliavę naują biblioteką, nepamirškime atnaujinti `requirements.txt`:
 
-```pip freeze > requirements.txt```
+```bash
+pip freeze > requirements.txt
+```
 
 
 `settings.py` failo pradžioje, prie kitų `import` sakinių, reikia pridėti ir tokį sakinį:
@@ -137,7 +144,9 @@ Tam, kad serveryje galėtume suinstaliuoti visus reikalingus framework'us ir bib
 Savo projekte paleiskit šią komandą: `pip freeze > requirements.txt`
 
 Bus sukurtas failas `requirements.txt`, jį reikia pridėti į git, komanda:
-```git add requirements.txt```. 
+```bash
+git add requirements.txt
+```. 
 
 Tada reikia padaryti git commitą: 
 ```git commit -m "pridėta requirements.txt"```
