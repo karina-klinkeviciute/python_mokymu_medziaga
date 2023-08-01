@@ -70,7 +70,9 @@ DEBUG=False
 
 Šį `.env_example` failą jau galim dėti į git:
 
-```git add .env_example```
+```
+git add .env_example
+```
 
 ```git commit -m "pridejom .env_example"```
 
