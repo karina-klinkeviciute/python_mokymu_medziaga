@@ -162,7 +162,9 @@ Naudotojo sukūrimo komanda:
 
 `sudo adduser karina`
 
-Paleidus šią komandą, paprašys sukurti slaptažodį ir, jei norit, įvesti naudotojo duomenis (galima palikti tuščius)
+Sukūrus naudotoją, reikia nustatyti jam slaptažodį:
+
+`passwd karina`
 
 Prisijunkim šiuo naudotoju:
 
@@ -170,7 +172,7 @@ Prisijunkim šiuo naudotoju:
 
 ### Projekto įkėlimas
 
-Projekto geriausiai nekelti į šakninę direktoriją, o jam sukurti naują direktoriją. Vienas iš variantų yra sukurti naują direktoriją, skirtą projektams, `/usr/local/` direktorijoje:
+Projekto geriausiai nekelti į šakninę direktoriją, o jam sukurti naują direktoriją. Vienas iš variantų yra sukurti naują direktoriją, skirtą projektams, `/usr/local/` direktorijoje. Ši direktorija neliečiama darant sistemos atnaujinimus, todėl patogu tokius dalykus laikyti joje.
 
 `cd /usr/local`
 
