@@ -146,7 +146,7 @@ Savo projekte paleiskit šią komandą: `pip freeze > requirements.txt`
 Bus sukurtas failas `requirements.txt`, jį reikia pridėti į git, komanda:
 ```bash
 git add requirements.txt
-```. 
+```
 
 Tada reikia padaryti git commitą: 
 ```git commit -m "pridėta requirements.txt"```
