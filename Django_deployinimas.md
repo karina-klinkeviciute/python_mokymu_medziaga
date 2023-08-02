@@ -115,7 +115,7 @@ Po `import` sakinių, reikia įrašyti tokią eilutę:
 load_dotenv()
 ```
 
-Tada reikia surasti nustatymus, kuriuos norime padaryti slaptais įdedant į `.env` failą ir juos pakeisti taip:
+Tada reikia surasti nustatymus, kuriuos norime padaryti slaptais, ir juos pakeisti taip:
 
 ```python
 SECRET_KEY = os.getenv("SECRET_KEY")
