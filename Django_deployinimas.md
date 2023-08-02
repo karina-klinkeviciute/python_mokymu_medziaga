@@ -292,7 +292,7 @@ Tada reikia susikurti virtualią aplinką.
 
 Tam paleidžiam komandą: 
 
-```python -m venv venv```
+```python3 -m venv venv```
 
 Tada šią virtualią aplinką aktyvuojam:
 
