@@ -304,7 +304,14 @@ Kai aktyvuojam virtualią aplinką, į ją reikia suinstaliuoti visa mūsų proj
 
 ```pip install -r requirements.txt```
 
-  
+### Migracijos
+`python manage.py migrate`
+
+### Static failai
+
+`python manage.py collectstatic`
+
+
 ### Pagrindinio naudotojo (super user) sukūrimas
   
 Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, reikia susikurti naudotoją:
@@ -312,14 +319,6 @@ Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, re
 ```python manage.py createsuperuser```
 
 Atsidariusiame dialoge reikia įrašyti naudotojo vardą ir kitus duomenis, kaip darėte ir savo kompiuteryje.
-
-
-### Migracijos
-
-
-### Static failai
-
-`python manage.py collectstatic`
 
 
 ### gunicorn ir nginx diegimas
