@@ -301,6 +301,8 @@ Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, re
 
 Atsidariusiame dialoge reikia įrašyti naudotojo vardą ir kitus duomenis, kaip darėte ir savo kompiuteryje.
 
+
+
 ### gunicorn ir nginx diegimas
 
 gunicorn yra Web serverio programinė įranga, skirta Python. Ji naudojama "production" serveriuose. Mūsų kompiuteriuose jos darbą atlieka `wsgi.py` failas, bet jis skirtas tik developinimui. 
@@ -328,15 +330,21 @@ Jei atnaujinam svetainės kodą ir norim, kad atsinaujintų ir mūsų svetainė,
 
 Pakeitus kodą, savo kompiuteryje reikia atlikti šiuos veiksmus savo kompiuteryje:
 
-`git add pakeistas_failas` arba `git add .` jei pakeitėm daugiau failų. Taip pridedami failai kėlimui į github.
-`git commit -m "pakeitimai"` - užtvirtinam pakeitimus
-`git push` - nusiunčiam į GitHub
+```git add pakeistas_failas``` arba ```git add .``` jei pakeitėm daugiau failų. Taip pridedami failai kėlimui į github.
+```git commit -m "pakeitimai"``` - užtvirtinam pakeitimus
+```git push``` - nusiunčiam į GitHub
 
 Serveryje reikia atlikti šiuos veiksmus:
 
 * nueinam į savo projekto direktoriją
-* parsiunčiam atnaujinimus iš git: `git pull`
-* perkraunam gunicorn (įdėti komandą)
+* parsiunčiam atnaujinimus iš git:
+  ```bash
+  git pull
+  ```
+* perkraunam gunicorn:
+  ```bash
+  sudo systemctl restart gunicorn
+  ```
 
 
 [How to generate Django Secret Key](https://codinggear.blog/django-generate-secret-key/)
