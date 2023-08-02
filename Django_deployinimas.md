@@ -314,7 +314,7 @@ Atsidariusiame dialoge reikia įrašyti naudotojo vardą ir kitus duomenis, kaip
 
 gunicorn yra Web serverio programinė įranga, skirta Python. Ji naudojama "production" serveriuose. Mūsų kompiuteriuose jos darbą atlieka `wsgi.py` failas, bet jis skirtas tik developinimui. 
 
-
+https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04 
 
 
 ## Saugus jungimasis (SSL, HTTPS)
