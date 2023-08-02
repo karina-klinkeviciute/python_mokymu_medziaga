@@ -187,7 +187,8 @@ Vartotoją pridedam į sudoers:
 ```bash
 # User privilege specification
 root    ALL=(ALL:ALL) ALL
-karina      ALL=(ALL:ALL) ALL```
+karina      ALL=(ALL:ALL) ALL
+```
 
 Prisijunkim šiuo naudotoju:
 
