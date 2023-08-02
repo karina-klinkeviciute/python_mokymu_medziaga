@@ -302,6 +302,13 @@ Kad galėtume prisijungti prie administravimo aplinkos ir ten kelti duomenis, re
 Atsidariusiame dialoge reikia įrašyti naudotojo vardą ir kitus duomenis, kaip darėte ir savo kompiuteryje.
 
 
+### Migracijos
+
+
+### Static failai
+
+`python manage.py collectstatic`
+
 
 ### gunicorn ir nginx diegimas
 
