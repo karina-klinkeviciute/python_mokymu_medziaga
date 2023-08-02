@@ -178,6 +178,17 @@ Sukūrus naudotoją, reikia nustatyti jam slaptažodį:
 
 ```passwd karina```
 
+Vartotoją pridedam į sudoers:
+
+`nano /etc/sudoers`
+
+Čia, po naudotojo `root` teisių, pridedam teises savo naudotojui:
+
+```bash
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+karina      ALL=(ALL:ALL) ALL```
+
 Prisijunkim šiuo naudotoju:
 
 ```sudo su karina```
