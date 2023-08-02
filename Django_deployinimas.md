@@ -286,7 +286,7 @@ Tada suinstaliuojam `venv` ir `pip`:
 
 ```sudo apt install python3.10-venv```
 
-```sudo apt install python3.10-pip```
+```sudo apt install python3-pip```
 
 Tada reikia susikurti virtualią aplinką.
 
