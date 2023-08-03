@@ -352,8 +352,36 @@ Pabandykim pasileisti gunicorn ir pažiūrėti, kaip veikia:
 gunicorn irankiai.wsgi
 ```
 
+Jei nerodo klaidų, reiškia viskas tvarkoje. Bet svetainės pamatyti vis dar negalėsim
 
+Jei norim pamatyti svetainę, reikia paleisti šią komandą:
 
+`gunicorn irankiai.wsgi:application --bind 0.0.0.0:8000` - tik `irankiai` reikia pakeisti savo projekto pavadinimu.
+
+##### gunicorn paleidimas kaip serviso, naudojant systemd
+
+Pirmiausiai reikia susikurti naują `service` failą folderyje `/etc/systemd/system/`
+
+Failą pavadinam, pavyzdžiui `irankiai_gunicorn.service` (jūs duokit jam savo pavadinimą vietoj `irankiai` dalies)
+
+```sudo nano /etc/systemd/system/irankiai_gunicorn.service```
+
+Į šį failą idedam šį turinį:
+
+```bash
+[Unit]
+Description=Gunicorn instance to serve myproject
+After=network.target
+
+[Service]
+User=karina
+Group=karina
+WorkingDirectory=/usr/local/project/CodeacademyDjango/irankiai
+ExecStart=/usr/local/project/CodeacademyDjango/venv/bin/gunicorn myproject.wsgi:application --bind 127.0.0.1:8000
+
+[Install]
+WantedBy=multi-user.target
+```
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04 
 
