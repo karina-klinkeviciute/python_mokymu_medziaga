@@ -157,8 +157,14 @@ Išsaugom ir išeinam (Ctrl+X)
 
 ```pip install -r requirements.txt```
 
+## Persijungiam 5 projekto direktorij1 (kur yra manage.py failas)
+
+`cd irankiai`
+
 
 ## Migracijos
+
+
 `python manage.py migrate`
 
 ## Static failai
@@ -166,7 +172,7 @@ Išsaugom ir išeinam (Ctrl+X)
 `python manage.py collectstatic`
 
 ## Pagrindinio naudotojo (super user) sukūrimas
-  
+
   
 ```python manage.py createsuperuser```
 
