@@ -53,5 +53,37 @@ DEBUG = True if os.getenv("DEBUG") == "True" else False
 
 ## requirements failas
 
+`pip freeze > requirements.txt`
+
+## sukeliam viską į github
+
+pridedam visus naujus failus su `git add` (arba per Pycharm)
+
+Tada:
+
+```git commit -am "paruošta deploynimui```
+
+```git push```
+
+# Projekto paruošimas serveryje
+
+## Naujo naudotojo sukūrimas
+
+```sudo adduser karina```
+
+```passwd karina```
+
+`nano /etc/sudoers`
+
+Čia, po naudotojo `root` teisių, pridedam teises savo naudotojui:
+
+```bash
+# User privilege specification
+root    ALL=(ALL:ALL) ALL
+karina      ALL=(ALL:ALL) ALL
+
+```sudo su karina```
+
+## Projekto įkėlimas
 
 
