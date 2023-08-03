@@ -414,11 +414,11 @@ server {
     server_name 209.38.218.242;
 
     location /static/ {
-        alias /usr/local/projektai/CodeAcademyDjango/static/;
+        alias /usr/local/projektai/CodeAcademyDjango/irankiai/static/;
     }
 
     location /media/ {
-        alias /usr/local/projektai/CodeAcademyDjango/media/;
+        alias /usr/local/projektai/CodeAcademyDjango/irankiai/media/;
     }
 
     location / {
