@@ -377,7 +377,7 @@ After=network.target
 User=karina
 Group=karina
 WorkingDirectory=/usr/local/project/CodeAcademyDjango/irankiai
-ExecStart=/usr/local/project/CodeAcademyDjango/venv/bin/gunicorn myproject.wsgi:application --bind 127.0.0.1:8000
+ExecStart=/usr/local/project/CodeAcademyDjango/venv/bin/gunicorn irankiai.wsgi:application --bind 127.0.0.1:8000
 
 [Install]
 WantedBy=multi-user.target
