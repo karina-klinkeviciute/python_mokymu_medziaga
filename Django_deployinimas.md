@@ -304,10 +304,19 @@ Kai aktyvuojam virtualią aplinką, į ją reikia suinstaliuoti visa mūsų proj
 
 ```pip install -r requirements.txt```
 
+
+
 ### Migracijos
+
+Į serverį savo duomenų bazės neįkėlėm, todėl čia reikia paleisti migracijas, kad sukurtų duomenų bazę ir lenteles pagal mūsų modelius.
+
+paleidžiam migracijas:
+
 `python manage.py migrate`
 
 ### Static failai
+
+Static failai serveryje veikia kiek kitaip, nei mūsų kompiuteryje, todėl reikia paleisti komandą, kad juos visus sukopijuotų į `static` direktoriją:
 
 `python manage.py collectstatic`
 
