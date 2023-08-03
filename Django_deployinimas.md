@@ -202,6 +202,10 @@ Projekto geriausiai nekelti į šakninę direktoriją, o jam sukurti naują dire
 
 ```sudo mkdir projects```
 
+Pakeičiam folderio `projects` savininką į savo naują vartotoją:
+
+`sudo chown -R karina projektai`
+
 Įeinam į sukurtą direktoriją: 
 
 ```cd projects```
