@@ -200,7 +200,7 @@ Projekto geriausiai nekelti į šakninę direktoriją, o jam sukurti naują dire
 
 ```cd /usr/local```
 
-```mkdir projects```
+```sudo mkdir projects```
 
 Įeinam į sukurtą direktoriją: 
 
