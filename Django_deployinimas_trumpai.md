@@ -91,6 +91,8 @@ karina      ALL=(ALL:ALL) ALL
 
 ```sudo mkdir projects```
 
+```sudo chown -R karina projektai```
+
 ```cd projects```
 
 ```git clone https://github.com/karina-klinkeviciute/CodeAcademyDjango.git```
