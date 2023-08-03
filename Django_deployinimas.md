@@ -376,8 +376,8 @@ After=network.target
 [Service]
 User=karina
 Group=karina
-WorkingDirectory=/usr/local/project/CodeacademyDjango/irankiai
-ExecStart=/usr/local/project/CodeacademyDjango/venv/bin/gunicorn myproject.wsgi:application --bind 127.0.0.1:8000
+WorkingDirectory=/usr/local/project/CodeAcademyDjango/irankiai
+ExecStart=/usr/local/project/CodeAcademyDjango/venv/bin/gunicorn myproject.wsgi:application --bind 127.0.0.1:8000
 
 [Install]
 WantedBy=multi-user.target
@@ -390,8 +390,8 @@ Perkraunam Systemctl, kad pakeitimai suveiktų:
 Paleidžiam gunicorn ir nustatom, kad jis pasileistų automatiškai kraunantis serveriui:
 
 ```bash
-sudo systemctl start myproject_gunicorn
-sudo systemctl enable myproject_gunicorn
+sudo systemctl start irankiai_gunicorn
+sudo systemctl enable irankiai_gunicorn
 ```
 
 #### nginx
@@ -400,8 +400,34 @@ Suinstaliuojam nginx:
 
 `sudo apt install nginx`
 
+Surašom `nginx` nustatymus:
 
+Sukuriam ir atsidarom šį failą:
 
+`sudo nano /etc/nginx/sites-available/irankiai`
+
+Jame surašom šiuos duomenis:
+
+```bash
+server {
+    listen 80;
+    server_name 209.38.218.242;
+
+    location /static/ {
+        alias /usr/local/projektai/CodeAcademyDjango/static/;
+    }
+
+    location /media/ {
+        alias /usr/local/projektai/CodeAcademyDjango/media/;
+    }
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+```
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04 
 
