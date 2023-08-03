@@ -332,7 +332,24 @@ Atsidariusiame dialoge reikia įrašyti naudotojo vardą ir kitus duomenis, kaip
 
 ### gunicorn ir nginx diegimas
 
+#### gunicorn
+
 gunicorn yra Web serverio programinė įranga, skirta Python. Ji naudojama "production" serveriuose. Mūsų kompiuteriuose jos darbą atlieka `wsgi.py` failas, bet jis skirtas tik developinimui. 
+
+Savo projekte, esant įjungtai virtualiai aplinkai (jei j1 išjungėt, reikia įjungti vėl su `source venv/bin/activate`) reikia suinstaliuoti gunicorn:
+
+```bash 
+pip install gunicorn
+```
+
+Pabandykim pasileisti gunicorn ir pažiūrėti, kaip veikia:
+
+```bash
+gunicorn irankiai.wsgi
+```
+
+
+
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04 
 
