@@ -161,7 +161,7 @@ Išsaugom ir išeinam (Ctrl+X)
 
 
 
-## Persijungiam 5 projekto direktorij1 (kur yra manage.py failas)
+## Persijungiam į projekto direktoriją (kur yra manage.py failas)
 
 `cd irankiai`
 
