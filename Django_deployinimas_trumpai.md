@@ -110,12 +110,17 @@ karina      ALL=(ALL:ALL) ALL
 
 ```source venv/bin/activate```
 
+## Įeinam į projekto šakninį folderį
+
+```cd CodeAcademyDjango``` (vietoj "CodeAcademyDjango" - jūsų projekto pavadinimas)
 
 
+## Django ir kitų bibliotekų instaliavimas
+
+`pip install -r requirements.txt`
 
 ## Aplinkos kintamieji
 
-```cd CodeAcademyDjango``` (vietoj "CodeAcademyDjango" - jūsų projekto pavadinimas)
 
 ```ls -al```
 
@@ -154,10 +159,7 @@ DEBUG = False
 Išsaugom ir išeinam (Ctrl+X)
 
 
-## Django ir kitų bibliotekų instaliavimas
 
-
-```pip install -r requirements.txt```
 
 ## Persijungiam 5 projekto direktorij1 (kur yra manage.py failas)
 
