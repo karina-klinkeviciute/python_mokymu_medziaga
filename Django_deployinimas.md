@@ -383,6 +383,26 @@ ExecStart=/usr/local/project/CodeacademyDjango/venv/bin/gunicorn myproject.wsgi:
 WantedBy=multi-user.target
 ```
 
+Perkraunam Systemctl, kad pakeitimai suveiktų:
+
+`sudo systemctl daemon-reload`
+
+Paleidžiam gunicorn ir nustatom, kad jis pasileistų automatiškai kraunantis serveriui:
+
+```bash
+sudo systemctl start myproject_gunicorn
+sudo systemctl enable myproject_gunicorn
+```
+
+#### nginx
+
+Suinstaliuojam nginx:
+
+`sudo apt install nginx`
+
+
+
+
 https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04 
 
 
