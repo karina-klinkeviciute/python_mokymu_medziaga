@@ -100,7 +100,7 @@ karina      ALL=(ALL:ALL) ALL
 
 ## Virtualios aplinkos sukūrimas
 
-```sudo apt update && apt upgrade```
+```sudo apt update && apt upgrade```  (jei rodo klaidas, gali reikėti persijungti į root). Po to grįžtam atgal į savo vartotoją)
 
 ```sudo apt install python3.10-venv```
 
