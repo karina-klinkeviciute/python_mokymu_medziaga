@@ -429,6 +429,21 @@ server {
 }
 ```
 
+Čia sukūrėm konfigūracijos failą folderyje `sites_available`, kuriame sudedam visas mūsų galimas svetaines. Dabar reikia jį pridėti su simboline nuoroda (symlink) į įjungtų svetainių folderį `sites_enabled`:
+
+`sudo ln -s /etc/nginx/sites-available/irankiai /etc/nginx/sites-enabled`
+
+pasitikrinam nginx konfigūraciją:
+
+`sudo nginx -t`
+
+Paleidžiam nginx:
+
+`sudo service nginx restart`
+
+
+
+
 https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04 
 
 
