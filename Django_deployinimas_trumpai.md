@@ -89,7 +89,7 @@ karina      ALL=(ALL:ALL) ALL
 
 ```cd /usr/local```
 
-```mkdir projects```
+```sudo mkdir projects```
 
 ```cd projects```
 
