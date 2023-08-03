@@ -81,9 +81,92 @@ Tada:
 # User privilege specification
 root    ALL=(ALL:ALL) ALL
 karina      ALL=(ALL:ALL) ALL
+```
 
 ```sudo su karina```
 
 ## Projekto įkėlimas
 
+```cd /usr/local```
+
+```mkdir projects```
+
+```cd projects```
+
+```git clone https://github.com/karina-klinkeviciute/CodeAcademyDjango.git```
+
+
+## Virtualios aplinkos sukūrimas
+
+```sudo apt update && apt upgrade```
+
+```sudo apt install python3.10-venv```
+
+```sudo apt install python3-pip```
+
+```python3 -m venv venv```
+
+```source venv/bin/activate```
+
+
+
+
+## Aplinkos kintamieji
+
+```cd CodeAcademyDjango``` (vietoj "CodeAcademyDjango" - jūsų projekto pavadinimas)
+
+```ls -al```
+
+Jei šioje direktorijoje yra `.env_example` failas, perkopijuojam jį į `.env` failą:
+
+```cp .env_example .env```
+
+``` nano .env```
+
+Sugeneruojam slaptą raktą:
+
+```python```
+
+```python
+from django.core.management.utils import get_random_secret_key
+print(get_random_secret_key())
+```
+
+Šis kodas atspausdins mums kažką panašaus į šitai:
+
+```m*epo+((q9t4h-g1zf9-nclc80-mthneqryca)0by@9=vgna6k```
+
+Nukopijuojam šį kodą. Išeinam iš Python (rašom `exit()`)
+
+Atsidarom .env failą:
+
+`nano .env`
+
+Įkopijuojam kodą, kad būtų panašiai, kaip čia:
+
+```
+SECRET_KEY="m*epo+((q9t4h-g1zf9-nclc80-mthneqryca)0by@9=vgna6k"
+DEBUG = False
+```
+
+Išsaugom ir išeinam (Ctrl+X)
+
+
+## Django ir kitų bibliotekų instaliavimas
+
+
+```pip install -r requirements.txt```
+
+
+## Migracijos
+`python manage.py migrate`
+
+## Static failai
+
+`python manage.py collectstatic`
+
+## Pagrindinio naudotojo (super user) sukūrimas
+  
+  
+```python manage.py createsuperuser```
 
