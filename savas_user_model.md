@@ -8,7 +8,7 @@ Savo naudotojo modelį verta turėti dėl šių priežasčių:
 
 - Galima prisidėti savo laukų prie naudotojo modelio (User model). Taip nereikės daryti atskiro modelio naudotojo profiliui, bus viskas vienoj vietoj, kas bus patogiau programuojant. Tai ypač patogu, jei kurie nors iš tų laukų yra privalomi - tada be jų neleis sukurti naudotojo.
 - Galima padaryti, kad prisiregistruoti ir prisijungti galima būtų naudojant el. pašto adresą ir slaptažodį, nereikėtų susigalvoti naudotojo vardo.
-- Galima įprastą ID lauką, kur naudotojo identifikatorius parenkamas iš eilės einantis skaičius nuo 1, pakeisti į UUID tipo lauką. Tai padeda išspręsti vieną iš saugumo spragų: iš eilės einančius skaičius įsilaužėliai gali pakeisti į kitokius, ir taip pasiekti kito naudotojo informaciją. UUID identifikatorius yra per daug sudėtingas, kad pavyktų tai padaryti. Šiuo atveju geriausia naudoti UUID4 variantą. (Daugiau apie UUID)[https://en.wikipedia.org/wiki/Universally_unique_identifier]
+- Galima įprastą ID lauką, kur naudotojo identifikatorius parenkamas iš eilės einantis skaičius nuo 1, pakeisti į UUID tipo lauką. Tai padeda išspręsti vieną iš saugumo spragų: iš eilės einančius skaičius įsilaužėliai gali pakeisti į kitokius, ir taip pasiekti kito naudotojo informaciją. UUID identifikatorius yra per daug sudėtingas, kad pavyktų tai padaryti. Šiuo atveju geriausia naudoti UUID4 variantą. [Daugiau apie UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)
 
 ## Naudotojo modelio keitimas savu
 
