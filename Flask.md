@@ -1,6 +1,6 @@
 # Interneto aplikacijos kūrimas su Flask
 
-Kursim programėlę, skirtą Codeacademy studentams užsiregistruoti į eilę dėstytojų konsultacijoms. 
+Kursim programėlę, skirtą CodeAcademy studentams užsiregistruoti į eilę dėstytojų konsultacijoms. 
 
 Ši medžiaga skirta tiems, kas jau žino interneto frameworkų veikimą ir yra dirbę su Django. Kai kurie dalykai, žinomi iš Django (pavyzdžiui šablonų sistema), nebus aptariami labai išsamiai. 
 
