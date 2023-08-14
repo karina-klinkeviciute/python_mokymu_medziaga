@@ -16,4 +16,11 @@ To užteks pirmai programėlės daliai. Toliau galvūt pridėsim ir kitą funkci
 - Galimybė nurodyti, ar studentus, kurie yra eilėje, rodytų visiems, ar tik dėstytojams.
 - Galimybė apytiksliai įvertinti, kada ateis tavo eilė.
 - Statistika, kurie studentai daugiausiai prašė konsultacijų ar panašiai.
-- 
+ 
+Programėlės kodas: https://github.com/karina-klinkeviciute/queueing
+
+Naudingi dalykai: 
+
+https://flask-admin.readthedocs.io/en/latest/introduction/ 
+
+https://pythonhosted.org/Flask-Security/
