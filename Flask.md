@@ -29,3 +29,5 @@ https://pythonhosted.org/Flask-Security/
 
 https://github.com/robotautas/kursas/wiki/Flask-1-dalis
 
+https://flask.palletsprojects.com/en/2.3.x/tutorial/layout/
+
