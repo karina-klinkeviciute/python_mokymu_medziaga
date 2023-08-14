@@ -24,3 +24,6 @@ Naudingi dalykai:
 https://flask-admin.readthedocs.io/en/latest/introduction/ 
 
 https://pythonhosted.org/Flask-Security/
+
+https://github.com/robotautas/kursas/wiki/Flask-1-dalis
+
