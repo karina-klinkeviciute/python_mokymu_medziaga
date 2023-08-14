@@ -2,6 +2,8 @@
 
 Kursim programėlę, skirtą Codeacademy studentams užsiregistruoti į eilę dėstytojų konsultacijoms. 
 
+Ši medžiaga skirta tiems, kas jau žino interneto frameworkų veikimą ir yra dirbę su Django. Kai kurie dalykai, žinomi iš Django (pavyzdžiui šablonų sistema), nebus aptariami labai išsamiai. 
+
 Programėlės veikimas: 
 
 Norėdamas konsultacijos, studentas nueina į tam skirtą svetainę, į laukelį ėveda savo vardą ir paspaudžia "Į eilę". Tada jis yra įkeliamas į eilės galą. 
