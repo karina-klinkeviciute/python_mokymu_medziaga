@@ -80,6 +80,14 @@ class MyUser(AbstractUser):
         return self.email
 ```
 
+### Standartinio User modelio pakeitimas savu `settings.py` faile
+
+Sukūrus savo naudotojo modelį, Django reikia pasakyti, kad naudotų jį, o ne standartinį. Tai reikia padaryti įdedant šią eilutę į `settings.py` fail`:
+
+```python
+AUTH_USER_MODEL = "user.MyUser"
+```
+
 ### Modelio tvarkyklės (model manager) aprašymas
 
 Tam, kad galima būtų sukurti naudotojus neįvedant naudotojo vardo, 
