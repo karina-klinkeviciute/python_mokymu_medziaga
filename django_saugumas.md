@@ -19,3 +19,6 @@ Private storage: Jei reikia kelti failus, kurie turi būti prieinami tik autoriz
 honeypots - bandymų įsilaužti pagavimu: https://pypi.org/project/django-honeypot/
 
 Django svetainės saugumui patinkrinti: https://djcheckup.com/ 
+
+Github įskiepis, tikrinantis Django projekto saugumą pačiame kode, esančiame github: https://github.com/marketplace/django-doctor 
+
