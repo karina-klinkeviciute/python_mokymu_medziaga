@@ -139,7 +139,6 @@ Su Django rekomenduojama naudoti Postgres, bet taip pat Django turi palaikymą i
 
 ## Talpinimas į serverį
 
-***Vėliau paruošiu medžiagą, kol kas gal pavyks pasileisti viską iš to, kas sudėta čia***
 
 Talpinimui į serverį geriausia pasirinkti VPS. Yra daug variantų, kur tai galima padaryti:
 
@@ -158,17 +157,11 @@ Kiti variantai yra mokami:
 
 Kartais geriau netgi pasirinkti mokamą servisą, nes nemokamam, viršijus limitą, gali kainuoti daugiau :) Be to, daugeliu atvejų, norint užregistruoti domeną, vis tiek reikia imti mokamą planą. Bet reikia patiems pasidaryti tyrimą, kas jums geriausiai tinka, ir pasirinkti.
 
-Projekto paruošimas talpinimui: https://github.com/karina-klinkeviciute/python_mokymu_medziaga/blob/main/Deployinimas.md 
+Projekto talpinimas serveryje su gunicorn ir nginx: https://github.com/karina-klinkeviciute/python_mokymu_medziaga/blob/main/Deployinimas.md 
 
-Prisijungus prie savo serverio (Digital Ocean tai būtų droplet), reikia ten sukonfigūruoti `gunicorn` ir `nginx` (yra ir alternatyvų, apache, uwsgi, bet populiariausia ir turbūt patogiausia yra gunicorn+nginx)
-
-Digital Ocean tutorial, kaip paruošti projektą su gunicorn, nginx ir postgres:  https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-22-04 
-
-Šiame tutoriale Django projektas kuriamas serveryje. Jums reikės įkelti savo sukurtą projektą į serverį, naudojantis git. 
+Yra ir alternatyvų, pavyzdžiui, apache, uwsgi, bet populiariausia ir turbūt patogiausia yra gunicorn+nginx
 
 Taip pat galima užregistruoti domeną. Užregistravus domeną, reikia įdiegti SSL sertifikatą, kad galima būtų jungtis prie svetainės per `https`. Yra įvairių SSL sertifikatų teikėjų, siūlau naudoti Let's Encryot, kuris yra Open Source ir nemokamas: https://letsencrypt.org/
-
-Kaip minėjau, vėliau paruošiu medžiagą, ir geriau jos palaukti, bet jei kas nors neturit kantrybės, galit bandyti patys :) 
 
 
 ## Kiti naudingi dalykai
