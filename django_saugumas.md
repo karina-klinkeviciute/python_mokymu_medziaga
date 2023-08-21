@@ -20,5 +20,13 @@ honeypots - bandymų įsilaužti pagavimu: https://pypi.org/project/django-honey
 
 Django svetainės saugumui patinkrinti: https://djcheckup.com/ 
 
+## github
+
+
+
 Github įskiepis, tikrinantis Django projekto saugumą pačiame kode, esančiame github: https://github.com/marketplace/django-doctor 
+
+Taip pat github turi ir kitų įrankių, skirtų analizuoti kodo kokybę ir saugumą. Juos galima rasti prie projekto pasirinkus "Actions" ir ten susiradus kategoriją "Security"
+
+Dar vienas patogus įrankis dependabot. Jis skirtas stebėti bibliotekų, naudojamų jūsų projekte, saugumo atnaujinimus: https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates
 
