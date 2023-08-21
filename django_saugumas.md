@@ -4,7 +4,7 @@ Allowed hosts https://zerotobyte.com/use-django-allowed-hosts-to-prevent-securit
 
 .env failas: https://codinggear.blog/django-environment-variables/
 
-Django Secret Key - jį *būtina* įdėti į .env failą (žiūrėti aukščiau)
+Django Secret Key - jį **būtina** įdėti į .env failą (žiūrėti aukščiau)
 
 Debug nustatymai - serveryje nustatynas DEBUG, esantis settings.py faile, turi būti nustatytas į False (DEBUG=False). Gali būti nustatomas per atskirą nustatymų failą arba per .env failą.
 
