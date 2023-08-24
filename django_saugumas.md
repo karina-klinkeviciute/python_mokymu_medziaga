@@ -41,11 +41,14 @@ https: https://letsencrypt.org/
 
 Private storage: Jei reikia kelti failus, kurie turi būti prieinami tik autorizuotiems naudotojams, ir galbūt netgi tik tam tikriems naudotojams (pavyzdžiui, įkelti dokumentai, kaip sąskaitos, sutartys ar kiti slapti/jautrūs dokumentai), reikia naudoti biblioteką, kuri tikrintų šiuos leidimus ir failus pateiktų tik tiems vartotojams, kuriems galima. Viena iš tam skirtų bibliotekų: https://pypi.org/project/django-private-storage/
 
-honeypots - bandymų įsilaužti pagavimu: https://pypi.org/project/django-honeypot/
+## Honeypots
+
+honeypots - bandymų įsilaužti pagavimui. Tai yra netikri prisijungimo ar kiti svarb8s puslapiai, kurie "sugaudo" bandymus 5silau=ti ir tada galima blokuoti tuos IP ar panašiai.  https://pypi.org/project/django-honeypot/
+
+## Django svetain4s saugumo patikrinimas
 
 Django svetainės saugumui patinkrinti: https://djcheckup.com/ 
 
-Video, paaiškinantis kai kuriuos saugumo aspektus Django: https://www.youtube.com/watch?v=CN6zJlqdxt0 
 
 ## Interneto saugumas bendrai
 
@@ -54,9 +57,7 @@ Video, paaiškinantis kai kuriuos saugumo aspektus Django: https://www.youtube.c
 [OWASP top 10 saugumo rizikų 2023 metais](https://owasp.org/API-Security/editions/2023/en/0x11-t10/)
 
 
-## github
-
-
+## github saugumo įrankiai
 
 Github įskiepis, tikrinantis Django projekto saugumą pačiame kode, esančiame github: https://github.com/marketplace/django-doctor 
 
@@ -67,6 +68,8 @@ Taip pat github turi ir kitų įrankių, skirtų analizuoti kodo kokybę ir saug
 Dar vienas patogus įrankis dependabot. Jis skirtas stebėti bibliotekų, naudojamų jūsų projekte, saugumo atnaujinimus: https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates
 
 
+## Kita
 
+Video, paaiškinantis kai kuriuos saugumo aspektus Django: https://www.youtube.com/watch?v=CN6zJlqdxt0 
 
 
