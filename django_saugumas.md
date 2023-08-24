@@ -16,7 +16,7 @@ Serveryje:
 
 `DEBUG=False`
 
-## UUID vietoje 5prasto ID
+## UUID vietoje įprasto ID
 
 
 Pagal [OWASP top 10 saugumo rizikų sąrašą](https://owasp.org/API-Security/editions/2023/en/0x11-t10/), dažniausiai pasitaikanti rizika yra ta, kad parodomi objekto ID, o per tai galima pasiekti objektus, kurių neturėtume pasiekti, pakeitus ID:
