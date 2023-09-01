@@ -18,6 +18,10 @@ Python programavimo mokymų medžiaga
 
 [Django saugumas](django_saugumas.md)
 
+### Praktiniai pavyzdžiai
+
+[Django deployinimas](Django_deployinimas.md)
+[Django deployinimas trumpai](Django_deployinimas_trumpai.md)
 
 ### Užduotys
 
