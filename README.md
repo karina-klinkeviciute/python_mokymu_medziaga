@@ -16,6 +16,9 @@ Python programavimo mokymų medžiaga
 
 [Dekoratoriai trumpai](dekoratoriai_trumpai.md)
 
+[Django saugumas](django_saugumas.md)
+
+
 ### Užduotys
 
 [git praktikos užduotis](https://github.com/karina-klinkeviciute/git_praktika)
