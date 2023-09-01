@@ -22,6 +22,7 @@ Python programavimo mokymų medžiaga
 
 [Django deployinimas](Django_deployinimas.md)
 [Django deployinimas trumpai](Django_deployinimas_trumpai.md)
+[Savas user model](savas_user_model.md)
 
 ### Užduotys
 
