@@ -204,7 +204,7 @@ Projekto geriausiai nekelti į šakninę direktoriją, o jam sukurti naują dire
 
 Pakeičiam folderio `projects` savininką į savo naują vartotoją:
 
-`sudo chown -R karina projektai`
+`sudo chown -R karina projects`
 
 Įeinam į sukurtą direktoriją: 
 
