@@ -39,12 +39,29 @@ b = 4
 
 vardas = "Karina"
 
-Su kintamaisiais taip pat galim aatlikti 5vairias operacijas:
+Su kintamaisiais taip pat galim aatlikti įvairias operacijas:
 
 >>> `a + b`
 `9`
 
->>> `"Labas " + "Karina"`
+>>> `"Labas " + vardas
 Labas Karina
+
+Tai, kad kintamieji gali įgauti įvairias reikšmes, labai naudinga programujant. 
+
+Kintamieji gali būti įvairių tipų.
+
+Kintamųjų tipai Python:
+
+`int` - "integer", sveikas skaičius. Tai, pavyzdzžiui, 1, 2, 100.
+`float` - "Floating point" - skaičiai su kableliais. Tai, pavyzdžiui, 1.2 ar 20.5
+`str` - string - simbolių eilutė. Kitaip tariant bet koks tekstas. Pavyzdžiui, "Sveikas, Pasauli". 
+
+Kintamųjų reikšmių priskyrimo pavyzdžiai:
+
+a = 9
+b = 2.5
+c = "Mokomės programuoti"
+
 
 
