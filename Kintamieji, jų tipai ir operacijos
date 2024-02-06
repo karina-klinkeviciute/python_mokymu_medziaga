@@ -1,4 +1,4 @@
-# Python operatoriai
+## Python operatoriai
 
 Python programavimo kalba, kaip ir kitos, leidžia atlikti įvairias aritmetines operacijas. 
 
@@ -27,7 +27,7 @@ Kaip matom, Python gali atlikti įvairias operacijas. Pabandykit ir kitas
 
 
 
-# Python kintamieji
+## Python kintamieji
 
 Programavimo kalba parašyta programa yra dinaminis, kintantis procesas. Todėl tam naudojami kintamieji. 
 
@@ -62,6 +62,25 @@ Kintamųjų reikšmių priskyrimo pavyzdžiai:
 a = 9
 b = 2.5
 c = "Mokomės programuoti"
+
+Kintamiesiems galima priskirti operacijų su kitais kintamaisiais rezultatus:
+
+a = 2
+b = 3
+c = a + b
+
+print(c)
+
+"print" yra funkcija, leidžianti atspausdinti kintamojo reikšmę ekrane. 
+
+
+## Užduotys
+
+1. Išbandyti visus Python operatorius (sudėties,atimties, daugybos, dalybos, dalybos be liekanos, kėlimo laipsniu)
+2. Sukirti kelis kintamuosius ir priskirti jiems reikšmes
+3. Atlikti aritmetines operacijas su sukurtais kintamaisiais
+
+
 
 
 
