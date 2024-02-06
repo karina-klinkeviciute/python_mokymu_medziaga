@@ -1,0 +1,50 @@
+# Python operatoriai
+
+Python programavimo kalba, kaip ir kitos, leidžia atlikti įvairias aritmetines operacijas. 
+
+Operacijoms naudojami operatoriai:
+
++ - sudėtis
+- - atimtis
+* - daugyba
+/ - dalyba
+// - dalyba be liekanos 
+% - liekana
+** - kėlimas laipsniu
+
+Pasileiskime Python komandinę eilutė ir pabandykime šias operacijas:
+
+$ `python`
+
+>>> `4 + 5`
+`9`
+
+>>> 2 * 3 
+6
+
+Kaip matom, Python gali atlikti įvairias operacijas. Pabandykit ir kitas
+
+
+
+
+# Python kintamieji
+
+Programavimo kalba parašyta programa yra dinaminis, kintantis procesas. Todėl tam naudojami kintamieji. 
+
+Kintamasis gali įgyti įvairias reikšmes. 
+
+a = 5
+
+b = 4
+
+vardas = "Karina"
+
+Su kintamaisiais taip pat galim aatlikti 5vairias operacijas:
+
+>>> `a + b`
+`9`
+
+>>> `"Labas " + "Karina"`
+Labas Karina
+
+
