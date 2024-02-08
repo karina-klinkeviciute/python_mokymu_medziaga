@@ -59,17 +59,21 @@ Kintamųjų tipai Python:
 
 Kintamųjų reikšmių priskyrimo pavyzdžiai:
 
+```python
 a = 9
 b = 2.5
 c = "Mokomės programuoti"
+```
 
 Kintamiesiems galima priskirti operacijų su kitais kintamaisiais rezultatus:
 
+```python
 a = 2
 b = 3
 c = a + b
 
 print(c)
+```
 
 "print" yra funkcija, leidžianti atspausdinti kintamojo reikšmę ekrane. 
 
