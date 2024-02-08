@@ -1,0 +1,39 @@
+Programuojant labai svarbu interakcija su programos naudotoju. Tam yra įvairių būdų, bet pradžiai, mokymuisi, naudosim įvedimą iš klaviatūros.
+
+Įvedimui iš klavietūros naudojama Python funkcija `input`.
+
+Pavyzdys:
+
+```python
+name = input("Įveskite savo vardą")
+
+print("Labas", vardas)
+```
+
+Šios eilutės paprašys naudotojo įvesti vardą, pavyzdžiui, "Lina", ir atspausdins "Labas Lina".
+
+`input` funkcijos rezultatas visada būna simbolių eilutė. Todėl, jei norim įvesti kito tipo kintamąjį, pavyzdžuii, `int` - sveiką skaičių, mums reikia eilutę paversti į to kito tipo kintamąjį. Tam naudojamos specialios funkcijos, nurodančios tų kintamųjų tipus. 
+
+```python
+name = input("Įveskite vardą")
+age = int(input("įveskite amžių")
+
+print(f"{name} yra {age} metų amžiaus")
+```
+
+Kaip matom, amžius čia turi būti skaičius, todėl jam naudojam pavertimą į skaičių `int`. 
+
+Spausdinimui čia naudojam taip vadinamus f-strings - formatuotas eilutes. Jos pažymimos prirašius f raidę prieš simbolių eilutę. Į jas galima įterpti kintamuosius, naudojant riestinius skliaustelius {}. Tada jų vietoje atspausdins tų kintamųjų reikšmes. 
+
+
+Panašiai galima paversti ir į slankaus kablelio skaičių (`float`)
+
+```python
+kaina = float(input("įveskite kainą"))
+
+print(f"Kaina: {kaina}")
+```
+
+
+
+
