@@ -11,6 +11,23 @@
 7. Funkcijos
 8. Aibės, tuples
 9. Klaidos, išimtys
+
+
+## Pažengusiems
 10. Loginimas
+11. Git, github
+12. Debugginimas
+13. Darbas su keliais failais, moduliai
+14. Virtual environments
+15. PEP8
+16. Generatoriai
+17. Dekoratoriai
+
+## OOP
+18. Objektinio programavimo 5vadas
+19. Klas4s, atributai, metodai
+20. Paveldėjimas
+21. Polimorfizmas, enkapsuliacija, abstrakcija
+22. 
 
 
