@@ -10,4 +10,7 @@
 6. Ciklai
 7. Funkcijos
 8. Aibės, tuples
-9. 
+9. Klaidos, išimtys
+10. Loginimas
+
+
