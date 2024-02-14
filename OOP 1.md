@@ -1,16 +1,19 @@
-Object oriented programming, OOP for short is one of the paradigms in programming. 
+Objektinis programavimas yra vienas iš programavimo tipų/ 
 
-Object oriented programming uses classes. 
+Objektinis programavimas naudoja klases ir jų objektus.
 
-A class is a structure which holds data and also has methods for manipulation of this data. 
+Klasė yra struktūra, kurioje kartu laikomi ir duomenys, ir yra metodai veiksmams su tais duomenimis.
 
-Example of a class:
+Klasės pavyzdys:
 
-```pytohn
-Animal:
-  def__init__(name, legs, can_swim, can_fly):
+```python
+Dog:
+  def__init__(name):
     self.name = name
-    self.legs = legs
-    self.can_swim = can_swim
-    self.can_fly = can_fly
 
+  def speak():
+    print("Au au")
+
+```
+
+Pati klasė yra kaip šablonas, aprašymas jos objektams. Norėdami su ja dirbti, pirma turim inicijuoti jos objektą. 
