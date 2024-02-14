@@ -23,9 +23,10 @@ Sukurtį programą restorano apskaitai:
 Restoranas. Ryte, atsidarius, restoranas turi 0 pinigų, vėliau už parduotus patiekalus gauna pinigų. Arbatpinigiai apskaitomi atskirai.
 Meniu. Restoranas turi meniu, kur surašyti patiekalai. Reikia sukurti bendrą meniu klasę ir specialius meniu.
 Patiekalas. Gali būti kelios skirtingos patiekalų klasės (pagrindinis, desertas, užkandis, gėrimas). Kiekvienas patiekalas turi kainą.
-Staliukas. 
-Užsakymas. Užsakyme gali būti keli patiekalai. Užsakymas susietas su staliuku.
-Pamokėjimas. Gali būti grynais arba kortele. 
+Užsakymas. Užsakyme gali būti keli patiekalai.
+Apmokėjimas. Gali būti grynais arba kortele. 
+Galimybė pridėti arbatpinigių. Jie skaičiuojami atskirai.
+
 
 
 13. 
