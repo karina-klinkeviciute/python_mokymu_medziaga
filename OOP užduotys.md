@@ -37,5 +37,5 @@ Autoserviso darbas.
 14. 
 15. Receptai
 Patiekalas: sukurti bendrą patiekalo klasę. Pagalvoti apie tai, kokius atributus ir metodus ji gali turėti.
-Sukurti atskiras klases skirtingiems patiekalų tipams: sriuba, kepsnys, desertas. Pagalvoti, kokias savybas gali turėti šios klasės.
+Sukurti atskiras klases skirtingiems patiekalų tipams: sriuba, kepsnys, desertas. Pagalvoti, kokius atributus ir metodus gali turėti šios klasės.
 
