@@ -35,4 +35,7 @@ Galimybė pridėti arbatpinigių. Jie skaičiuojami atskirai.
 13. Autoservisas
 Autoserviso darbas. 
 14. 
-15. 
+15. Receptai
+Patiekalas: sukurti bendrą patiekalo klasę. Pagalvoti apie tai, kokius atributus ir metodus ji gali turėti.
+Sukurti atskiras klases skirtingiems patiekalų tipams: sriuba, kepsnys, desertas. Pagalvoti, kokias savybas gali turėti šios klasės.
+
