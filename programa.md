@@ -11,6 +11,7 @@
 7. Funkcijos
 8. Aibės, tuples
 9. Klaidos, išimtys
+10. List comprehension 
 
 
 ## Pažengusiems
@@ -23,7 +24,7 @@
 7. Generatoriai
 8. Dekoratoriai
 9. Web scraping
-10. Duomen7 pa4mimas i6 API
+10. Duomenų paėmimas iš API
 
 ## OOP
 1. Objektinio programavimo įvadas
