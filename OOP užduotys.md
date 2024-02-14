@@ -1,21 +1,21 @@
-1. Create a car rental system
+1. Sukurti automobilių nuomos svetainę
 
-2. create a system for managing your garden
+2. Sukurti sistemą daržo priežiūrai (pasodinti augalai, priežiūros darbai)
 
-3. create a queueing system
+3. Sukurti stojimo į eilę sistemą. Naudotojas turėtų turėti galimybę atsistoti į eilę (pavyzdžiui, konsultacijoms), kitas naudotojas - priimti naudotoją iš eilės.
 
-4. movie database
+4. Filmų duomenų bazė. 
 
-5. recipe book
+5. Receptų knyga
 
-6. tools rental
+6. Įrankių nuomos programa. Vieni naudotojai gali įdėti įrankius, kiti - juos nuomotis
 
-7. library
+7. Bibliotekos sistema
 
-8. candy store
+8. Saldumynų parduotuvė
 
-9. employee work time management
+9. Darbuotojų darbo laiko apskaita
 
-10. shipments management
+10. Siuntinių apskaita
 
 11. 
