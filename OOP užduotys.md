@@ -14,14 +14,19 @@ Daržas:
 7. Įrankių nuomos programa. Vieni naudotojai gali įdėti įrankius, kiti - juos nuomotis
 
 8. Bibliotekos sistema
+   Klasės:
+   Knyga.
+   
+   
+   
 
-9. Saldumynų parduotuvė
+10. Saldumynų parduotuvė
 
-10. Darbuotojų darbo laiko apskaita
+11. Darbuotojų darbo laiko apskaita
 
-11. Siuntinių apskaita
+12. Siuntinių apskaita
 
-12. Restorano apskaita
+13. Restorano apskaita
 Sukurtį programą restorano apskaitai:
 Restoranas. Ryte, atsidarius, restoranas turi 0 pinigų, vėliau už parduotus patiekalus gauna pinigų. Arbatpinigiai apskaitomi atskirai.
 Meniu. Restoranas turi meniu, kur surašyti patiekalai. Reikia sukurti bendrą meniu klasę ir specialius meniu.
@@ -32,10 +37,10 @@ Galimybė pridėti arbatpinigių. Tikrinti, ar arbatpinigių suma - teigiamas sk
 
 
 
-13. Autoservisas
+14. Autoservisas
 Autoserviso darbas. 
-14. 
-15. Receptai
+15. 
+16. Receptai
     
 Patiekalas: sukurti bendrą patiekalo klasę. Pagalvoti apie tai, kokius atributus ir metodus ji gali turėti.
 
