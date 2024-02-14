@@ -28,7 +28,7 @@ Meniu. Restoranas turi meniu, kur surašyti patiekalai. Reikia sukurti bendrą m
 Patiekalas. Gali būti kelios skirtingos patiekalų klasės (pagrindinis, desertas, užkandis, gėrimas). Kiekvienas patiekalas turi kainą.
 Užsakymas. Užsakyme gali būti keli patiekalai.
 Apmokėjimas. Gali būti grynais arba kortele. 
-Galimybė pridėti arbatpinigių. Jie skaičiuojami atskirai.
+Galimybė pridėti arbatpinigių. Tikrinti, ar arbatpinigių suma - teigiamas skačius.
 
 
 
@@ -36,6 +36,8 @@ Galimybė pridėti arbatpinigių. Jie skaičiuojami atskirai.
 Autoserviso darbas. 
 14. 
 15. Receptai
+    
 Patiekalas: sukurti bendrą patiekalo klasę. Pagalvoti apie tai, kokius atributus ir metodus ji gali turėti.
+
 Sukurti atskiras klases skirtingiems patiekalų tipams: sriuba, kepsnys, desertas. Pagalvoti, kokius atributus ir metodus gali turėti šios klasės.
 
