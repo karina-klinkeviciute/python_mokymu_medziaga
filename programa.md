@@ -8,13 +8,16 @@
 4. Sąrašai
 5. Žodynai
 6. Ciklai
-7. Funkcijos
-8. Aibės, tuples
-9. Klaidos, išimtys
-10. List comprehension 
+7. Veiksmai su teksto eilutėmis
+8. Funkcijos
+9. Aibės, tuples
+10. Klaidos, išimtys
+11. List comprehension
+
 
 
 ## Pažengusiems
+
 1. Loginimas
 2. Git, github pagrindai
 3. Debugginimas
@@ -27,6 +30,7 @@
 10. Duomenų paėmimas iš API
 
 ## OOP
+
 1. Objektinio programavimo įvadas
 2. Klasės, atributai, metodai, objektai
 3. Paveldėjimas
@@ -37,6 +41,7 @@
 8. Dataclasses
 
 ## Kiti naudingi dalykai
+
 1. Git plačiau
 2. Docker
 3. Duomenų bazės
