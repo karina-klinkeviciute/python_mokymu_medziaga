@@ -28,6 +28,7 @@
 8. Dekoratoriai
 9. Web scraping
 10. Duomenų paėmimas iš API
+11. Duomenų bazės
 
 ## OOP
 
