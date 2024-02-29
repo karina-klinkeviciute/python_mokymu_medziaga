@@ -28,6 +28,30 @@
    3. Dažnių skaičiavimas:
         Parašykite funkciją, kuri priima eilutę kaip įvestį ir grąžina žodyną, kuriame yra kiekvienos simbolio pasikartojimo dažnis šioje eilutėje.
 
+## Funkcijos
+   
+   1. Pasisveikinimo funkcija:
+   Parašykite funkciją, kuri priima vartotojo vardą kaip argumentą ir grąžina pasisveikinimo žinutę su tuo vardu.
+
+   2. Skaičių kvadratų sąrašas:
+   Parašykite funkciją, kuri priima skaičių ir grąžina sąrašą, kuriame yra kvadratai visų skaičių nuo 1 iki nurodyto skaičiaus.
+   
+   3. Faktorialo skaičiavimas:
+   Parašykite funkciją, kuri priima sveikąjį skaičių ir grąžina jo faktorialą.
+   
+   4. Daugybos lentelė:
+   Parašykite funkciją, kuri priima sveikąjį skaičių ir spausdina jo daugybos lentelę iki 10.
+   
+   5. Didžiausio ir mažiausio skaičiaus radimas:
+   Parašykite funkciją, kuri priima sąrašą skaičių ir grąžina didžiausią ir mažiausią skaičius šiame sąraše.
+
+   6. Parašykite funkciją, kuri priima sąrašą skaičių ir grąžina jų vidurkį. Išbandykite funkciją su bet kokiu sąrašu skaičių.
+
+   7. Sukurkite funkciją pavadinimu "zodziu_kiekis", kuri priima tekstą ir žodžio raktą. Funkcija turi grąžinti, kiek kartų pasikartoja nurodytas žodis tekste. Išbandykite funkciją su kokia nors teksto eilute ir žodžiu, kurį norite surasti.
+
+   8. Sukurkite kelias funkcijas, kurios atlieka skirtingus veiksmus (pvz., prideda du skaičius, atima juos, daugina, dalija ir kt.). Tada sukurkite pagrindinę funkciją, kuri leistų vartotojui pasirinkti, kokią operaciją jis nori atlikti ir iškvieskite atitinkamą funkciją pagal pasirinkimą.
+   9. Sukurkite funkciją, kuri perskaito tekstinių duomenų failą ir grąžina žodžių skaičių, kurie yra joje.
+   10. Sukurkite paprastą modulį, kuriame būtų viena ar kelios funkcijos. Tada sukurti kitą Python failą ir importuokite jūsų sukurtą modulį. Iškvieskite jo funkcijas ir patikrinkite, ar jos veikia.
 
 
 ## Objektinis programavimas
