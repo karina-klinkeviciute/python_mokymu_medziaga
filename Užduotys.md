@@ -1,3 +1,38 @@
+# Užduotys
+
+## Žodynai
+
+   1. Įvairūs veiksmai su žodynu
+
+    Žodyno kūrimas:
+        Sukurkite žodyną, kuriame būtų asmens duomenys. Juose turi būti tokie duomenys, kaip "vardas", "amžius", "lytis" ir "profesija". Atspausdinkite reikšmę, susijusią su raktu "amžius".
+
+    Žodyno atnaujinimas:
+        Pridėkite naują raktą-reikšmę prie žodyno, sukurtam pirmoje užduotyje, reprezentuojančią asmens "miestą".
+
+    Iteravimas per žodyną:
+        Parašykite ciklą, kad išspausdintumėte visas raktas-reikšmes žodyne, sukurtame pirmoje užduotyje.
+
+    Žodyno metodai:
+        Naudodami žodynų metodus, išskirkite ir atspausdinkite visus raktus ir visus reikšmes atskirai iš žodyno, sukurto pirmoje užduotyje.
+
+    Sąlyginiai veiksmai su žodynais:
+        Patikrinkite, ar žodyne yra raktas "miestas". Jei yra, atspausdinkite "Miesto informacija prieinama", kitaip atspausdinkite "Miesto informacija neprieinama".
+
+    Žodyno rikiavimas:
+        Surikiuokite žodyną, sukurtą septintoje užduotyje, pagal raktus ir išspausdinkite surikiuotas raktas-reikšmes.
+
+   2. Atvirkštinis ieškojimas:
+        Turint žodyną, kuriame yra sąrašai daiktų ir jų kainos, parašykite funkciją, kuri priima kainą ir grąžina sąrašą visų daiktų su ta kaina.
+
+   3. Dažnių skaičiavimas:
+        Parašykite funkciją, kuri priima eilutę kaip įvestį ir grąžina žodyną, kuriame yra kiekvienos simbolio pasikartojimo dažnis šioje eilutėje.
+
+
+
+## Objektinis programavimas
+
+
 1. Sukurti automobilių nuomos sistemą. Galimos klasės: 
 
 Nuomos punktas. Atributai: Adresas, automobilių kiekis
