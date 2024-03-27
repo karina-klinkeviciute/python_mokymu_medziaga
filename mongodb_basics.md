@@ -16,7 +16,7 @@ in terminal, type `mongosh`
 
 # creating a collection
 
-`my_db.createCollection(`col1`)
+`my_db.createCollection("col1")`
 
 # inserting a document into a collection 
 
