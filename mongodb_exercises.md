@@ -1,6 +1,6 @@
 1. Basic CRUD Operations:
     - Create a new database called "School" and within it, create a collection called "Students".
-    - Insert a few documents into the "Students" collection, each containing fields like "name", "age", "grade", and "subjects" (nested array).
+    - Insert a few documents into the "Students" collection, each containing fields like "name", "age", "grade", and "subjects" (nested array, in a form of: `subjects: [{name: "Literature", teacher:{name: "Jane", surname: "Johnson"}}, {name: "Physics", teacher:{name: "Linda", surname: "Jackson"}}]`).
     - Update the age of a specific student.
     - Delete a student from the collection.
 
