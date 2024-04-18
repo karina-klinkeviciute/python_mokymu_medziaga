@@ -133,9 +133,7 @@ Hands-On Activity:
     Apply various text properties to the text content using CSS to achieve desired styling effects.
     Encourage students to experiment with different property values to see how they impact the appearance of text.
 
-Part 3: CSS Fonts
-
-## CSS Font Properties
+## Part 3: CSS Fonts
 
 ### 1. `font-family`
 
