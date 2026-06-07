@@ -145,7 +145,7 @@ Sukurk pirkinių sąrašą su 5 produktais.
 - Atspausdink pirmą ir paskutinį elementą pagal indeksą
 - Pridėk naują produktą su `.append()`
 - Atspausdink tik pirmus 3 produktus (naudok slicing!)
-- Patikrink su `in`, ar „pienas" yra sąraše
+- Patikrink su `in`, ar „duona" yra sąraše
 
 ---
 
