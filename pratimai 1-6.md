@@ -1,5 +1,5 @@
 # 🐍 Python pratimų rinkinys
-### Pagal Karinos mokymų medžiagą – 1, 2, 3, 5, 6 pamokos
+### Pagal Karinos mokymų medžiagą – 1, 2, 3, 4, 5, 6 pamokos
 
 ---
 
@@ -59,7 +59,7 @@ Naudok f-string formatą.
 ### 🧮 Paprastas skaičiuotuvas
 Parašyk programą, kuri:
 1. Paprašo įvesti du skaičius (paversk į `float`!)
-2. Atspausdina jų sumą, skirtumą, sandaugą ir dalmenį  
+2. Atspausdina jų sumą, skirtumą, sandaugą ir dalmenį
 
 Pvz.:
 ```
@@ -123,7 +123,7 @@ Programa paklausia pažymio ir atspausdina:
 - 9–10 → „Puikiai! 🌟"
 - 7–8 → „Gerai 👍"
 - 5–6 → „Patenkinamai"
-- 1–4 → „Reikia daugiau pastangų"  
+- 1–4 → „Reikia daugiau pastangų"
 
 Bonus: patikrink, ar įvestas skaičius yra 1–10 ribose, jei ne – atspausdink „Neteisingas pažymys".
 
@@ -137,10 +137,52 @@ Jei neteisingas → „Klaidingas slaptažodis. ❌"
 
 ---
 
+## 4 pamoka: Duomenų struktūros – sąrašai
+
+### 🛍️ Pirkinių sąrašas
+Sukurk pirkinių sąrašą su 5 produktais.
+
+- Atspausdink pirmą ir paskutinį elementą pagal indeksą
+- Pridėk naują produktą su `.append()`
+- Atspausdink tik pirmus 3 produktus (naudok slicing!)
+- Patikrink su `in`, ar „pienas" yra sąraše
+
+---
+
+### 🏆 Sporto rezultatai
+Komandos žaidėjai surinko taškų: `[14, 8, 21, 5, 17, 11, 9]`
+
+- Atspausdink rezultatus surikiuotus nuo mažiausio iki didžiausio (naudok `sorted()` – originalus sąrašas turi likti nepakitęs)
+- Surikiuok patį sąrašą su `.sort()`
+- Atspausdink rezultatus atvirkštine tvarka naudodamas slicing `[::-1]`
+- Atspausdink tik pirmus 3 geriausius rezultatus
+
+---
+
+### 🎵 Grojaraštis
+Sukurk mėgstamų dainų sąrašą (bent 6 dainos).
+
+- Atspausdink 2-ą ir 4-ą dainą pagal indeksą
+- Atspausdink paskutines 3 dainas naudojant slicing
+- Apsuk grojaraštį (naudok `[::-1]`) ir atspausdink
+- Patikrink, ar kuri nors konkreti daina yra sąraše
+
+---
+
+### 📊 Temperatūrų savaitė
+Duotos savaitės temperatūros: `[12.5, 9.0, 14.2, 18.0, 16.5, 11.0, 8.3]`
+
+- Atspausdink darbo dienų (pirmadienio–penktadienio) temperatūras naudojant slicing
+- Atspausdink savaitgalio temperatūras
+- Surikiuok temperatūras ir atspausdink – kokia buvo šilčiausia ir šalčiausia diena?
+- Apskaičiuok savaitės vidurkį (naudok `sum()` ir `len()`)
+
+---
+
 ## 5 pamoka: Žodynai (dictionaries)
 
 ### 📇 Kontaktas
-Sukurk žodyną su draugo/draugės kontakto informacija:
+Sukurk žodyną su draugo kontakto informacija:
 - vardas, pavardė, telefonas, miestas, gimimo metai
 
 Atspausdink kiekvieną lauką atskirai naudodamas raktus.  
@@ -260,4 +302,14 @@ Parašyk programą:
 
 ---
 
+### 🏪 Parduotuvės sandėlis
+Sukurk sąrašą su prekių pavadinimais ir atskirą sąrašą su jų kiekiais.  
+Su `for` ciklu atspausdink visas prekes ir kiekius.  
+Patikrink su `in`, ar konkreti prekė yra sandėlyje.  
+Surikiuok prekes abėcėlės tvarka ir atspausdink.
+
+---
+
 *Sėkmės mokantis Python! 🚀*
+
+(Sugeneruota naudojant Claude)
